@@ -14,7 +14,10 @@
 		<h3 style="color:purple;">
 			조리미 방문하신 것을 환영홥니다.
 		</h3>	
-		<span style="color:gray;">
+		<span style="color:black;">
+			빠른 시일내에 오픈하겠습니다.
+		</span>
+		<span style="color:black;">
 			빠른 시일내에 오픈하겠습니다.
 		</span>
 	</div>
