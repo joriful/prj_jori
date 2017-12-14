@@ -4,22 +4,30 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/index.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<title>Jorimi</title>
 </head>
 <body>
-	<div class="container">
-		<h3 style="color:purple;">
-			조리미 방문하신 것을 환영홥니다.
-		</h3>	
-		<span style="color:black;">
-			빠른 시일내에 오픈하겠습니다.
-		</span>
-		<span style="color:black;">
-			빠른 시일내에 오픈하겠습니다.
-		</span>
-	</div>
+	<div class="indexBGfst" style="width:100%; height:600px; display: table; ">
+		<div class="container">
+			<div style="margin-top:23%;">
+				<div style="vertical-align:middle; display:table-cell; /* border:solid red 1px;  */margin:10px;">
+					<span style="color:#ffffff; font-size:45px; font-weight:bold;">
+						조리미
+					</span><br>
+					<span style="color:#ffffff; font-size:45px; ">
+						방문을 환영합니다.
+					</span><br>
+					<span style="color:#ffffff; font-size:25px;">
+						빠른 시일내에 오픈하겠습니다.
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>	
 </body>
 </html>
