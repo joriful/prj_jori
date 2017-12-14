@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="container">
-		<h3 style="color:gray;">
+		<h3 style="color:purple;">
 			조리미 방문하신 것을 환영홥니다.
 		</h3>	
 		<span style="color:gray;">
