@@ -16,13 +16,15 @@
 		<div class="container">
 			<div style="margin-top:23%;">
 				<div style="vertical-align:middle; display:table-cell; /* border:solid red 1px;  */margin:10px;">
-					<span style="color:#ffffff; font-size:45px; font-weight:bold;">
+					<span style="color:#ffffff; font-size:50px; font-weight:bold;">
 						조리미
 					</span><br>
-					<span style="color:#ffffff; font-size:45px; ">
+					
+					<span style="color:#ffffff; font-size:50px; ">
 						방문을 환영합니다.
 					</span><br>
-					<span style="color:#ffffff; font-size:25px;">
+					
+					<span style="color:#ffffff; font-size:30px;">
 						빠른 시일내에 오픈하겠습니다.
 					</span>
 				</div>
