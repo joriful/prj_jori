@@ -17,7 +17,7 @@
 			<div style="margin-top:23%;">
 				<div style="vertical-align:middle; display:table-cell; /* border:solid red 1px;  */margin:10px;">
 					<span style="color:#ffffff; font-size:50px; font-weight:bold;">
-						조리미
+						조리미味
 					</span><br>
 					
 					<span style="color:#ffffff; font-size:50px; ">
