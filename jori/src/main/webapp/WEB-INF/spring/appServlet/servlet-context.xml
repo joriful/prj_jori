@@ -17,6 +17,7 @@
 	<resources mapping="/resources/**" location="/resources/" /> -->
 
 	<!-- WARN : org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'appServlet' -->
+	<mvc:resources location="/favicon.ico" mapping="/favicon.ico"/>
 	<mvc:resources location="/resources/" mapping="/resources/**"/>
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
