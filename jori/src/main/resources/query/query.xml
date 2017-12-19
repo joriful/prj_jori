@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="query">
+  	<resultMap type="com.jori.member.model.LoginInfo" id="LoginInfoResult">
+  		<result column="ID" property="id" />
+  		<result column="PASSWORD" property="password" />  	
+  	</resultMap>
+  
+  	<select id="loginChk" resultType="integer" parameterType="com.jori.member.model.LoginInfo">
+  		select count(*) from tb_account
+  			<where>
+  				id=#{id}
+  					AND
+  				password =#{password}
+  			</where>
+  	</select>
+  	<select id="totalAccount" resultType="integer">
+  		SELECT count(*) FROM tb_account
+  	</select>
+  </mapper>

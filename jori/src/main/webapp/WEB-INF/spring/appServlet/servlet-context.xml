@@ -11,14 +11,15 @@
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
-	<!-- <annotation-driven />
+	<annotation-driven />
 
-	Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory
-	<resources mapping="/resources/**" location="/resources/" /> -->
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+	<!-- <resources mapping="/resources/**" location="/resources/" /> -->
+	<resources mapping="/resources/**" location="/resources/**"/>
 
 	<!-- WARN : org.springframework.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'appServlet' -->
 	<mvc:resources location="/favicon.ico" mapping="/favicon.ico"/>
-	<mvc:resources location="/resources/" mapping="/resources/**"/>
+	<!-- <mvc:resources location="/resources/**" mapping="/resources/**"/> -->
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -38,7 +39,10 @@
 		<property name="order" value="1" />
 	</bean> -->
 	
-	<context:component-scan base-package="com.jori.joriful" />
+	
+	<context:component-scan base-package="com.jori.joriful" /><!-- 삭제 -->
+	<context:component-scan base-package="com.jori.member.controller" />
+	<context:component-scan base-package="com.jori.member.model" />
 	
 	
 	

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 div.indexBGfst{
-	background: url(../divImgs/jorim2.jpg) no-repeat center center;/* 가운데 기준으로 이미지확대 */
+	background: url(../divImgs/jorim3.jpg) no-repeat center center;/* 가운데 기준으로 이미지확대 */
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
