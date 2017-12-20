@@ -33,15 +33,19 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="/login/loginChk")
-	public void loginChk(Locale locale, Model model, LoginInfo loginInfo, HttpSession session, HttpServletResponse response) throws IOException{
+	public void loginChk(Locale locale, Model model, LoginInfo loginInfo, HttpSession session, HttpServletResponse response) 
+			throws IOException{
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out=response.getWriter();
+		System.out.println("printWriter out="+out);
 		
 		if((loginInfo.getId() != null && !loginInfo.getId().equals("")
 				&& loginInfo.getPassword() != null && !loginInfo.getPassword().equals(""))) {
 			
 			if(loginDAO.loginChk(loginInfo)) {
 				session.setAttribute("login", 0);//로그인 성공시 세션
+				
+				System.out.println("세션추가 성공");
 				
 				session.setAttribute("id", loginInfo.getId());
 				out.println("<script>location.href='/'; </script>");
@@ -55,5 +59,15 @@ public class LoginController {
 			}
 		}
 	}
+	
+	//로그아웃 컨트롤러
+	@RequestMapping(value="/login/logout")
+	public ModelAndView logOut(ModelAndView mav, HttpSession session) {
+		String page = "redirect:/";
+		session.removeAttribute("id");
+		mav.setViewName(page);
+		return mav;
+	}
+	
 	
 }//
