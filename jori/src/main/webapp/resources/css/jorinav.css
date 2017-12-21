@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* nav-bar styelsheet */
+	#jori-bi , #jori-bi > a {
+	    color:#FF8C00 !important;
+	}
+	
+	#jori-bi > a:hover, #jori-bi > a:focus {
+	    color: #e57e00 !important;
+	}

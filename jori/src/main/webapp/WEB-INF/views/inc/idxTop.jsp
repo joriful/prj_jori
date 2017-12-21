@@ -7,19 +7,20 @@
 <head>
 <meta charset="UTF-8">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/jorinav.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<title>Jorimi</title>
 </head>
-<body style="background-color:black;">
-	<div class="navbar navbar-default">
+<!-- <body style=""> -->
+	<div class="navbar navbar-default navbar-fixed-top" style="background:transparent; border:transparent; box-shadow: none;">
 		<div class="container">
-			<div class="navbar-header">
+			<div class="navbar-header" id="jori-bi">
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main" >
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Jorimi</a>
+				<a href="#" class="navbar-brand" style="font-size:35px; ">味</a>
 			</div>
 			
 			<c:choose >
@@ -47,5 +48,5 @@
 			</c:choose>
 		</div>
 	</div>	
-</body>
+<!-- </body> -->
 </html>

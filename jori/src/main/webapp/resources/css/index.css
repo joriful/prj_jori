@@ -1,12 +1,42 @@
 @charset "UTF-8";
 
-div.indexBGfst{
+/*  @keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 140% auto; }
+  100% { background-size: 100% auto; }
+}  */
+
+/* @keyframes breath {
+  0%   { background-size: 130% auto; }
+  50% { background-size: 100% auto; }
+} */
+
+ @keyframes breath {
+  0%   { background-size: auto 160%; }
+  100%  { background-size: auto 141%; }
+  /* 100% { background-size: auto 100%; } */
+}
+
+div.joritem-1{
+	/* background: url(../divImgs/jorim3.jpg) no-repeat center center fixed; *//* 가운데 기준으로 이미지확대 */
 	background: url(../divImgs/jorim3.jpg) no-repeat center center;/* 가운데 기준으로 이미지확대 */
-	background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-size: auto 141%;
+  	background-position: center center;
+		animation: breath 2s linear;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.joritem-2{
+	background: url(../divImgs/jorim4.jpg) no-repeat center center;/* 가운데 기준으로 이미지확대 */
+ 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    /* margin: 0px;
-    padding: 0px; */
-    
+	  height: 100vh;
+	  background-position: center center;
+    margin: 0px;
+    padding: 0px;
 }
