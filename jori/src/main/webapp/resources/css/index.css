@@ -12,19 +12,19 @@
 } */
 
  @keyframes breath {
-  0%   { background-size: auto 160%; }
-  100%  { background-size: auto 141%; }
+  0%   { background-size: auto 165%; }
+  100%  { background-size: auto 143%; }
   /* 100% { background-size: auto 100%; } */
 }
 
 div.joritem-1{
 	/* background: url(../divImgs/jorim3.jpg) no-repeat center center fixed; *//* 가운데 기준으로 이미지확대 */
-	background: url(../divImgs/jorim3.jpg) no-repeat center center;/* 가운데 기준으로 이미지확대 */
+	background: url(../divImgs/jorim3.jpg) no-repeat center center fixed;/* 가운데 기준으로 이미지확대 */
     height: 100vh;
     width: 100vw;
-    background-size: auto 141%;
+    background-size: auto 143%;
   	background-position: center center;
-		animation: breath 2s linear;
+		animation: breath 2s linear; /* animation zooming */
     margin: 0px;
     padding: 0px;
 }
@@ -36,7 +36,21 @@ div.joritem-2{
     -moz-background-size: cover;
     -o-background-size: cover;
 	  height: 100vh;
+	  width: 100vw;
 	  background-position: center center;
     margin: 0px;
     padding: 0px;
 }
+
+/* div.joritem-2{
+	background: url(../divImgs/jorim4.jpg) no-repeat center center;가운데 기준으로 이미지확대
+ 	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	  height: 100vh;
+	  background-position: center center;
+    margin: 0px;
+    padding: 0px;
+} */
+

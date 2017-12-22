@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* scroll hidden */
+::-webkit-scrollbar {display:none;}
+html, body { -ms-overflow-style: none; overflow: auto; }
+
+/* div vertical middle */
+#vertiBox{
+	display: table;
+}
+
+#vertiDiv{
+	display:table-cell; 
+	vertical-align:middle;
+}
