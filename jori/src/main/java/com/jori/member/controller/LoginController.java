@@ -69,5 +69,18 @@ public class LoginController {
 		return mav;
 	}
 	
+	@RequestMapping(value="/join")
+	public ModelAndView joinMember(ModelAndView mav) {
+		
+		
+		return mav;
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 }//
