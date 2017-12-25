@@ -69,8 +69,9 @@ public class LoginController {
 		return mav;
 	}
 	
-	@RequestMapping(value="/join")
+	@RequestMapping(value="/join", method=RequestMethod.GET )
 	public ModelAndView joinMember(ModelAndView mav) {
+		
 		
 		
 		return mav;

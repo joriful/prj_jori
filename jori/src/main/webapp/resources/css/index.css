@@ -12,7 +12,7 @@
 } */
 
  @keyframes breath {
-  0%   { background-size: auto 165%; }
+  0%   { background-size: auto 170%; }
   100%  { background-size: auto 155%; }
   /* 100% { background-size: auto 100%; } */
 }
