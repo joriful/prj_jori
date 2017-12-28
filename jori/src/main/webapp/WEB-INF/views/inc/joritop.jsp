@@ -14,7 +14,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<title>Jorimi</title>
 </head>
-<!-- <body style=""> -->
 	<div class="navbar navbar-default navbar-fixed-top" style="background:#000000; border:#000000; opacity: 0.7;/* background:transparent; border:transparent; box-shadow: none; */">
 		<div class="container">
 			<div class="navbar-header" id="jori-bi">
@@ -30,9 +29,7 @@
 				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >메뉴</span>
 				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >주문배달</span>
 				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >로그인</span>
-				<a href="${pageContext.request.contextPath}/join">
-					<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */">가입하기</span>
-				</a>
+				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */">가입하기</span>
 			</div>
 			
 			<%-- <c:choose >
@@ -60,5 +57,4 @@
 			</c:choose> --%>
 		</div>
 	</div>	
-<!-- </body> -->
 </html>
