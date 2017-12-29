@@ -21,11 +21,11 @@
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main" >
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand" style="font-size:35px; font-weight:bold;">味</a>
+				<a href="${pageContext.request.contextPath }" class="navbar-brand" style="font-size:35px; font-weight:bold;">味</a>
 			</div>
 			
 			<div class="navbar-header pull-right">			
-				<a href="#"><span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >
+				<a href="${pageContext.request.contextPath }"><span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >
 					소개</span></a>
 				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >메뉴</span>
 				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >주문배달</span>

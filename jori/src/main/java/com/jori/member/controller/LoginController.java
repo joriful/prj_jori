@@ -23,15 +23,6 @@ public class LoginController {
 	@Autowired
 	MloginDAO loginDAO;
 	
-	//localhost:9090을 입력 하였을때  index.jsp 호출
-	@RequestMapping(value="/", method=RequestMethod.GET )
-	public ModelAndView indexView(ModelAndView mav) {
-		String page ="index";
-		mav.setViewName(page);
-		
-		return mav;
-	}
-	
 	@RequestMapping(value="/login/loginChk")
 	public void loginChk(Locale locale, Model model, LoginInfo loginInfo, HttpSession session, HttpServletResponse response) 
 			throws IOException{

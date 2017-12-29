@@ -20,16 +20,18 @@
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main" >
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand" style="font-size:35px; font-weight:bold;">味</a>
+				<a href="http://localhost:9090/" class="navbar-brand" style="font-size:35px; font-weight:bold;">味</a>
 			</div>
 			
 			<div class="navbar-header pull-right">			
-				<a href="#"><span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >
+				<a href="http://localhost:9090/"><span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >
 					소개</span></a>
 				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >메뉴</span>
 				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >주문배달</span>
 				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */" >로그인</span>
-				<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */">가입하기</span>
+				<a href="${pageContext.request.contextPath}/join">
+					<span class="navbar-brand" style="color:#ffffff; /* font-weight:bold; */">가입하기</span>
+				</a>
 			</div>
 			
 			<%-- <c:choose >
