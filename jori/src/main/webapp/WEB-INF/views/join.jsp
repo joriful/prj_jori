@@ -29,14 +29,14 @@
 			
 					<div class="form-group " style="">
 						<div class="col-xs-10 col-xs-offset-1">
-							<input type="text" class="form-control" name="userid" value="${cookie.ck_userid.value}" placeholder="유저 아이디" >
+							<input type="text" class="form-control" name="userid" value="${cookie.ck_userid.value}" placeholder="닉네임" >
 						</div>
 					</div>	
 			
 						<div id="chkUid" style="color:blue;">
 						</div>
 			
-					<div class="form-group " style="">
+					<!-- <div class="form-group " style="">
 						<div class="col-xs-10 col-xs-offset-1">
 							<input type="text" class="form-control" name="fName" placeholder="성">
 						</div>
@@ -46,7 +46,7 @@
 						<div class="col-xs-10 col-xs-offset-1">
 							<input type="text" class="form-control" name="lName" placeholder="이름">
 						</div>
-					</div>
+					</div> -->
 					
 					<div class="form-group " style="">			
 						<div class="col-xs-10 col-xs-offset-1">
