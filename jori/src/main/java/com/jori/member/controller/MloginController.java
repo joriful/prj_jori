@@ -2,6 +2,7 @@ package com.jori.member.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletResponse;
@@ -14,17 +15,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.jori.member.model.LoginInfo;
+import com.jori.member.model.MloginInfo;
+import com.jori.member.model.JoriMemBean;
 import com.jori.member.model.MloginDAO;
 
 @Controller
-public class LoginController {
+public class MloginController {
 	
 	@Autowired
 	MloginDAO loginDAO;
 	
 	@RequestMapping(value="/login/loginChk")
-	public void loginChk(Locale locale, Model model, LoginInfo loginInfo, HttpSession session, HttpServletResponse response) 
+	public void loginChk(Locale locale, Model model, MloginInfo loginInfo, HttpSession session, HttpServletResponse response) 
 			throws IOException{
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out=response.getWriter();
@@ -65,6 +67,22 @@ public class LoginController {
 	public ModelAndView joinMember(ModelAndView mav) {
 		
 		mav.setViewName("/join");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value="/join", method=RequestMethod.POST)
+	public ModelAndView joinMemPost(ModelAndView mav, HttpSession session, JoriMemBean jmBean) throws Exception {
+		
+		try {
+			joinService.insertJoriMem(jmBean);
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+			System.out.println("회원가입 실패");
+		}
+		
+		/*MloginSe*/
 		
 		return mav;
 	}

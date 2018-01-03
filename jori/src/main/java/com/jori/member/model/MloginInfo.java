@@ -1,6 +1,6 @@
 package com.jori.member.model;
 
-public class LoginInfo {
+public class MloginInfo {
 	private String id;
 	private String name;
 	private String password;

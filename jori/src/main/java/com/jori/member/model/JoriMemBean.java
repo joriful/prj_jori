@@ -5,52 +5,30 @@ import java.sql.Timestamp;
 import org.springframework.web.multipart.MultipartFile;
 
 public class JoriMemBean {
-	private int memberNo;
-	private String memberId;
-	private String nickName;
-	private String pwd;
+	private int jmemNo;
 	private String email;
-	private Timestamp joindate;
-	private int mileage;
-	private int joriCoupon;
-	private String myIcon;
-	
-	//업로드 아이콘
-	private MultipartFile uploadIcon;
-	
+	private String pwd;
+	private String nick;
+	private Timestamp regdate;
+	private int rp;
+	private int jPhon;
+	private int jZip;
+	private String jAddr;
+	private String jAddrDetail;
+	private int jCoin;
+	private String jIcon;
 	//salt
 	private String joriSlt;
+		
+	//업로드 아이콘
+	private MultipartFile uploadIcon;
 
-	public int getMemberNo() {
-		return memberNo;
+	public int getJmemNo() {
+		return jmemNo;
 	}
 
-	public void setMemberNo(int memberNo) {
-		this.memberNo = memberNo;
-	}
-
-	public String getMemberId() {
-		return memberId;
-	}
-
-	public void setMemberId(String memberId) {
-		this.memberId = memberId;
-	}
-
-	public String getNickName() {
-		return nickName;
-	}
-
-	public void setNickName(String nickName) {
-		this.nickName = nickName;
-	}
-
-	public String getPwd() {
-		return pwd;
-	}
-
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public void setJmemNo(int jmemNo) {
+		this.jmemNo = jmemNo;
 	}
 
 	public String getEmail() {
@@ -61,44 +39,84 @@ public class JoriMemBean {
 		this.email = email;
 	}
 
-	public Timestamp getJoindate() {
-		return joindate;
+	public String getPwd() {
+		return pwd;
 	}
 
-	public void setJoindate(Timestamp joindate) {
-		this.joindate = joindate;
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
 	}
 
-	public int getMileage() {
-		return mileage;
+	public String getNick() {
+		return nick;
 	}
 
-	public void setMileage(int mileage) {
-		this.mileage = mileage;
+	public void setNick(String nick) {
+		this.nick = nick;
 	}
 
-	public int getJoriCoupon() {
-		return joriCoupon;
+	public Timestamp getRegdate() {
+		return regdate;
 	}
 
-	public void setJoriCoupon(int joriCoupon) {
-		this.joriCoupon = joriCoupon;
+	public void setRegdate(Timestamp regdate) {
+		this.regdate = regdate;
 	}
 
-	public String getMyIcon() {
-		return myIcon;
+	public int getRp() {
+		return rp;
 	}
 
-	public void setMyIcon(String myIcon) {
-		this.myIcon = myIcon;
+	public void setRp(int rp) {
+		this.rp = rp;
 	}
 
-	public MultipartFile getUploadIcon() {
-		return uploadIcon;
+	public int getjPhon() {
+		return jPhon;
 	}
 
-	public void setUploadIcon(MultipartFile uploadIcon) {
-		this.uploadIcon = uploadIcon;
+	public void setjPhon(int jPhon) {
+		this.jPhon = jPhon;
+	}
+
+	public int getjZip() {
+		return jZip;
+	}
+
+	public void setjZip(int jZip) {
+		this.jZip = jZip;
+	}
+
+	public String getjAddr() {
+		return jAddr;
+	}
+
+	public void setjAddr(String jAddr) {
+		this.jAddr = jAddr;
+	}
+
+	public String getjAddrDetail() {
+		return jAddrDetail;
+	}
+
+	public void setjAddrDetail(String jAddrDetail) {
+		this.jAddrDetail = jAddrDetail;
+	}
+
+	public int getjCoin() {
+		return jCoin;
+	}
+
+	public void setjCoin(int jCoin) {
+		this.jCoin = jCoin;
+	}
+
+	public String getjIcon() {
+		return jIcon;
+	}
+
+	public void setjIcon(String jIcon) {
+		this.jIcon = jIcon;
 	}
 
 	public String getJoriSlt() {
@@ -109,11 +127,21 @@ public class JoriMemBean {
 		this.joriSlt = joriSlt;
 	}
 
+	public MultipartFile getUploadIcon() {
+		return uploadIcon;
+	}
+
+	public void setUploadIcon(MultipartFile uploadIcon) {
+		this.uploadIcon = uploadIcon;
+	}
+
 	@Override
 	public String toString() {
-		return "JoriMemBean [memberNo=" + memberNo + ", memberId=" + memberId + ", nickName=" + nickName + ", pwd="
-				+ pwd + ", email=" + email + ", joindate=" + joindate + ", mileage=" + mileage + ", joriCoupon="
-				+ joriCoupon + ", myIcon=" + myIcon + ", uploadIcon=" + uploadIcon + ", joriSlt=" + joriSlt + "]";
+		return "JoriMemBean [jmemNo=" + jmemNo + ", email=" + email + ", pwd=" + pwd + ", nick=" + nick + ", regdate="
+				+ regdate + ", rp=" + rp + ", jPhon=" + jPhon + ", jZip=" + jZip + ", jAddr=" + jAddr + ", jAddrDetail="
+				+ jAddrDetail + ", jCoin=" + jCoin + ", jIcon=" + jIcon + ", joriSlt=" + joriSlt + ", uploadIcon="
+				+ uploadIcon + "]";
 	}
+	
 	
 }//

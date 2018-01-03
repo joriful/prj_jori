@@ -5,13 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class loginImpl implements MloginDAO {
+public class MloginImpl implements MloginDAO {
 	
 	@Autowired
 	private SqlSession sql;
 	
 	@Override
-	public boolean loginChk(LoginInfo loginInfo) {
+	public boolean loginChk(MloginInfo loginInfo) {
 		int count = Integer.parseInt(sql.selectOne("loginChk", loginInfo).toString()),
 				totalCount = sql.selectOne("totalAccount");
 		
