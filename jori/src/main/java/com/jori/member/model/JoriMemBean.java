@@ -143,5 +143,7 @@ public class JoriMemBean {
 				+ uploadIcon + "]";
 	}
 	
+
+
 	
 }//
