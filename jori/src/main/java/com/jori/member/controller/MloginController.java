@@ -63,13 +63,13 @@ public class MloginController {
 	}
 	
 	
-	@RequestMapping(value="/join", method=RequestMethod.GET )
+/*	@RequestMapping(value="/join", method=RequestMethod.GET )
 	public ModelAndView joinMember(ModelAndView mav) {
 		
 		mav.setViewName("/join");
 		
 		return mav;
-	}
+	}*/
 	
 /*	@RequestMapping(value="/join", method=RequestMethod.POST)
 	public ModelAndView joinMemPost(ModelAndView mav, HttpSession session, JoriMemBean jmBean) throws Exception {

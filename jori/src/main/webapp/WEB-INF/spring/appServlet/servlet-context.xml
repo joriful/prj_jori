@@ -47,6 +47,9 @@
 	<!-- index -->
 	<context:component-scan base-package="com.jori.controller" />
 	
+	<!-- join -->
+	<context:component-scan base-package="com.jori.member.join" />
+	
 	
 	
 </beans:beans>

@@ -1,4 +1,4 @@
-package com.jori.member.model;
+package com.jori.member.join;
 
 public class JoinServiceImpl {
 
