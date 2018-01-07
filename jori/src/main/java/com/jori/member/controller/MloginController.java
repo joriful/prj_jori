@@ -71,7 +71,7 @@ public class MloginController {
 		return mav;
 	}
 	
-	@RequestMapping(value="/join", method=RequestMethod.POST)
+/*	@RequestMapping(value="/join", method=RequestMethod.POST)
 	public ModelAndView joinMemPost(ModelAndView mav, HttpSession session, JoriMemBean jmBean) throws Exception {
 		
 		try {
@@ -82,10 +82,10 @@ public class MloginController {
 			System.out.println("회원가입 실패");
 		}
 		
-		/*MloginSe*/
+		MloginSe
 		
 		return mav;
-	}
+	}*/
 	
 	
 }//
