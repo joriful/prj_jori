@@ -1,5 +1,7 @@
 package com.jori.member.join;
 
+import java.sql.SQLException;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -11,8 +13,12 @@ public class JoinDaoImpl implements JoinDAO{
 	private SqlSession sql;
 	
 	@Override
-	public int pushMember(MemberBean mbBean) {
+	public int pushMember(MemberBean mbBean) throws SQLException{
+		int joinResult = 0;
 		
+		
+		
+		return joinResult;
 	}
 	
 	
