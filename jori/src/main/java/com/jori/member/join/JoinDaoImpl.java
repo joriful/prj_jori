@@ -1,5 +1,19 @@
 package com.jori.member.join;
 
-public class JoinDaoImpl {
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class JoinDaoImpl implements JoinDAO{
+	
+	@Autowired
+	private SqlSession sql;
+	
+	@Override
+	public int pushMember(MemberBean mbBean) {
+		
+	}
+	
 	
 }//

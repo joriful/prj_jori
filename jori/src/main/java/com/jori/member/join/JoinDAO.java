@@ -1,5 +1,7 @@
 package com.jori.member.join;
 
-public interface JoinDAO {
+import java.sql.SQLException;
 
+public interface JoinDAO {
+	public int pushMember(MemberBean mbBean) throws SQLException;
 }//
