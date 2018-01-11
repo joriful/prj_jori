@@ -15,8 +15,8 @@ public class JoinDaoImpl implements JoinDAO{
 	@Override
 	public int pushMember(MemberBean mbBean) throws SQLException{
 		int joinResult = 0;
-		
-		
+		/*joinResult = sql.insert("insertMember", mbBean);*/
+		joinResult = (Integer)sql.insert("insertMember", mbBean);
 		
 		return joinResult;
 	}

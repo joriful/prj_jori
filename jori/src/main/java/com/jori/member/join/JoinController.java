@@ -29,14 +29,14 @@ public class JoinController {
 		
 		int joinNo = 0;
 		
-		/*try {
+		try {
 			joinNo = joinService.pushMember(mbBean);
 			System.out.println("회원가입 성공"+joinNo);
 			
 		}catch(SQLException e) {
 			e.printStackTrace();
 			System.out.println("가입 실패");
-		}*/
+		}
 		
 		return mav;
 	}
