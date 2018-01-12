@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-  <mapper namespace="query">
+  
+  
+  <mapper namespace="query">	
+  	<!-- <typeAlias alias="memberBean" type="com.jori.member.join.MemberBean"></typeAlias> -->	
+  	
   	<resultMap type="com.jori.member.model.MloginInfo" id="LoginInfoResult">
   		<result column="ID" property="id" />
   		<result column="PASSWORD" property="password" />  	
@@ -18,4 +22,24 @@
   	<select id="totalAccount" resultType="integer">
   		SELECT count(*) FROM tb_account
   	</select>
+  	
+  	<!-- join member -->
+  	<insert id="insertMember" parameterType="memberBean" keyProperty="JMemNo">
+		insert into joriMem(EMAIL, PWD, JORISLT) 
+			values(#{email}, #{pwd}, #{joriSlt});
+  	</insert>
+  	
+  	<!-- <insert id="exifInsert" parameterClass="exBean">
+		<selectKey keyProperty="exifNo" resultClass="int">
+			select ptExif_seq.nextval as exifNo from dual
+		</selectKey>
+			insert into ptExif(exifNo, ptNo, brand, camModel, lensModel, fLen, fNum, expsTime, iso, ptRegDate)
+			values(#exifNo#, #ptNo#, #brand:VARCHAR#, #camModel:VARCHAR#, #lensModel:VARCHAR#, #fLen:VARCHAR#, #fNum:VARCHAR#, #expsTime:VARCHAR#, #iso:VARCHAR#, #ptRegDate:VARCHAR#)
+	</insert> -->
+  	
+  	
+  	
+  	
+  	
+  	
   </mapper>

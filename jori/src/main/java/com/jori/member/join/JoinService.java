@@ -1,5 +1,7 @@
 package com.jori.member.join;
 
-public interface JoinService {
+import java.sql.SQLException;
 
-}
+public interface JoinService {
+	public int pushMember(MemberBean mbBean) throws SQLException;
+}//
