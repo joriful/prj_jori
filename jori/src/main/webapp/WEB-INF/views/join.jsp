@@ -104,7 +104,7 @@
 	
 	
 	/* idCheck for sighUp */
-	$('input[name=userid]').on('keyup', function(){				
+	/* $('input[name=userid]').on('keyup', function(){				
 		var uid = this.value;
  		var g = {"userid":uid};
  		if(uid)  {
@@ -130,10 +130,10 @@
 				}
 			});
 		}
-	});
+	}); */
 	
 	/*Nick Name  */
-	$('input[name=fName]').on('keyup', function(){
+	/* $('input[name=fName]').on('keyup', function(){
 		var fname = this.value;
 		if(fname.indexOf(' ') >=0 || fname.length <= 2 || fname.length >= 13){
 			$('input[name=fName]').attr('id', 'agrChkIc_off');
@@ -160,10 +160,10 @@
 		}else{
 			$('input[name=pwd]').attr('id', 'agrChkIc_on');
 		};
-	});
+	}); */
 	
 	
-	$('.btn-logi').on('click', function(){
+	/* $('.btn-logi').on('click', function(){
 		var idCnt = $('input[id=agrChkIc_off]').length;
 			//체크 비활성 아이콘이 1개이상
 			if(idCnt > 0){
@@ -194,16 +194,16 @@
 			if(idCnt == 0){
 				$('form').submit();
 			};
-	});
+	}); */
 	
-	$(document).ready( function(){
+	/* $(document).ready( function(){
 		var nullurl = $('input[name="rediUrl"]').val();
 		if(nullurl != null && nullurl != ""){
 			chkLogForm ();
 		}
-	});
+	}); */
 	
-	$(window).load(function(){
+/* 	$(window).load(function(){
 		$(window).resize(function(){
 			var diSize = $(window).width();
 			if(diSize >= 495){
@@ -213,7 +213,7 @@
 				$('.loginBox, .registBoxText').css({'width':'300px','margin-top':'20px'});
 			}
 		}).resize();
-	});
+	}); */
 	
 </script>
 
