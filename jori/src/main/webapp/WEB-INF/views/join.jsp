@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" 
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +28,7 @@
 					</div> 
 			
 					<div class="form-group " style="">
-						<div class="col-xs-10 col-xs-offset-1">
+						<div class="col-xs-10 col-xs-offset-1" style="">
 							<input type="text" class="form-control" id="agrChkIc_off" name="nick" value="${cookie.ck_userid.value}" placeholder="닉네임" >
 						</div>
 					</div>	
@@ -73,7 +72,7 @@
 <script type="text/javascript">
 	
 	/* email */
-	$('input[name=email]').on('keyup', function(){
+	/* $('input[name=email]').on('keyup', function(){
 			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 			var mailChk = $('input[name=email]').val();
 
@@ -100,7 +99,7 @@
 						}
 					});
 				}
-	});
+	}); */
 	
 	
 	/* idCheck for sighUp */

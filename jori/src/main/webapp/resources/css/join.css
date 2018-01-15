@@ -97,3 +97,17 @@ html{
   background-image: none; 
 }
 /* 로그인 버튼 끝 */
+
+/* 회원가입 */
+#agrChkIc_off { 
+	background-image:url(../divimgs/agrChkIc_off.png) ; 
+	background-repeat: no-repeat ; 
+	background-position: right 10px center;
+}
+	
+#agrChkIc_on { 
+	background-image:url(../divimgs/agrChkIc_on.png) ; 
+	background-repeat: no-repeat ; 
+	background-position: right 10px center;
+}
+
