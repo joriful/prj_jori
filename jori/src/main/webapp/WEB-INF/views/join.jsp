@@ -1,16 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="inc/joritop.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/join.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/join.css">
 <title>회원 가입</title>
 </head>
 <body style="height: 100%; margin: 0; ">
+	
+	<!-- chkEmail -->
+	<input type="hidden" id="emlFlg" value="${emailChkValue}">
+	
 	<div class="jointem">
 		
 		<!-- navbar -->
-		<%@ include file="inc/joritop.jsp" %>
+		<%-- <%@ include file="inc/joritop.jsp" %> --%>
 		
 			<div class="container" id="verHoriCenter" style="" >
 			
@@ -72,7 +77,7 @@
 <script type="text/javascript">
 	
 	/* email */
-	/* $('input[name=email]').on('keyup', function(){
+	$('input[name=email]').on('keyup', function(){
 			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 			var mailChk = $('input[name=email]').val();
 
@@ -84,7 +89,7 @@
 					var chkMail = {"email": mailChk};		
 					
  					$.ajax({
-						url:"${pageContext.request.contextPath}/member/checkId.do",	
+						url:"${pageContext.request.contextPath}/join",	
 						type:'POST',
 						data:chkMail,
 						success:function(data){
@@ -99,7 +104,7 @@
 						}
 					});
 				}
-	}); */
+	});
 	
 	
 	/* idCheck for sighUp */
@@ -202,7 +207,7 @@
 		}
 	}); */
 	
-/* 	$(window).load(function(){
+	/* $(window).load(function(){
 		$(window).resize(function(){
 			var diSize = $(window).width();
 			if(diSize >= 495){
@@ -215,5 +220,6 @@
 	}); */
 	
 </script>
+
 
 </html>

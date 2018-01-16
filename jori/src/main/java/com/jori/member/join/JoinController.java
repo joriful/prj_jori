@@ -41,5 +41,21 @@ public class JoinController {
 		return mav;
 	}
 	
+	@RequestMapping(value="/chkEmail")
+	public ModelAndView chkEmail(ModelAndView mav){
+		boolean emailFlag = false;
+		
+		/*try{
+			emailFlag = joinService.chkEmail();
+		}catch(SQLException e){
+			e.printStackTrace();
+			System.out.println("이메일 체크 실패");
+		}*/
+		
+		mav.addObject("emailChkValue", emailFlag);
+		mav.setViewName("/join");
+		return mav;
+	}
+	
 	
 }//
