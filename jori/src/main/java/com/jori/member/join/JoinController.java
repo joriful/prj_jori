@@ -42,15 +42,16 @@ public class JoinController {
 	}
 	
 	@RequestMapping(value="/chkEmail")
-	public ModelAndView chkEmail(ModelAndView mav){
+	public ModelAndView chkEmail(ModelAndView mav, String email){
 		boolean emailFlag = false;
+		System.out.println("email"+email);
 		
-		/*try{
-			emailFlag = joinService.chkEmail();
+		try{
+			emailFlag = joinService.chkEmail(email);
 		}catch(SQLException e){
 			e.printStackTrace();
 			System.out.println("이메일 체크 실패");
-		}*/
+		}
 		
 		mav.addObject("emailChkValue", emailFlag);
 		mav.setViewName("/join");

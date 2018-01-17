@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="/resources/css/join.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/join.css">
 <title>회원 가입</title>
 </head>
 <body style="height: 100%; margin: 0; ">

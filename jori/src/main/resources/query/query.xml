@@ -29,6 +29,13 @@
 			values(#{email}, #{pwd}, #{joriSlt});
   	</insert>
   	
+  	<select id="chkEmail" parameterType="com.jori.member.join.MemberBean" resultType="integer">
+  		select count(*) from joriMem
+  			<where>
+  				email = #{email}
+  			</where>
+  	</select>
+  	
   	<!-- <insert id="exifInsert" parameterClass="exBean">
 		<selectKey keyProperty="exifNo" resultClass="int">
 			select ptExif_seq.nextval as exifNo from dual

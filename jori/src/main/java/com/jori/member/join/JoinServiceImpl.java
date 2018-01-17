@@ -16,4 +16,10 @@ public class JoinServiceImpl implements JoinService{
 		return joinDao.pushMember(mbBean);
 	};
 	
+	@Override
+	public boolean chkEmail(String email) throws SQLException{
+		
+		return joinDao.chkEmail(email);
+	};
+	
 }//

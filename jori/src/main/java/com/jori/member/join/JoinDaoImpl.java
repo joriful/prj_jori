@@ -21,5 +21,18 @@ public class JoinDaoImpl implements JoinDAO{
 		return joinResult;
 	}
 	
+	@Override
+	public boolean chkEmail(String email) throws SQLException{
+		int emailCount 
+			= (Integer)sql.selectOne("chkEmail", email);
+		
+		System.out.println("emailCount"+emailCount);
+		
+		if(emailCount > 0) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 	
 }//
