@@ -89,7 +89,7 @@
 					var chkMail = {"email": mailChk};		
 					
  					$.ajax({
-						url:"${pageContext.request.contextPath}/join",	
+						url:"${pageContext.request.contextPath}/chkEmail",	
 						type:'POST',
 						data:chkMail,
 						success:function(data){
