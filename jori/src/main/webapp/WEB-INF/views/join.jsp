@@ -43,14 +43,14 @@
 		
 					<div class="form-group " style="">			
 						<div class="col-xs-10 col-xs-offset-1">
-							<input type="password" class="form-control" id="agrChkIc_off" name="pwd" onkeydown="enterProc()" placeholder="비밀번호 (6자 이상)">
+							<input type="password" class="form-control" id="agrChkIc_off" name="pwd" placeholder="비밀번호 (6자 이상)">
 						</div>
 					</div>
 							<div id ="errors" class="form-group col-xs-10" style="float: left">
 					     	</div>
 			
 					<div style="display:table; margin:0 auto;  margin-bottom:5px;">	
-						<input type="button" class="btn btn-logi" style="/* color:#ffffff; */" value="완료" onclick="send()">
+						<input type="button" class="btn btn-logi" style="" value="완료" onclick="send()">
 			
 					</div>
 									
@@ -95,53 +95,14 @@
 	});
 	
 	
-	/* idCheck for sighUp */
-	/* $('input[name=userid]').on('keyup', function(){				
-		var uid = this.value;
- 		var g = {"userid":uid};
- 		if(uid)  {
- 			
- 			if(uid.indexOf(' ') >=0 || uid.length <= 4 ||  uid.length >= 20){
-				$('input[name=userid]').attr('id', 'agrChkIc_off');
-				return;
-			}
-			
- 			$.ajax({
-				url:"${pageContext.request.contextPath}/member/checkId.do",
-				type:'POST',
-				data:g,
-				success:function(data){
-					var usid = $(data).filter('#usrFlg').val();
-					$("#idChk").val(usid);
-					if(usid == "true"){
-						$('input[name=userid]').attr('id', 'agrChkIc_off');
-					}
-					if(usid == "false"){
-						$('input[name=userid]').attr('id', 'agrChkIc_on');
-					}
-				}
-			});
-		}
-	}); */
-	
 	/*Nick Name  */
-	/* $('input[name=fName]').on('keyup', function(){
-		var fname = this.value;
-		if(fname.indexOf(' ') >=0 || fname.length <= 2 || fname.length >= 13){
-			$('input[name=fName]').attr('id', 'agrChkIc_off');
+	$('input[name=nick]').on('keyup', function(){
+		var nk = this.value;
+		if(nk.indexOf(' ') >=0 || nk.length <= 1 || nk.length >= 13){
+			$('input[name=nick]').attr('id', 'agrChkIc_off');
 			
 		}else{
-			$('input[name=fName]').attr('id', 'agrChkIc_on');
-		};
-	});
-	
-	$('input[name=lName]').on('keyup', function(){
-		var lname = this.value;
-		if(lname.indexOf(' ') >=0 || lname.length <= 2 || lname.length >= 13){
-			$('input[name=lName]').attr('id', 'agrChkIc_off');
-			
-		}else{
-			$('input[name=lName]').attr('id', 'agrChkIc_on');
+			$('input[name=nick]').attr('id', 'agrChkIc_on');
 		};
 	});
 	
@@ -152,7 +113,7 @@
 		}else{
 			$('input[name=pwd]').attr('id', 'agrChkIc_on');
 		};
-	}); */
+	}); 
 	
 	
 	/* $('.btn-logi').on('click', function(){

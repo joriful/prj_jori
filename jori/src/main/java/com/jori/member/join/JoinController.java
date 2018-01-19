@@ -45,7 +45,6 @@ public class JoinController {
 	
 	@RequestMapping(value="/chkEmail")
 	public ModelAndView chkEmail(ModelAndView mav, String email){
-		System.out.println("controller email="+email);
 		boolean emailFlag = false;
 		
 		try{
