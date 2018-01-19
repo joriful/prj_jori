@@ -10,10 +10,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class JoinController {
-	/*@Autowired
-	JoinService joinService;*/
+	@Autowired
+	private JoinService joinService;
 	
-	JoinService joinService;
+	public void setFvService(JoinService joinService){
+		this.joinService=joinService;
+	}
 	
 	@RequestMapping(value="/join", method=RequestMethod.GET)
 	public ModelAndView joinGet(ModelAndView mav) {

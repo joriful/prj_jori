@@ -40,19 +40,7 @@
 			
 						<div id="chkUid" style="color:blue;">
 						</div>
-			
-					<!-- <div class="form-group " style="">
-						<div class="col-xs-10 col-xs-offset-1">
-							<input type="text" class="form-control" name="fName" placeholder="성">
-						</div>
-					</div>
 		
-					<div class="form-group " style="">	
-						<div class="col-xs-10 col-xs-offset-1">
-							<input type="text" class="form-control" name="lName" placeholder="이름">
-						</div>
-					</div> -->
-					
 					<div class="form-group " style="">			
 						<div class="col-xs-10 col-xs-offset-1">
 							<input type="password" class="form-control" id="agrChkIc_off" name="pwd" onkeydown="enterProc()" placeholder="비밀번호 (6자 이상)">

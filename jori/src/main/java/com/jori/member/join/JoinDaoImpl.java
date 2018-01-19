@@ -15,7 +15,6 @@ public class JoinDaoImpl implements JoinDAO{
 	@Override
 	public int pushMember(MemberBean mbBean) throws SQLException{
 		int joinResult = 0;
-		/*joinResult = sql.insert("insertMember", mbBean);*/
 		joinResult = (Integer)sql.insert("insertMember", mbBean);
 		
 		return joinResult;
@@ -23,12 +22,8 @@ public class JoinDaoImpl implements JoinDAO{
 	
 	@Override
 	public boolean chkEmail(String email) throws SQLException{
-		System.out.println("DAO IMPLE EMAIL="+email);
 		int emailCount 
 			= (Integer)sql.selectOne("chkEmail", email);
-		
-		System.out.println("emailCount"+emailCount);
-		
 		if(emailCount > 0) {
 			return true;
 		}else {

@@ -7,6 +7,5 @@ public interface JoinService {
 	public int pushMember(MemberBean mbBean) throws SQLException;
 	
 	public boolean chkEmail(String emnail) throws SQLException;
-	
 	//체크 이메일
 }//

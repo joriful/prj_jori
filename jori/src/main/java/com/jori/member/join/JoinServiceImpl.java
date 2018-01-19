@@ -18,7 +18,6 @@ public class JoinServiceImpl implements JoinService{
 	
 	@Override
 	public boolean chkEmail(String email) throws SQLException{
-		
 		return joinDao.chkEmail(email);
 	};
 	
