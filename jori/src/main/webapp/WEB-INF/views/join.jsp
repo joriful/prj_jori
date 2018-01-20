@@ -43,7 +43,7 @@
 		
 					<div class="form-group " style="">			
 						<div class="col-xs-10 col-xs-offset-1">
-							<input type="password" class="form-control" id="agrChkIc_off" name="pwd" placeholder="비밀번호 (6자 이상)">
+							<input type="password" class="form-control" id="agrChkIc_off" name="pwd" onkeydown="enterProc()" placeholder="비밀번호 (6자 이상)">
 						</div>
 					</div>
 							<div id ="errors" class="form-group col-xs-10" style="float: left">
@@ -82,7 +82,8 @@
 						data:chkMail,
 						success:function(data){
 							var emFlg = $(data).filter('#emlFlg').val();
-							$('#emlChk').val(emFlg);
+							
+							/* $('#emlChk').val(emFlg); */
 							if(emFlg == "true"){
 								$('input[name=email]').attr('id', 'agrChkIc_off');
 							}
@@ -106,6 +107,7 @@
 		};
 	});
 	
+	
 	$('input[name=pwd]').on('keyup', function(){
 		var pw = this.value;
 		if(pw.indexOf(' ') >=0 || pw.length <= 5 || pw.length >= 25){
@@ -116,27 +118,21 @@
 	}); 
 	
 	
-	/* $('.btn-logi').on('click', function(){
+	 $('.btn-logi').on('click', function(){
 		var idCnt = $('input[id=agrChkIc_off]').length;
 			//체크 비활성 아이콘이 1개이상
 			if(idCnt > 0){
-				if($('#emlChk').val()=="true"){
+
+				if($('#emlFlg').val()=="false"){
 					$("#myModal_w").on("shown.bs.modal", function () {
 						$(".msContent").text("이메일 주소가 존재합니다.");
 					}).modal('show');
 						$("#myModal_w").on('click', function(){
 							$('.loginBox').find('#agrChkIc_off').focus();	
-						});
-				}else if($('#idChk').val()=="true"){
-					$("#myModal_w").on("shown.bs.modal", function () {
-						$(".msContent").text("ID가 존재합니다.");
-					}).modal('show');
-						$("#myModal_w").on('click', function(){
-							$('.loginBox').find('#agrChkIc_off').focus();	
-						});					
+						});	
 				}else{
 					$("#myModal_w").on("shown.bs.modal", function () {
-						$(".msContent").text("양식을 모두 작성해 주십시오.");
+						$(".msContent").text("양식을 모두 작성해 주세요~");
 					}).modal('show');
 						$("#myModal_w").on('click', function(){
 							$('.loginBox').find('#agrChkIc_off').focus();
@@ -147,7 +143,7 @@
 			if(idCnt == 0){
 				$('form').submit();
 			};
-	}); */
+	});
 	
 	/* $(document).ready( function(){
 		var nullurl = $('input[name="rediUrl"]').val();

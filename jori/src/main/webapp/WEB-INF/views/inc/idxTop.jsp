@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
 	<title>Jorimi</title>
 </head>
 <!-- <body style=""> -->
@@ -60,6 +61,12 @@
 				</c:otherwise>
 			</c:choose> --%>
 		</div>
+	</div>
+		
+	<div>
+		<jsp:include page="/WEB-INF/views/inc/mess.jsp" flush="true">
+			<jsp:param name="msg" value="${msg }" />
+		</jsp:include> 
 	</div>	
 <!-- </body> -->
 </html>

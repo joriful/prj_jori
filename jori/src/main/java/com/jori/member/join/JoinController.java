@@ -33,11 +33,11 @@ public class JoinController {
 		
 		try {
 			joinNo = joinService.pushMember(mbBean);
-			System.out.println("회원가입 성공"+joinNo);
+			System.out.println("����媛��� �깃났"+joinNo);
 			
 		}catch(SQLException e) {
 			e.printStackTrace();
-			System.out.println("가입 실패");
+			System.out.println("媛��� �ㅽ��");
 		}
 		
 		return mav;
@@ -51,7 +51,7 @@ public class JoinController {
 			emailFlag = joinService.chkEmail(email);
 		}catch(SQLException e){
 			e.printStackTrace();
-			System.out.println("이메일 체크 실패");
+			System.out.println("이메일체크 실패");
 		}
 		
 		mav.addObject("emailChkValue", emailFlag);
