@@ -10,6 +10,35 @@
   		<result column="ID" property="id" />
   		<result column="PASSWORD" property="password" />  	
   	</resultMap>
+  	
+  	<!-- private int jmemNo;
+	private String email;
+	private String pwd;
+	private String nick;
+	private Timestamp regdate;
+	private int rp;
+	private int jPhon;
+	private int jZip;
+	private String jAddr;
+	private String jAddrDetail;
+	private int jCoin;
+	private String jIcon;
+	//salt
+	private String joriSlt; -->
+
+  	<resultMap type="com.jori.member.join.MemberBean" id="MemberBeanResult">
+  		<result column="EMAIL" property="EMAIL" />
+  		<result column="PWD" property="pwd" />  	
+  		<result column="NICK" property="nick" />  	
+  		<result column="REGDATE" property="regdate" />  	
+  		<result column="RP" property="rp" />  	
+  		<result column="JPHON" property="jPhone" />  	
+  		<result column="JZIP" property="jZip" />  	
+  		<result column="JADDR" property="jAddr" />  	
+  		<result column="JADDRDETAIL" property="jAddrDetail" />  	
+  		<result column="JCOIN" property="jCoin" />
+  		<result column="JORISLT" property="joriSlt" />
+  	</resultMap>  	
   
   	<select id="loginChk" resultType="integer" parameterType="com.jori.member.model.MloginInfo">
   		select count(*) from tb_account
@@ -24,9 +53,9 @@
   	</select>
   	
   	<!-- join member -->
-  	<insert id="insertMember" parameterType="com.jori.member.join.MemberBean" keyProperty="JMemNo">
-		insert into joriMem(EMAIL, PWD, JORISLT) 
-			values(#{email}, #{pwd}, #{joriSlt});
+  	<insert id="insertMember" parameterType="com.jori.member.join.MemberBean" keyProperty="JMemNo" useGeneratedKeys="true">
+		insert into joriMem(EMAIL, PWD, NICK, JORISLT) 
+			values(#{email}, #{pwd}, #{nick}, #{joriSlt});
   	</insert>
   	
   	<select id="chkEmail" parameterType="com.jori.member.join.MemberBean" resultType="integer">

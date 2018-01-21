@@ -25,35 +25,36 @@
 					<div class="registBoxText" style="">
 						<h4>가입하기</h4>
 					</div>
+					<%-- <form class="form-horizontal" name="frm1" id=submitJoin method="post" action="${pageContext.request.contextPath}/mbrs/mymenu" > --%>
+					<form class="form-horizontal" name="frm1" id=submitJoin method="post" action="${pageContext.request.contextPath}/join" >
+						<div class="form-group " style="">			
+							<div class="col-xs-10 col-xs-offset-1">
+								<input type="email" class="form-control" id="agrChkIc_off" name="email" placeholder="이메일">
+							</div>
+						</div> 
 				
-					<div class="form-group " style="">			
-						<div class="col-xs-10 col-xs-offset-1">
-							<input type="email" class="form-control" id="agrChkIc_off" name="email" placeholder="이메일">
-						</div>
-					</div> 
+						<div class="form-group " style="">
+							<div class="col-xs-10 col-xs-offset-1" style="">
+								<input type="text" class="form-control" id="agrChkIc_off" name="nick" value="${cookie.ck_userid.value}" placeholder="닉네임" >
+							</div>
+						</div>	
+				
+							<div id="chkUid" style="color:blue;">
+							</div>
 			
-					<div class="form-group " style="">
-						<div class="col-xs-10 col-xs-offset-1" style="">
-							<input type="text" class="form-control" id="agrChkIc_off" name="nick" value="${cookie.ck_userid.value}" placeholder="닉네임" >
+						<div class="form-group " style="">			
+							<div class="col-xs-10 col-xs-offset-1">
+								<input type="password" class="form-control" id="agrChkIc_off" name="pwd" onkeydown="enterProc()" placeholder="비밀번호 (6자 이상)">
+							</div>
 						</div>
-					</div>	
-			
-						<div id="chkUid" style="color:blue;">
+								<div id ="errors" class="form-group col-xs-10" style="float: left">
+						     	</div>
+				
+						<div style="display:table; margin:0 auto;  margin-bottom:5px;">	
+							<input type="button" class="btn btn-logi" style="" value="완료" onclick="send()">
+				
 						</div>
-		
-					<div class="form-group " style="">			
-						<div class="col-xs-10 col-xs-offset-1">
-							<input type="password" class="form-control" id="agrChkIc_off" name="pwd" onkeydown="enterProc()" placeholder="비밀번호 (6자 이상)">
-						</div>
-					</div>
-							<div id ="errors" class="form-group col-xs-10" style="float: left">
-					     	</div>
-			
-					<div style="display:table; margin:0 auto;  margin-bottom:5px;">	
-						<input type="button" class="btn btn-logi" style="" value="완료" onclick="send()">
-			
-					</div>
-									
+					</form>			
 				</div>
 				
 			<!-- container -->

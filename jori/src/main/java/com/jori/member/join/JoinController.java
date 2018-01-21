@@ -21,8 +21,8 @@ public class JoinController {
 	public ModelAndView joinGet(ModelAndView mav) {
 		
 		mav.setViewName("/join");
-		
 		return mav;
+		
 	}
 	
 	
@@ -30,17 +30,25 @@ public class JoinController {
 	public ModelAndView joinPost(ModelAndView mav, MemberBean mbBean) {
 		
 		int joinNo = 0;
-		
+		System.out.println("mBBEAN parameters="+mbBean);
 		try {
+			
+			String joriSlt = "테스트slt";
+			mbBean.setJoriSlt(joriSlt);
+			System.out.println("MBBEAN="+mbBean);
 			joinNo = joinService.pushMember(mbBean);
-			System.out.println("����媛��� �깃났"+joinNo);
+			System.out.println("가입성공"+joinNo);
 			
 		}catch(SQLException e) {
 			e.printStackTrace();
-			System.out.println("媛��� �ㅽ��");
+			System.out.println("가입실패");
 		}
+		mav.addObject("memberBean", mbBean);
+		mav.setViewName("redirect:/join");
+		/*mav.setViewName("redirect:/mbrs/mymenu");*/
 		
 		return mav;
+		
 	}
 	
 	@RequestMapping(value="/chkEmail")
@@ -51,7 +59,7 @@ public class JoinController {
 			emailFlag = joinService.chkEmail(email);
 		}catch(SQLException e){
 			e.printStackTrace();
-			System.out.println("이메일체크 실패");
+			System.out.println("이메일 체크성공");
 		}
 		
 		mav.addObject("emailChkValue", emailFlag);
