@@ -2,7 +2,7 @@
 
 /* scroll hidden */
 ::-webkit-scrollbar {display:none;}
-html, body { -ms-overflow-style: none; overflow: auto; }
+/* html, body { -ms-overflow-style: none; overflow: auto; } */
 
 /* div vertical middle */
 #vertiBox{

@@ -17,20 +17,39 @@
   /* 100% { background-size: auto 100%; } */
 }
 
-div.joritem-1{
-	/* background: url(../divImgs/jorim3.jpg) no-repeat center center fixed; *//* 가운데 기준으로 이미지확대 */
-	background: url(../divImgs/jorim3.jpg) no-repeat center center fixed;/* 가운데 기준으로 이미지확대 */
+/*   div.joritem-1{
+	background: url(../divImgs/jorim3.jpg) no-repeat center center fixed;
     height: 100vh;
     width: 100vw;
     background-size: auto 155%;
   	background-position: center center;
-		animation: breath 2s linear; /* animation zooming */
+		animation: breath 2s linear;
     margin: 0px;
     padding: 0px;
+} */
+
+
+div.joritem-1 {
+	background: url(../divImgs/jorim3.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #434343;
+	color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    background-size: auto 155%;
+  	background-position: center center;
+		animation: breath 2s linear;    
 }
 
-div.joritem-2{
-	background: url(../divImgs/jorim4.jpg) no-repeat center center;/* 가운데 기준으로 이미지확대 */
+/* div.joritem-1{
+	animation: breath 2s linear;
+} */
+
+.joritem-2{
+	background: url(../divImgs/jorim1.jpg) no-repeat center center fixed;/* 가운데 기준으로 이미지확대 */
  	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -40,10 +59,25 @@ div.joritem-2{
 	  background-position: center center;
     margin: 0px;
     padding: 0px;
+    background-color: #434343;
+	color: #ffffff;
 }
 
+
+/* div.joritem-2::before{
+  content: "";
+  display: block;
+  -webkit-filter:  brightness(0.5);
+  -moz-filter:  brightness(0.5);
+  -ms-filter:  brightness(0.5);
+  -o-filter:  brightness(0.5);
+  filter:  brightness(0.5); 
+	z-index: 0 !important;
+	background: inherit !important;
+}
+ */
  div.joritem-3{
-	background: url(../divImgs/jorim4.jpg) no-repeat center center;가운데 기준으로 이미지확대
+	background: url(../divImgs/jorim4.jpg) no-repeat center center;/* 가운데 기준으로 이미지확대 */
  	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -139,3 +173,5 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
     }
+    
+    /*  */

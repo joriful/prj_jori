@@ -18,4 +18,14 @@ public class JoriIndexContgroller {
 	}
 	
 	
+	//index test
+	//localhost:9090을 입력 하였을때  index.jsp 호출
+	@RequestMapping(value="/1", method=RequestMethod.GET )
+	public ModelAndView indexView0(ModelAndView mav) {
+		String page ="index0";
+		mav.setViewName(page);
+		
+		return mav;
+	}
+	
 }//
