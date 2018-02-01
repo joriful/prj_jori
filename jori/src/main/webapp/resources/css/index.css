@@ -54,7 +54,7 @@ div.joritem-1 {
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-	  height: 100vh;
+	  height: 50vh;
 	  width: 100vw;
 	  background-position: center center;
     margin: 0px;
@@ -93,6 +93,7 @@ div.joritem-1 {
 body{
   font-family: 'Lato', sans-serif;
 }
+
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
@@ -140,11 +141,27 @@ body{
 } 
 .carousel-caption {
     text-shadow: 0 1px 4px rgba(0,0,0,.9);
-  font-size:17px
+  font-size:17px;
+  /* border:solid red 1px; *//*  */
+  margin-bottom:3%;
+  color: #FFF;
+  /* padding-left:30px;
+  padding-right:30px;
+  background-color: black;
+  opacity: 0.8; */
 }
 .carousel-caption h3 {
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'Lato', sans-serif;
+  color: #FFF;
+  /* font-weight:bold; */
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: #FFF;
+  /* font-weight:bold;   */
 }
     html,
     body,
@@ -153,13 +170,18 @@ body{
     .carousel-inner .item {
       height: 100%;
     } 
+    
+    #carouselFade{
+    	height:50vh;
+    }
+    
     .item:nth-child(1) {
       background: url('../divImgs/misoSlide.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
     }
-
+	
     .item:nth-child(2) {
       background: url('../divImgs/gojorim.jpg');
   background-size: cover;
@@ -167,11 +189,39 @@ body{
   background-repeat: no-repeat;
     }
 
+
     .item:nth-child(3) {
       background: url('../divImgs/ojing.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
     }
+
     
-    /*  */
+    /* IE  */
+    /*Edge*/
+@supports ( -ms-accelerator:true ) 
+{
+    html{
+        overflow: hidden;
+        height: 100%;    
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+}
+/*Ie 10/11*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+{
+    html{
+        overflow: hidden;
+        height: 100%;    
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+}
+    
+    
