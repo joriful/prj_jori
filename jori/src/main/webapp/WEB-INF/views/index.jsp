@@ -56,7 +56,49 @@
 </div>		
 
 
-<!-- slide area -->
+
+
+<!-- about jorimi -->
+
+<div class="container-about" style="background-color:#ffffff; ">
+<!--     <div class="container"> -->
+    
+    <div class="container">	    
+        <div class="page-header" id="about" style="border-bottom:solid coral 1px;">
+            <h1 class="text-center text-danger" style="font-weight:bold;">조리미의 "味" 서비스</h1>
+        </div>
+        
+         <div  id="about" style="">
+            <!-- <h1 class="text-center text-danger">조리미의 "味"</h1> -->
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 text-left" style="/* border:solid 1px red; */">
+                <!-- <p style="color:#000000;">"찌개류"</p>
+                <br /> -->
+				<%-- <p><img src="${pageContext.request.contextPath}/resources/divImgs/misoSlide.jpg"style="border-radius:50%; width:160px; height:160px;" /></p>
+                <br /> --%>
+                
+                <p class="slogan" style="font-size:45px; /* font-weight:bold; */"> 건강한 배달</p>
+                <p class="slogan" style="font-size:45px; /* font-weight:bold; */"> 맛있는 배달</p>
+            </div>
+<%--             <div class="col-md-4 text-center">
+                <p style="color:#000000;">"조림류"</p>
+                <br />
+				<p><img src="${pageContext.request.contextPath}/resources/divImgs/jorim4.jpg" style="border-radius:50%; width:160px; height:160px;" /></p>
+                <br />
+            </div>
+            <div class="col-md-4 text-center">
+                <p style="color:#000000;">"볶음류"</p>
+                <br />
+				<p><img src="${pageContext.request.contextPath}/resources/divImgs/ojing.jpg" style="border-radius:50%; width:160px; height:160px;" /></p>
+                <br />
+            </div> --%>
+        </div>
+    </div>
+
+    
+    <!-- slide area -->
 	    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel" >
 			<!-- slide -->
 	        <div class="carousel-inner" role="listbox">
@@ -79,7 +121,7 @@
 	                </div>
 	            </div>
 	        </div>
-	
+
 	        <!-- Controls -->
 	        <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
 	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -92,10 +134,7 @@
 	    </div>	
 	    <!-- slide -->	
 
-<!-- about jorimi -->
-
-<div class="container-about" style="background-color:#ffffff; ">
-    <div class="container">
+    <div class="container">	    
         <div class="page-header" id="about">
             <h1 class="text-center text-danger">조리미味 메뉴 구성</h1>
         </div>

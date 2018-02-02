@@ -172,7 +172,7 @@ body{
     } 
     
     #carouselFade{
-    	height:50vh;
+    	height:60vh;
     }
     
     .item:nth-child(1) {
@@ -224,4 +224,9 @@ body{
     }
 }
     
-    
+    /* font awsom */
+    .slogan::before {
+	    font-family: "FontAwesome";
+	    content: "\f0d1";
+		color:coral;
+	}
