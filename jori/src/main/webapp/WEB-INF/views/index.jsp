@@ -7,6 +7,7 @@
 	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/index.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css' rel='stylesheet' type='text/css'> -->
 <title>Jorimi</title>
 </head>
 
@@ -64,8 +65,9 @@
 <!--     <div class="container"> -->
     
     <div class="container">	    
-        <div class="page-header" id="about" style="border-bottom:solid coral 1px;">
-            <h1 class="text-center text-danger" style="font-weight:bold;">조리미의 "味" 서비스</h1>
+        <div class="page-header" id="about" style="/* border-bottom:solid coral 1px; */">
+            <h1 class="text-center text-danger" 
+            	style="font-weight:bold; color:#404040; /* font-family:BatangChe; */margin-top:50px;padding-top:50px;">조리미의 '味' 서비스</h1>
         </div>
         
          <div  id="about" style="">
@@ -79,8 +81,8 @@
 				<%-- <p><img src="${pageContext.request.contextPath}/resources/divImgs/misoSlide.jpg"style="border-radius:50%; width:160px; height:160px;" /></p>
                 <br /> --%>
                 
-                <p class="slogan" style="font-size:45px; /* font-weight:bold; */"> 건강한 배달</p>
-                <p class="slogan" style="font-size:45px; /* font-weight:bold; */"> 맛있는 배달</p>
+                <p class="slogan" style="font-size:45px; /* font-family:BatangChe; */ /* font-weight:bold; */"> 건강한 배달</p>
+                <p class="slogan" style="font-size:45px; /* font-family:BatangChe;  *//* font-weight:bold; */"> 맛있는 배달</p>
             </div>
 <%--             <div class="col-md-4 text-center">
                 <p style="color:#000000;">"조림류"</p>
@@ -208,9 +210,9 @@
 </body>
 
 <script type="text/javascript">
-
+	/* $('#about'). */
 
 </script>
-
+	
 
 </html>
