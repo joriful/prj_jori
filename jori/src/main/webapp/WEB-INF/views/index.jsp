@@ -67,7 +67,8 @@
     <div class="container">	    
         <div class="page-header" id="about" style="/* border-bottom:solid coral 1px; */">
             <h1 class="text-center text-danger" 
-            	style="font-weight:bold; color:#404040; /* font-family:BatangChe; */margin-top:50px;padding-top:50px;">조리미의 '味' 서비스</h1>
+            	style="font-weight:bold; /* color:#404040; */color:#404040; /* font-family:BatangChe; */
+            		font-size: 55px; padding-top:3%;">조리미의 '味' 서비스</h1>
         </div>
         
          <div  id="about" style="">
@@ -75,14 +76,18 @@
         </div>
         
         <div class="row">
-            <div class="col-md-8 text-left" style="/* border:solid 1px red; */">
+            <div class="col-md-16 text-left" style="border:solid 1px red; padding-bottom:3%;">
                 <!-- <p style="color:#000000;">"찌개류"</p>
                 <br /> -->
 				<%-- <p><img src="${pageContext.request.contextPath}/resources/divImgs/misoSlide.jpg"style="border-radius:50%; width:160px; height:160px;" /></p>
                 <br /> --%>
                 
-                <p class="slogan" style="font-size:45px; /* font-family:BatangChe; */ /* font-weight:bold; */"> 건강한 배달</p>
-                <p class="slogan" style="font-size:45px; /* font-family:BatangChe;  *//* font-weight:bold; */"> 맛있는 배달</p>
+                <p class="slogan" style="font-size:25px; 
+                	color:#696969; padding-left:15%; /* font-family:BatangChe; */ /* font-weight:bold; */"> 건강한 '味'</p>
+                	<p class="slogan" style=" text-align:center;">
+                		화학조미료를 첨가하지 않은 종가집 장독된장과 
+                	</p>
+                <!-- <p class="slogan" style="font-size:45px; /* font-family:BatangChe;  *//* font-weight:bold; */"> 맛있는 배달</p> -->
             </div>
 <%--             <div class="col-md-4 text-center">
                 <p style="color:#000000;">"조림류"</p>
