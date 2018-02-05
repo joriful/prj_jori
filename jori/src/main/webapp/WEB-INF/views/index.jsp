@@ -76,6 +76,7 @@
         </div>
         
         <div class="row">
+        	
             <div class="col-md-16 text-left" style="border:solid 1px red; padding-bottom:3%;">
                 <!-- <p style="color:#000000;">"찌개류"</p>
                 <br /> -->
@@ -83,9 +84,9 @@
                 <br /> --%>
                 
                 <p class="slogan" style="font-size:25px; 
-                	color:#696969; padding-left:15%; /* font-family:BatangChe; */ /* font-weight:bold; */"> 건강한 '味'</p>
+                	color:#696969; /* padding-left:15%; */text-align:center; /* font-family:BatangChe; */ /* font-weight:bold; */"> 건강한 '味'</p>
                 	<p class="slogan" style=" text-align:center;">
-                		화학조미료를 첨가하지 않은 종가집 장독된장과 
+                		화학조미료를 첨가하지 않은 종가집 장독된장과 청정지역에서 직거래하는 우렁과 신선한 식재료로 한끼에 건강을 책임집니다.
                 	</p>
                 <!-- <p class="slogan" style="font-size:45px; /* font-family:BatangChe;  *//* font-weight:bold; */"> 맛있는 배달</p> -->
             </div>
