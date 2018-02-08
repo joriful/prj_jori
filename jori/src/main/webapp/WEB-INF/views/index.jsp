@@ -65,47 +65,140 @@
 <!--     <div class="container"> -->
     
     <div class="container">	    
-        <div class="page-header" id="about" style="/* border-bottom:solid coral 1px; */">
-            <h1 class="text-center text-danger" 
-            	style="font-weight:bold; /* color:#404040; */color:#404040; /* font-family:BatangChe; */
-            		font-size: 55px; padding-top:3%;">조리미의 '味' 서비스</h1>
-        </div>
-        
-         <div  id="about" style="">
-            <!-- <h1 class="text-center text-danger">조리미의 "味"</h1> -->
+        <div class="text-center" style="/* border-bottom:solid coral 1px; */ margin-top:5%;">
+            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 58px; /* padding-top:3%; */">조리미의</span>
+            <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; /* padding-top:3%; */">'味'</span>
+            <!-- <h1 class="text-center" style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 58px; padding-top:3%;">서비스</h1> -->
         </div>
         
         <div class="row">
-        	
-            <div class="col-md-16 text-left" style="border:solid 1px red; padding-bottom:3%;">
-                <!-- <p style="color:#000000;">"찌개류"</p>
-                <br /> -->
-				<%-- <p><img src="${pageContext.request.contextPath}/resources/divImgs/misoSlide.jpg"style="border-radius:50%; width:160px; height:160px;" /></p>
-                <br /> --%>
-                
-                <p class="slogan" style="font-size:25px; 
-                	color:#696969; /* padding-left:15%; */text-align:center; /* font-family:BatangChe; */ /* font-weight:bold; */"> 건강한 '味'</p>
-                	<p class="slogan" style=" text-align:center;">
-                		화학조미료를 첨가하지 않은 종가집 장독된장과 청정지역에서 직거래하는 우렁과 신선한 식재료로 한끼에 건강을 책임집니다.
-                	</p>
+            <div class="col-md-8 text-center col-centered" style=" margin-bottom:5%; /* padding-top:2%; */">                
+                <!-- <p class="slogan" style="font-size:25px; 
+                	color:#696969; /* padding-left:15%; */text-align:center; /* font-family:BatangChe; */ /* font-weight:bold; */"> 건강한 '味'</p> -->
+                <p class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+                	화학조미료를 첨가하지 않은 종가집 장독된장과 청정지역에서 직거래하는 13가지 신선한 식재료로 한끼에 건강을 책임집니다.</p>
                 <!-- <p class="slogan" style="font-size:45px; /* font-family:BatangChe;  *//* font-weight:bold; */"> 맛있는 배달</p> -->
             </div>
-<%--             <div class="col-md-4 text-center">
-                <p style="color:#000000;">"조림류"</p>
-                <br />
-				<p><img src="${pageContext.request.contextPath}/resources/divImgs/jorim4.jpg" style="border-radius:50%; width:160px; height:160px;" /></p>
-                <br />
-            </div>
-            <div class="col-md-4 text-center">
-                <p style="color:#000000;">"볶음류"</p>
-                <br />
-				<p><img src="${pageContext.request.contextPath}/resources/divImgs/ojing.jpg" style="border-radius:50%; width:160px; height:160px;" /></p>
-                <br />
-            </div> --%>
         </div>
     </div>
 
-    
+ <!-- jorim+soy -->
+ 
+<!-- menu bottom image -->	
+ 	<div id="vertiBox" style="">
+		<div class="joritem-2" id="vertiDiv" >
+
+<!-- 			<div class="container" style="">
+				<span style="color:#ffffff; font-size:50px; font-weight:bold;">
+					조리미
+				</span>
+				<span style="color:#FF8C00; font-size:50px; font-weight:bold;">
+					味
+				</span><br>
+					
+				<span style="color:#ffffff; font-size:50px; ">
+					방문을
+				</span>
+						
+				<span style="color:#FF8C00; font-size:50px; ">
+					 환영
+				</span>
+				
+				<span style="color:#ffffff; font-size:50px; ">
+					 합니다.
+				</span><br>
+				
+				<span style="color:#ffffff; font-size:30px;">
+					빠른 시일내에 
+				</span>
+				
+				<span style="color:#FF8C00; font-size:30px;">
+					오픈
+				</span>
+						
+				<span style="color:#ffffff; font-size:30px;">
+					하겠습니다.
+				</span><br>			
+			</div> -->
+			
+		</div>
+	</div> 
+<!-- menu bottom image -->	   
+
+
+    <div class="container">	    
+        <div class="page-header" id="about">
+            <h1 class="text-center" style="font-weight:bold; font-size:45px; padding-top:3%;">조리미味 추천 메뉴</h1>
+        </div>
+        <div class="row" >
+        
+        	<!-- menu slider  -->
+			<!-- <div class="container"> -->
+				 <div class="col-lg-3 col-md-3 col-sm-6 col-md-4" style="margin:10px;">
+			    		<div id="ptListRow" class="row"> 
+				    		<div class="ratio" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg'); position:relative;">
+				    			<div class="caption" data-idx="${count}">
+				    				<%-- <div id="scoreView" >
+				    					<fmt:formatNumber value="${ptBean.popular}" type="Number" pattern="###.#" />
+				    				</div> --%>
+				    			</div>
+
+				  						<a href="#">
+											<%-- <div class="infoPtCaption" data-idx="${count}">
+												<img src="${pageContext.request.contextPath }/my_icon/${ptBean.myIcon}" id="iconByPtList" class="img-circle">
+											</div> --%>
+										</a>
+				    				<img class="opacityImg" data-idx="${count}" src="${pageContext.request.contextPath}/resources/divImgs/jorim4.jpg">
+				    		</div>
+			    		</div>
+			    </div>
+				
+
+				 <div class="col-lg-3 col-md-3 col-sm-6 col-md-4" style="margin:10px;">
+			    		<div id="ptListRow" class="row"> 
+				    		<div class="ratio" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg'); position:relative;">
+				    			<div class="caption" data-idx="${count}">
+				    				<%-- <div id="scoreView" >
+				    					<fmt:formatNumber value="${ptBean.popular}" type="Number" pattern="###.#" />
+				    				</div> --%>
+				    			</div>
+				  						<a href="#">
+											<%-- <div class="infoPtCaption" data-idx="${count}">
+												<img src="${pageContext.request.contextPath }/my_icon/${ptBean.myIcon}" id="iconByPtList" class="img-circle">
+											</div> --%>
+										</a>
+				    				<img class="opacityImg" data-idx="${count}" src="${pageContext.request.contextPath}/resources/divImgs/jorim1.jpg">
+				    		</div>
+			    		</div>
+			    </div>
+
+	
+				 <div class="col-lg-3 col-md-3 col-sm-6 col-md-4" style="margin:10px;">
+			    		<div id="ptListRow" class="row"> 
+				    		<div class="ratio" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg'); position:relative;">
+				    			<div class="caption" data-idx="${count}">
+				    				<%-- <div id="scoreView" >
+				    					<fmt:formatNumber value="${ptBean.popular}" type="Number" pattern="###.#" />
+				    				</div> --%>
+				    			</div>
+				  						<a href="#">
+											<%-- <div class="infoPtCaption" data-idx="${count}">
+												<img src="${pageContext.request.contextPath }/my_icon/${ptBean.myIcon}" id="iconByPtList" class="img-circle">
+											</div> --%>
+										</a>
+				    				<img class="opacityImg" data-idx="${count}" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+				    		</div>
+			    		</div>
+			    </div>
+	
+			<!-- </div> -->
+            
+            <!-- menu slider end -->
+        </div>
+    </div>
+</div>
+
+
     <!-- slide area -->
 	    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel" >
 			<!-- slide -->
@@ -142,77 +235,7 @@
 	    </div>	
 	    <!-- slide -->	
 
-    <div class="container">	    
-        <div class="page-header" id="about">
-            <h1 class="text-center text-danger">조리미味 메뉴 구성</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <p style="color:#000000;">"찌개류"</p>
-                <br />
-				<p><img src="images/image3.jpg" style="border-radius:50%; width:160px; height:160px;" /></p>
-                <br />
-            </div>
-            <div class="col-md-4 text-center">
-                <p style="color:#000000;">"Exceeds expectations"</p>
-                <br />
-				<p><img src="images/image1.jpg" style="border-radius:50%; width:160px; height:160px;" /></p>
-                <br />
-            </div>
-            <div class="col-md-4 text-center">
-                <p style="color:#000000;">"This is the best restaurant"</p>
-                <br />
-				<p><img src="images/image2.jpg" style="border-radius:50%; width:160px; height:160px;" /></p>
-                <br />
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- menu bottom image -->	
- 	<div id="vertiBox" style="">
-		<div class="joritem-2" id="vertiDiv" >
-		
-		<!--  -->
-
-		<!--  -->
-		
-			<div class="container" style="">
-				<span style="color:#ffffff; font-size:50px; font-weight:bold;">
-					조리미
-				</span>
-				<span style="color:#FF8C00; font-size:50px; font-weight:bold;">
-					味
-				</span><br>
-					
-				<span style="color:#ffffff; font-size:50px; ">
-					방문을
-				</span>
-						
-				<span style="color:#FF8C00; font-size:50px; ">
-					 환영
-				</span>
-				
-				<span style="color:#ffffff; font-size:50px; ">
-					 합니다.
-				</span><br>
-				
-				<span style="color:#ffffff; font-size:30px;">
-					빠른 시일내에 
-				</span>
-				
-				<span style="color:#FF8C00; font-size:30px;">
-					오픈
-				</span>
-						
-				<span style="color:#ffffff; font-size:30px;">
-					하겠습니다.
-				</span><br>
-						
-			</div>
-		</div>
-	</div> 
-	
 </body>
 
 <script type="text/javascript">
