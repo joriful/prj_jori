@@ -83,62 +83,70 @@
         
         <!-- icon & string -->
         
-         <div class="container">
+       <div class="container" style="/* border:solid purple 1px; */">
          
-         <div class="row" style="border:solid red 1px;">
-            <div class="col-md-4" style=" margin-bottom:5%; float:left;/* padding-top:2%; */">               
-				<div style="/* text-align:left; */ float:left;"><i class="fa fa-spoon fa-5x" aria-hidden="true" style="color:#FFA500;"></i></div>
-					<div style="margin-left:30px;">
-		 				<ul style="/* text-align:left; */">
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 재료
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 신선한 현지 재료
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 모든 자연 및 유기농
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 조심스럽게 손으로 선택           	 
-							<li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 품질과 맛을 테스트했습니다.
-		                </ul>
-	                </div>            	 
+         <div class="row" style="/* border:solid black 1px; */">
+            <div class="col-md-4" style=" margin-bottom:5%;">
+            	<div class="center-block" style=" min-width:350px; max-width:355px; float: none; margin: 0 auto;">             
+					<div style="float:left;"><i class="fa fa-shopping-basket fa-3x" aria-hidden="true" style="color:#FFA500;"></i></div>
+						<!-- title -->
+
+						<div style="padding-left:40px; /* border:solid purple 1px;  */">
+							<span style="padding-left:15px; font-size:25px; font-weight:bold;">음식의 재료</span>
+<!-- 							<dl style="">
+								<dt class="slogan" style="padding-left:20px; font-size:25px;"> 
+				                	 음식의 재료</dt>
+							</dl> -->
+			 				<ul style="">
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 신선한 현지 재료</li>
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 모든 자연 및 유기농</li>
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 조심스럽게 손으로 선택</li>      	 
+								<li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 품질과 맛을 테스트했습니다.</li>
+			                </ul>
+		                </div> 
+	             </div>       	 
             </div>
             
-            <div class="col-md-4" style=" margin-bottom:5%; float:left;/* padding-top:2%; */">                
-				<div style="/* text-align:left; */ float:left;"><i class="fa fa-spoon fa-5x" aria-hidden="true" style="color:#FFA500;"></i></div>
-					<div style="margin-left:30px;">
-		 				<ul style="/* text-align:left; */">
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 재료
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 신선한 현지 재료
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 모든 자연 및 유기농
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 조심스럽게 손으로 선택           	 
-							<li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 품질과 맛을 테스트했습니다.
-		                </ul>
-	                </div> 
+            <div class="col-md-4" style=" margin-bottom:5%;">
+            	<div class="center-block" style=" min-width:350px; max-width:355px; float: none; margin: 0 auto;">             
+					<div style=" float:left; */ "><i class="fa fa-cutlery fa-3x" aria-hidden="true" style="color:#FFA500;"></i></div>
+						<div style="padding-left:40px; /* border:solid purple 1px;  */">
+			 				<ul class="" style="">
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 신선한 현지 재료</li>
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 모든 자연 및 유기농</li>
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 조심스럽게 손으로 선택</li>      	 
+								<li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 품질과 맛을 테스트했습니다.</li>
+			                </ul>
+		                </div> 
+	             </div>           	 
             </div>
             
-             <div class="col-md-4" style=" margin-bottom:5%; float:left;/* padding-top:2%; */">                
-				<div style="/* text-align:left; */ float:left;"><i class="fa fa-spoon fa-5x" aria-hidden="true" style="color:#FFA500;"></i></div>
-					<div style="margin-left:30px;">
-		 				<ul style="/* text-align:left; */">
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 재료
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 신선한 현지 재료
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 모든 자연 및 유기농
-			                <li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 조심스럽게 손으로 선택           	 
-							<li class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.8em;"> 
-			                	 품질과 맛을 테스트했습니다.
-		                </ul>
-	                </div> 
+            <div class="col-md-4" style=" margin-bottom:5%;">
+            	<div class="center-block" style=" min-width:350px; max-width:355px; float: none; margin: 0 auto;">             
+					<div style=" float:left; "><i class="fa fa-users fa-3x" aria-hidden="true" style="color:#FFA500;"></i></div>
+						<div style="padding-left:40px; /* border:solid purple 1px;  */">
+			 				<ul class="" style="">
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 신선한 현지 재료</li>
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 모든 자연 및 유기농</li>
+				                <li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 조심스럽게 손으로 선택</li>      	 
+								<li class="slogan" style="font-size:16px; color:#696969; margin-top:10px; line-height:1.8em;"> 
+				                	 품질과 맛을 테스트했습니다.</li>
+			                </ul>
+		                </div> 
+	             </div>           	 
             </div>
+            
          </div>   
             
         </div>
