@@ -4,10 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/index.css">
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<!-- <link href='http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
 <title>Jorimi</title>
 </head>
 
@@ -84,8 +82,8 @@
        <div class="container" style="">
          
          <div class="row" style="">
-            <div class="col-md-4" style=" margin-bottom:5%;">
-            	<div class="center-block" style=" min-width:350px; max-width:355px; float: none; margin: 0 auto;">             
+            <div class="col-md-4" style=" margin-bottom:5%; /* border:solid red 1px; */">
+            	<div class="center-block" style=" /* min-width:350px; max-width:355px; float: none; margin: 0 auto; */">             
 					<div style="float:left;"><i class="fa fa-shopping-basket fa-3x" aria-hidden="true" style="color:#FF8C00;"></i></div>
 						<div style="padding-left:40px;">
 							<span style="padding-left:15px; font-size:28px; font-weight:bold; font-family:'Nanum Gothic', serif;">음식의 재료</span>
@@ -104,7 +102,7 @@
             </div>
             
 			<div class="col-md-4" style=" margin-bottom:5%;">
-            	<div class="center-block" style=" min-width:350px; max-width:355px; float: none; margin: 0 auto;">             
+            	<div class="center-block" style=" /* min-width:350px; max-width:355px; float: none; margin: 0 auto; */">             
 					<div style="float:left;"><i class="fa fa-cutlery fa-3x" aria-hidden="true" style="color:#FF8C00;"></i></div>
 						<div style="padding-left:40px;">
 							<span style="padding-left:15px; font-size:28px; font-weight:bold; font-family:'Nanum Gothic', serif;">음식의 조리</span>
@@ -123,7 +121,7 @@
             </div>
             
 			<div class="col-md-4" style=" margin-bottom:5%;">
-            	<div class="center-block" style=" min-width:350px; max-width:355px; float: none; margin: 0 auto;">             
+            	<div class="center-block" style=" /* min-width:350px; max-width:355px; float: none; margin: 0 auto; */">             
 					<div style="float:left;"><i class="fa fa-users fa-3x" aria-hidden="true" style="color:#FF8C00;"></i></div>
 						<div style="padding-left:40px;">
 							<span style="padding-left:15px; font-size:28px; font-weight:bold; font-family:'Nanum Gothic', serif;">조리미 서비스</span>
@@ -171,10 +169,76 @@
                 	지금까지 가장 많이 주문되고 만족해주신 메뉴입니다.</p>	
             </div>
         </div>        
+		
+		<!-- recommend menu -->
+		<!-- main dish -->
+	<!-- <div class="container"> -->
+		<div class="col-md-6">
+            <!-- <div  > -->
+            	<div id="ptListRow" class="row">
+            	<div  id="recomenu1" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/ojing.jpg'); position:relative; border:solid red 1px;">             
+					<!-- <div style="float:left;"><i class="fa fa-shopping-basket fa-3x" aria-hidden="true" style="color:#FF8C00;"></i></div> -->
+						<div style="/* padding-left:40px; */">
+							
+		                </div> 
+	             </div>
+	             </div>
+            <!-- </div> -->
+		</div>
+	<!-- </div> -->
+		<!-- sub dishs -->
+		    <div class="col-md-6" style=" /* margin-bottom:5%; */">
+		    	<div id="ptListRow" class="row">
+            	<div class="recommend1" style=" border:solid red 1px;">
+
+			 				<!-- sub menu -->
+			 		    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+					      <!-- Wrapper for slides -->
+					      <div class="carousel-inner">
+					      
+					        <div class="item active">
+					          <img src="http://placehold.it/1200x400/cccccc/ffffff">
+					           <div class="carousel-caption">
+					            <h3>Headline</h3>
+					            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+					          </div>
+					        </div><!-- End Item -->
+					 
+					         <div class="item">
+					          <img src="http://placehold.it/1200x400/999999/cccccc">
+					           <div class="carousel-caption">
+					            <h3>Headline</h3>
+					            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+					          </div>
+					        </div><!-- End Item -->
+					        
+					        <div class="item">
+					          <img src="http://placehold.it/1200x400/dddddd/333333">
+					           <div class="carousel-caption">
+					            <h3>Headline</h3>
+					            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+					          </div>
+					        </div><!-- End Item -->
+					        
+					        <div class="item">
+					          <img src="http://placehold.it/1200x400/999999/cccccc">
+					           <div class="carousel-caption">
+					            <h3>Headline</h3>
+					            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+					          </div>
+					        </div><!-- End Item -->
+					                
+					      </div><!-- End Carousel Inner -->
+			 				<!-- sub menu -->
+		                </div> 
+   
+	             </div>   	 
+            </div>
 
     </div>
 </div>
-
+</div>
         <!-- recommand 메뉴 -->
  
             <!-- recommand menu end -->
