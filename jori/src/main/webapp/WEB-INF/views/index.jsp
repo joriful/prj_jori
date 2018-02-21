@@ -170,26 +170,28 @@
             </div>
         </div>        
 		
-		<!-- recommend menu -->
-		<!-- main dish -->
+	<!-- recommend menu -->
 	<!-- <div class="container"> -->
-		<div class="col-md-6">
+		<div class="col-md-12">
+		</div>
+		
+		<div class="col col-sm-6">
             <!-- <div  > -->
             	<div id="ptListRow" class="row">
-            	<div  id="recomenu1" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/ojing.jpg'); position:relative; border:solid red 1px;">             
-					<!-- <div style="float:left;"><i class="fa fa-shopping-basket fa-3x" aria-hidden="true" style="color:#FF8C00;"></i></div> -->
-						<div style="/* padding-left:40px; */">
-							
-		                </div> 
-	             </div>
-	             </div>
+
+		   			<div style="background-color:#ffffff; border:solid red 1px; padding:10px;">
+		   				<div  id="recomenu1" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/soybean.jpg');">             
+			            </div>
+						<span class="text-danger" style="font-family: 'Nanum Pen Script'; font-size:15px; font-weight:bold;">된장찌개</span>
+		            </div> 
+	            </div>
             <!-- </div> -->
 		</div>
 	<!-- </div> -->
 		<!-- sub dishs -->
-		    <div class="col-md-6" style=" /* margin-bottom:5%; */">
+		    <div class="col col-sm-6" style=" /* margin-bottom:5%; */">
 		    	<div id="ptListRow" class="row">
-            	<div class="recommend1" style=" border:solid red 1px;">
+            	<div class="recommend1" style="">
 
 			 				<!-- sub menu -->
 			 		    <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -197,38 +199,39 @@
 					      <!-- Wrapper for slides -->
 					      <div class="carousel-inner">
 					      
+					        <!-- <div class="item active"> -->
 					        <div class="item active">
-					          <img src="http://placehold.it/1200x400/cccccc/ffffff">
+					          <img id="recomenslide1" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
 					           <div class="carousel-caption">
-					            <h3>Headline</h3>
-					            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+					            <h3>제육 볶음+쌈</h3>
+					            <p>voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 					          </div>
 					        </div><!-- End Item -->
 					 
 					         <div class="item">
-					          <img src="http://placehold.it/1200x400/999999/cccccc">
+					          <img id="recomenslide2" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
 					           <div class="carousel-caption">
-					            <h3>Headline</h3>
-					            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+					            <h3>오삼불고기 볶음</h3>
+					            <p> voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 					          </div>
 					        </div><!-- End Item -->
 					        
 					        <div class="item">
-					          <img src="http://placehold.it/1200x400/dddddd/333333">
+					          <img id="recomenslide3" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
 					           <div class="carousel-caption">
-					            <h3>Headline</h3>
-					            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+					            <h3>오징어 볶음</h3>
+					            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 					          </div>
 					        </div><!-- End Item -->
 					        
 					        <div class="item">
-					          <img src="http://placehold.it/1200x400/999999/cccccc">
+					          <img id="recomenslide4" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
 					           <div class="carousel-caption">
 					            <h3>Headline</h3>
-					            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+					            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 					          </div>
-					        </div><!-- End Item -->
-					                
+					        </div><!-- End Item -->		
+					        			                
 					      </div><!-- End Carousel Inner -->
 			 				<!-- sub menu -->
 		                </div> 
@@ -245,22 +248,22 @@
 
 
     <!-- slide area -->
-	    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel" >
-			<!-- slide -->
+	   <!--  <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel" >
+			slide
 	        <div class="carousel-inner" role="listbox">
-	            <div class="item active" >  
+	            <div class="item active" id="aboutjorim"> 
 	                <div class="carousel-caption">
 	                  <h3>"종가집 장독 재래된장"</h3>
 	                  <p>"종가집"에서 정성껏 담근 장독된장의 구수하고 진한맛</p>
 	                </div>
 	            </div>
-	            <div class="item"> 
+	            <div class="item" id="aboutjorim"> 
 	                <div class="carousel-caption">
 	                  <h3>"시래기 생선조림"</h3>
 	                  <p>건강에 좋은 시래기와 재료를 아끼지 않은 양념으로 조리한 생선조림</p>
 	                </div>
 	            </div>
-	            <div class="item"> 
+	            <div class="item" id="aboutjorim"> 
 	                <div class="carousel-caption">
 	                  <h3>"매콤한 오징어와 제육볶음"</h3>
 	                  <p>강릉 주문진 채낚어으로 잡은 국내산 오징어와 매콤한 소스의 개운한 볶음 요리</p>
@@ -268,7 +271,7 @@
 	            </div>
 	        </div>
 
-	        <!-- Controls -->
+	        Controls
 	        <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
 	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 	            <span class="sr-only">Previous</span>
@@ -277,7 +280,7 @@
 	            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 	            <span class="sr-only">Next</span>
 	        </a>
-	    </div>	
+	    </div>	 -->
 	    <!-- slide -->	
 
 

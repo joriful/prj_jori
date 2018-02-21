@@ -90,7 +90,7 @@ div.joritem-1 {
 
 
 /* slider */
-body{
+/* body{
   font-family: 'Lato', sans-serif;
 }
 
@@ -142,26 +142,26 @@ body{
 .carousel-caption {
     text-shadow: 0 1px 4px rgba(0,0,0,.9);
   font-size:17px;
-  /* border:solid red 1px; *//*  */
+  border:solid red 1px; *//* 
   margin-bottom:3%;
   color: #FFF;
-  /* padding-left:30px;
+  padding-left:30px;
   padding-right:30px;
   background-color: black;
-  opacity: 0.8; */
+  opacity: 0.8;
 }
 .carousel-caption h3 {
   font-size: 40px;
   font-family: 'Lato', sans-serif;
   color: #FFF;
-  /* font-weight:bold; */
+  font-weight:bold;
 }
 
 .carousel-caption p {
   font-size: 20px;
   font-family: 'Lato', sans-serif;
   color: #FFF;
-  /* font-weight:bold;   */
+  font-weight:bold;  
 }
     html,
     body,
@@ -174,15 +174,15 @@ body{
     #carouselFade{
     	height:60vh;
     }
-    
-    .item:nth-child(1) {
+
+    #aboutjorim:nth-child(1) {
       background: url('../divImgs/misoSlide.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
     }
 	
-    .item:nth-child(2) {
+    #aboutjorim:nth-child(2) {
       background: url('../divImgs/gojorim.jpg');
   background-size: cover;
   background-position: center center;
@@ -190,13 +190,12 @@ body{
     }
 
 
-    .item:nth-child(3) {
+    #aboutjorim:nth-child(3) {
       background: url('../divImgs/ojing.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-    }
-
+    } */
     
     /* IE  */
     /*Edge*/
@@ -256,7 +255,7 @@ body{
 
  #recomenu1{
 	    /* position:absolute; */
-	    /* background: url('../divImgs/ojing.jpg'); */
+	    background: url('../divImgs/ojing.jpg');
 	    width: 100%;
 	    /* height: 150px; */
 	    height: 0;
@@ -270,4 +269,48 @@ body{
 		#ptListRow{
 		margin: 10px -3px 10px -3px;
 	}
+	
+ #recomenslide1{
+	    background: url('../divImgs/jeyouk.jpg');
+	    width: 100%;
+	    height: 0;
+	    padding-top:50%;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;  
+	    overflow: hidden;
+ }		
+ 
+ #recomenslide2{
+	    background: url('../divImgs/eggroll.PNG');
+	    width: 100%;
+	    height: 0;
+	    padding-top:50%;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;  
+	    overflow: hidden;
+ }		
+ 
+ #recomenslide3{
+	    background: url('../divImgs/osam.jpg');
+	    width: 100%;
+	    height: 0;
+	    padding-top:50%;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;  
+	    overflow: hidden;
+ }		
+ 
+  #recomenslide4{
+	    background: url('../divImgs/ojing.jpg');
+	    width: 100%;
+	    height: 0;
+	    padding-top:50%;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;  
+	    overflow: hidden;
+ }	
 	
