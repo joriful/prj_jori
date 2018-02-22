@@ -169,20 +169,25 @@
                 	지금까지 가장 많이 주문되고 만족해주신 메뉴입니다.</p>	
             </div>
         </div>        
-		
+	</div>	
 	<!-- recommend menu -->
 	<!-- <div class="container"> -->
-		<div class="col-md-12">
-		</div>
-		
-		<div class="col col-sm-6">
+	<!-- <div class="row" id="colback"style="width:100%; border:solid red 1px;"> -->
+	<div class="row" style="background-color:#FF8C00;">	
+	<div class="container" style="background-color:#FF8C00; /* border-radius: 15px; */ ">
+		<div class="col col-sm-6" style="">
             <!-- <div  > -->
-            	<div id="ptListRow" class="row">
+            	<div id="ptListRow" class="row" style="padding:10px;">
 
-		   			<div style="background-color:#ffffff; border:solid red 1px; padding:10px;">
+		   			<div class="recomenu_box" style="background-color:#ffffff; padding:20px;">
 		   				<div  id="recomenu1" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/soybean.jpg');">             
 			            </div>
-						<span class="text-danger" style="font-family: 'Nanum Pen Script'; font-size:15px; font-weight:bold;">된장찌개</span>
+			            <div style="padding:10px 0 10px 0;">
+							<span class="text-danger" style="border:solid red 1px; margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
+								된장찌개</span> <button type="button" class="btn btn-warning">Warning</button> <br> <br>
+							<span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>
+						</div>
 		            </div> 
 	            </div>
             <!-- </div> -->
@@ -190,9 +195,10 @@
 	<!-- </div> -->
 		<!-- sub dishs -->
 		    <div class="col col-sm-6" style=" /* margin-bottom:5%; */">
-		    	<div id="ptListRow" class="row">
+		    	<div id="ptListRow" class="row" style="padding:10px;">
             	<div class="recommend1" style="">
-
+            		<!-- 테두리 -->
+					<div style="background-color:#ffffff; border:solid red 1px; padding:20px;">
 			 				<!-- sub menu -->
 			 		    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
@@ -206,6 +212,10 @@
 					            <h3>제육 볶음+쌈</h3>
 					            <p>voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 					          </div>
+					          <span class="text-danger" style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
+					          	제육볶음과 쌈</span>
+         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>						          	
 					        </div><!-- End Item -->
 					 
 					         <div class="item">
@@ -214,6 +224,10 @@
 					            <h3>오삼불고기 볶음</h3>
 					            <p> voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 					          </div>
+					          <span class="text-danger" style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
+					          	된장찌개</span>
+         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>					          	
 					        </div><!-- End Item -->
 					        
 					        <div class="item">
@@ -222,6 +236,10 @@
 					            <h3>오징어 볶음</h3>
 					            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 					          </div>
+					          <span class="text-danger" style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
+					          	된장찌개</span>
+         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>					          	
 					        </div><!-- End Item -->
 					        
 					        <div class="item">
@@ -230,17 +248,23 @@
 					            <h3>Headline</h3>
 					            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
 					          </div>
+					          <span class="text-danger" style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
+					          	된장찌개</span>
+         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>					          	
 					        </div><!-- End Item -->		
 					        			                
 					      </div><!-- End Carousel Inner -->
 			 				<!-- sub menu -->
 		                </div> 
-   
+</div>   
 	             </div>   	 
             </div>
 
     </div>
+	<!-- </div> -->
 </div>
+	</div>
 </div>
         <!-- recommand 메뉴 -->
  
