@@ -200,34 +200,42 @@
         </div><!--/row-fluid-->
     </div><!--/item-->
      
-    <div class="item" style="background-color:yellow;">
+    <div class="item" style="">
         <!-- <div class="row-fluid" style=""> -->
         <!-- <div class="row-fluid" style=""> -->      
         <ul class="thumbnail" style="">
             <li class="col-sm-3" style="background-color:blue;">
+            	<div style="background-color:#fff;">
             	<a href="#x" class="thumbnail">
             		<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
             	</a>
-				<div class="caption">
+				<!-- <div class="caption">
 					<h4>Praesent commodo</h4>
 					<p>Nullam Condimentum Nibh Etiam Sem</p>
 					<a class="btn btn-mini" href="#">» Read More</a>
-				</div>            	
+				</div> -->
+				</div>         	
             </li>
             <li class="col-sm-3" style="background-color:blue;">
+            	<div style="background-color:#fff;">            
             	<a href="#x" class="thumbnail">
             		<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
             	</a>
+            	</div>
             </li>
             <li class="col-sm-3" style="background-color:blue;">
+            	<div style="background-color:#fff;">            
             	<a href="#x" class="thumbnail">
             		<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
             	</a>
+            	</div>
             </li>
             <li class="col-sm-3" style="background-color:blue;">
+            	<div style="background-color:#fff;">            
             	<a href="#x" class="thumbnail">
             		<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
             	</a>
+            	</div>
             </li>
         </ul><!--/row-fluid-->
 	    <!-- </div> -->
