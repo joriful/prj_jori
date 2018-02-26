@@ -170,148 +170,343 @@
             </div>
         </div>        
 	</div>	
-	<!-- recommend menu -->
-	<!-- <div class="container"> -->
-	<!-- <div class="row" id="colback"style="width:100%; border:solid red 1px;"> -->
-	<div class="row" style="background-color:#FF8C00;">	
-	<div class="container" style="background-color:#FF8C00; /* border-radius: 15px; */ ">
-		<div class="col col-sm-6" style="">
-            <!-- <div  > -->
-            	<div id="ptListRow" class="row" style="padding:10px;">
 
-		   			<div class="recomenu_box" style="background-color:#ffffff; padding:20px;">
-		   				<div  id="recomenu1" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/soybean.jpg');">             
-			            </div>
-			            <div style="padding:10px 0 10px 0;">
-							<span class="text-danger" style="border:solid red 1px; margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
-								된장찌개</span> <button type="button" class="btn btn-warning">Warning</button> <br> <br>
-							<span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
-								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>
-						</div>
-		            </div> 
-	            </div>
-            <!-- </div> -->
-		</div>
-	<!-- </div> -->
-		<!-- sub dishs -->
-		    <div class="col col-sm-6" style=" /* margin-bottom:5%; */">
-		    	<div id="ptListRow" class="row" style="padding:10px;">
-            	<div class="recommend1" style="">
-            		<!-- 테두리 -->
-					<div style="background-color:#ffffff; border:solid red 1px; padding:20px;">
-			 				<!-- sub menu -->
-			 		    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!--  -->
+<div class="container">
+  
+  <div class="span8">
     
-					      <!-- Wrapper for slides -->
-					      <div class="carousel-inner">
-					      
-					        <!-- <div class="item active"> -->
-					        <div class="item active">
-					          <img id="recomenslide1" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
-					           <div class="carousel-caption">
-					            <h3>제육 볶음+쌈</h3>
-					            <p>voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-					          </div>
-					          <span class="text-danger" style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
-					          	제육볶음과 쌈</span>
-         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
-								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>						          	
-					        </div><!-- End Item -->
-					 
-					         <div class="item">
-					          <img id="recomenslide2" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
-					           <div class="carousel-caption">
-					            <h3>오삼불고기 볶음</h3>
-					            <p> voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-					          </div>
-					          <span class="text-danger" style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
-					          	된장찌개</span>
-         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
-								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>					          	
-					        </div><!-- End Item -->
-					        
-					        <div class="item">
-					          <img id="recomenslide3" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
-					           <div class="carousel-caption">
-					            <h3>오징어 볶음</h3>
-					            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-					          </div>
-					          <span class="text-danger" style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
-					          	된장찌개</span>
-         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
-								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>					          	
-					        </div><!-- End Item -->
-					        
-					        <div class="item">
-					          <img id="recomenslide4" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
-					           <div class="carousel-caption">
-					            <h3>Headline</h3>
-					            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-					          </div>
-					          <span class="text-danger" style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold;">
-					          	된장찌개</span>
-         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
-								종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>					          	
-					        </div><!-- End Item -->		
-					        			                
-					      </div><!-- End Carousel Inner -->
-			 				<!-- sub menu -->
-		                </div> 
-</div>   
-	             </div>   	 
-            </div>
-
+    <h1>Bootstrap Thumbnail Slider</h1>
+    
+    <div class="well">
+     
+    <div id="myCarousel" class="carousel slide">
+     
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+     
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        
+    <div class="item active">
+        <div class="row-fluid" style="">
+          <div class="col-sm-3" style="background-color:blue;"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+          <div class="col-sm-3" style="background-color:blue;"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+          <div class="col-sm-3" style="background-color:blue;"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+          <div class="col-sm-3" style="background-color:blue;"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+        </div><!--/row-fluid-->
+    </div><!--/item-->
+     
+    <div class="item" style="background-color:yellow;">
+        <!-- <div class="row-fluid" style=""> -->
+        <!-- <div class="row-fluid" style=""> -->      
+        <ul class="thumbnail" style="">
+            <li class="col-sm-3" style="background-color:blue;">
+            	<a href="#x" class="thumbnail">
+            		<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+            	</a>
+				<div class="caption">
+					<h4>Praesent commodo</h4>
+					<p>Nullam Condimentum Nibh Etiam Sem</p>
+					<a class="btn btn-mini" href="#">» Read More</a>
+				</div>            	
+            </li>
+            <li class="col-sm-3" style="background-color:blue;">
+            	<a href="#x" class="thumbnail">
+            		<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+            	</a>
+            </li>
+            <li class="col-sm-3" style="background-color:blue;">
+            	<a href="#x" class="thumbnail">
+            		<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+            	</a>
+            </li>
+            <li class="col-sm-3" style="background-color:blue;">
+            	<a href="#x" class="thumbnail">
+            		<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+            	</a>
+            </li>
+        </ul><!--/row-fluid-->
+	    <!-- </div> -->
+    <!-- </div> --><!--/item-->
     </div>
-	<!-- </div> -->
+     
+    <div class="item">
+        <div class="row-fluid" style="">
+            <div class="col-sm-3" style="background-color:blue;" ><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+            <div class="col-sm-3" style="background-color:blue;" ><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+            <div class="col-sm-3" style="background-color:blue;" ><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+            <div class="col-sm-3" style="background-color:blue;" ><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
+        </div><!--/row-fluid-->
+    </div><!--/item-->
+     
+    </div><!--/carousel-inner-->
+     
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div><!--/myCarousel-->
+     
+    </div><!--/well-->
+  </div>
 </div>
+<!--  -->
+
+<%-- 	
+	<!-- 추천1 슬라이드 시작-->
+	<div class="row" style="background-color:#FF8C00;">	
+		<div class="container" style="background-color:#FF8C00; ">
+			<div class="col col-sm-6" style="">
+	            	<div id="ptListRow" class="row" style="padding:10px;">
+	
+			   			<div class="recomenu_box" id="leftmain" style="background-color:#ffffff; padding:20px;">
+			   				<div  id="recomenu1" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/soybean.jpg');">             
+				            </div>
+				            <div class="leftrecommend" style="padding:10px 0 10px 0;">
+					            <div style="">
+									<span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+										된장찌개 </span> 
+										<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>  
+								</div>  <br>
+									<span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>
+							</div>
+			            </div> 
+		            </div>
+			</div>
+			<!-- sub dishs -->
+			    <div class="col col-sm-6" style="">
+			    	<div id="ptListRow" class="row" style="padding:10px;">
+	            	<div class="recomenu_box" id ="rightrecommend" style="">
+	            		<!-- 테두리 -->
+						<div style="background-color:#ffffff; padding:20px;">
+				 				<!-- sub menu -->
+				 		    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    
+						      <!-- Wrapper for slides -->
+						      <div class="carousel-inner">
+						      
+						        <!-- <div class="item active"> -->
+						        <div class="item active">
+						          <img id="recomenslide1" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+						           <div class="carousel-caption">
+						            <h3>제육 볶음+쌈</h3>
+						            <p>voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+						         </div>
+						         <div class="rightrecommend" style="padding:10px 0 10px 0;">
+							          <div  style="">
+								          <span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+								          	제육볶음과 쌈</span>
+								          	<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>
+							          </div> <br>
+		         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의</span>
+								  </div>					          	
+						        </div><!-- End Item -->
+						 
+						         <div class="item">
+						          <img id="recomenslide2" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+						           <div class="carousel-caption">
+						            <h3>오삼불고기 볶음</h3>
+						            <p> voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+						          </div>
+						         <div class="rightrecommend" style="padding:10px 0 10px 0;">
+							          <div  style="">
+								          <span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+								          	오삼불고기</span>
+								          	<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>
+							          </div> <br>
+		         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>
+								  </div>					          	
+						        </div><!-- End Item -->
+						        
+						        <div class="item">
+						          <img id="recomenslide3" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+						           <div class="carousel-caption">
+						            <h3>오징어 볶음</h3>
+						            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+						          </div>
+						         <div class="rightrecommend" style="padding:10px 0 10px 0;">
+							          <div  style="">
+								          <span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+								          	제육볶음과 쌈</span>
+								          	<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>
+							          </div> <br>
+		         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의 </span>
+								  </div>						          	
+						        </div><!-- End Item -->
+						        
+						        <div class="item">
+						          <img id="recomenslide4" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+						           <div class="carousel-caption">
+						            <h3>Headline</h3>
+						            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+						          </div>
+						         <div class="rightrecommend" style="padding:10px 0 10px 0;">
+							          <div  style="">
+								          <span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+								          	제육볶음과 쌈</span>
+								          	<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>
+							          </div> <br>
+		         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>
+								  </div>						          	
+						        </div><!-- End Item -->		
+						        			                
+						      </div><!-- End Carousel Inner -->
+				 				<!-- sub menu -->
+			                </div>
+			                 
+			                <!-- background color -->
+						</div>   
+		             </div>   	 
+	            </div>
+	
+	    </div>
+	    
 	</div>
+</div><!-- 추천 1 슬라이드 끝 -->
+ --%>
+<%-- 
+	<!-- 추천2 슬라이드 시작-->
+	<div class="row" style="background-color:#D5DBDB"> 	
+		<div class="container" style="background-color:#D5DBDB  margin:40xp 0 40px 0; /* width:1400px; */">
+			<div class="col col-sm-6" style="">
+	            	<div id="ptListRow" class="row" style="padding:10px;">
+	
+			   			<div class="recomenu_box" id="leftmain" style="background-color:#ffffff; padding:20px;">
+			   				<div  id="recomenu1" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/soybean.jpg');">             
+				            </div>
+				            <div class="leftrecommend" style="padding:10px 0 10px 0;">
+					            <div style="">
+									<span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+										된장찌개 </span> 
+										<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>  
+								</div>  <br>
+									<span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>
+							</div>
+			            </div> 
+		            </div>
+			</div>
+			
+			<!-- sub dishs -->
+			    <div class="col col-sm-6" style="">
+			    	<div id="ptListRow" class="row" style="padding:10px;">
+	            	<div class="recomenu_box" id ="rightrecommend" style="">
+	            		<!-- 테두리 -->
+						<div style="background-color:#ffffff; padding:20px;">
+				 				<!-- sub menu -->
+				 		    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    
+						      <!-- Wrapper for slides -->
+						      <div class="carousel-inner">
+						      
+						        <!-- <div class="item active"> -->
+						        <div class="item active">
+						          <img id="recomenslide11" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+						           <div class="carousel-caption">
+						            <h3>제육 볶음+쌈</h3>
+						            <p>voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+						         </div>
+						         <div class="rightrecommend" style="padding:10px 0 10px 0;">
+							          <div  style="">
+								          <span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+								          	제육볶음과 쌈</span>
+								          	<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>
+							          </div> <br>
+		         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의</span>
+								  </div>
+       	
+						        </div><!-- End Item -->
+						 
+						         <div class="item">
+						          <img id="recomenslide22" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+						           <div class="carousel-caption">
+						            <h3>오삼불고기 볶음</h3>
+						            <p> voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+						          </div>
+						         <div class="rightrecommend" style="padding:10px 0 10px 0;">
+							          <div  style="">
+								          <span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+								          	오삼불고기</span>
+								          	<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>
+							          </div> <br>
+		         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>
+								  </div>					          	
+						        </div><!-- End Item -->
+						        
+						        <div class="item">
+						          <img id="recomenslide33" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+						           <div class="carousel-caption">
+						            <h3>오징어 볶음</h3>
+						            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+						          </div>
+						         <div class="rightrecommend" style="padding:10px 0 10px 0;">
+							          <div  style="">
+								          <span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+								          	제육볶음과 쌈</span>
+								          	<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>
+							          </div> <br>
+		         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의 </span>
+								  </div>						          	
+						        </div><!-- End Item -->
+						        
+						        <div class="item">
+						          <img id="recomenslide44" src="${pageContext.request.contextPath}/resources/divImgs/joinBG.jpg">
+						           <div class="carousel-caption">
+						            <h3>Headline</h3>
+						            <p>sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+						          </div>
+						         <div class="rightrecommend" style="padding:10px 0 10px 0;">
+							          <div  style="">
+								          <span class="text-danger" style="line-height: 34px; vertical-align: middle; margin-top:20px; font-size:25px; font-weight:bold;">
+								          	제육볶음과 쌈</span>
+								          	<button type="button" class="btn btn-danger btn-sm" style="float:right;">주문 담기</button>
+							          </div> <br>
+		         					  <span style="margin-top:20px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; ">
+										종가집 장독된장의 깊은맛과 우렁,쇠고기를 메인으로 호박 두부 버섯등 13가지 이상의 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</span>
+								  </div>						          	
+						        </div><!-- End Item -->		
+						        			                
+						      </div><!-- End Carousel Inner -->
+				 				<!-- sub menu -->
+			                </div>
+			                 
+			                <!-- background color -->
+						</div>   
+		             </div>   	 
+	            </div>
+	
+	    </div>
+	    
+	</div>
+</div><!-- 추천2 슬라이드 끝-->
+ --%>
+
+
+
+<!-- index-page -->
 </div>
-        <!-- recommand 메뉴 -->
- 
-            <!-- recommand menu end -->
-
-
-    <!-- slide area -->
-	   <!--  <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel" >
-			slide
-	        <div class="carousel-inner" role="listbox">
-	            <div class="item active" id="aboutjorim"> 
-	                <div class="carousel-caption">
-	                  <h3>"종가집 장독 재래된장"</h3>
-	                  <p>"종가집"에서 정성껏 담근 장독된장의 구수하고 진한맛</p>
-	                </div>
-	            </div>
-	            <div class="item" id="aboutjorim"> 
-	                <div class="carousel-caption">
-	                  <h3>"시래기 생선조림"</h3>
-	                  <p>건강에 좋은 시래기와 재료를 아끼지 않은 양념으로 조리한 생선조림</p>
-	                </div>
-	            </div>
-	            <div class="item" id="aboutjorim"> 
-	                <div class="carousel-caption">
-	                  <h3>"매콤한 오징어와 제육볶음"</h3>
-	                  <p>강릉 주문진 채낚어으로 잡은 국내산 오징어와 매콤한 소스의 개운한 볶음 요리</p>
-	                </div>
-	            </div>
-	        </div>
-
-	        Controls
-	        <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
-	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	            <span class="sr-only">Previous</span>
-	        </a>
-	        <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
-	            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	            <span class="sr-only">Next</span>
-	        </a>
-	    </div>	 -->
-	    <!-- slide -->	
-
 
 </body>
 
 <script type="text/javascript">
-	/* $('#about'). */
+
+	$(window).on('resize', function(){
+		var lheight = $('#leftmain').height();
+		$('.carousel-inner .item').height(lheight);				
+	});
+	$(document).ready(function(){
+	    $(window).trigger('resize');		
+	});
 
 </script>
 	
