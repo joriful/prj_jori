@@ -216,53 +216,58 @@
                                     </div><!-- Carousel nav -->
                                     
                                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>                                       
+                                        <span class="glyphicon glyphicon-chevron-left" ></span>                                       
                                     </a>
                                     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>                                       
+                                        <span class="glyphicon glyphicon-chevron-right" ></span>                                       
                                     </a>                                
                                     </div>
                             </div>
 
-                            <div class="col-sm-4" id="carousel-text"></div>
-
-                            <div id="slide-content" style="display: none;">
-                                <div id="slide-content-0">
+                            <div class="col-sm-6" id="carousel-text" style="/* border:solid red 1px; */"></div>
+                            <div id="slide-content" style="display:none;">
+                                <div id="slide-content-0" style="">
                                     <h2>된장찌개</h2>
-                                    <p>Lorem Ipsum Dolor</p>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
                                     <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                    <%-- <button type="button" class="btn btn-danger" data-toggle="tooltipmenu" 
+                                    	title="<img src='${pageContext.request.contextPath}/resources/divImgs/osam.jpg'/>">제육+쌈</button> --%>
+                                    <button id="tooltipimg" type="button" class="btn btn-danger" data-toggle="tooltipmenu" 
+                                    	title="<img src='${pageContext.request.contextPath}/resources/divImgs/osam.jpg'/>">제육+쌈</button>
+                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Tooltip on top">오삼불고기</button>
+                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Tooltip on top">계란말이</button>
                                 </div>
 
                                 <div id="slide-content-1">
                                     <h2>Slider Two</h2>
-                                    <p>Lorem Ipsum Dolor</p>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
                                     <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-2">
                                     <h2>Slider Three</h2>
-                                    <p>Lorem Ipsum Dolor</p>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
                                     <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-3">
                                     <h2>Slider Four</h2>
-                                    <p>Lorem Ipsum Dolor</p>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
                                     <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-4">
                                     <h2>Slider Five</h2>
-                                    <p>Lorem Ipsum Dolor</p>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
                                     <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-5">
                                     <h2>Slider Six</h2>
-                                    <p>Lorem Ipsum Dolor</p>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
                                     <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
-                            </div>
+                            </div>                         
                         </div>
                     </div>
                 </div><!--/Slider-->
@@ -546,11 +551,37 @@
 
 <script type="text/javascript">
 
+/* tooltip : display:none not working*/
+/* $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+}); */
+
+/* $(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]', 
+    	animated: 'fade',
+        placement: 'top',
+        html: true });
+}); */
+
+$(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltipmenu]', 
+    	animated: 'fade',
+        placement: 'top',
+        html: true,
+        content: function () {
+            return '<img src="'+$(this).attr('src') + '" width="500" height="500" />';
+          }
+	});
+});
+
+
+
+/* slider */
 jQuery(document).ready(function($) {
 	 
-    $('#myCarousel').carousel({
+    /* $('#myCarousel').carousel({
             interval: 5000
-    });
+    }); */
 
     $('#carousel-text').html($('#slide-content-0').html());
 
