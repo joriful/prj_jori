@@ -226,34 +226,44 @@
 
                             <div class="col-sm-6" id="carousel-text" style="/* border:solid red 1px; */"></div>
                             <div id="slide-content" style="display:none;">
-                                <div id="slide-content-0" style="">
-                                    <h2>된장찌개</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                    <%-- <button type="button" class="btn btn-danger" data-toggle="tooltipmenu" 
-                                    	title="<img src='${pageContext.request.contextPath}/resources/divImgs/osam.jpg'/>">제육+쌈</button> --%>
-                                    <button id="tooltipimg" type="button" class="btn btn-danger" data-toggle="tooltipmenu" 
-                                    	title="<img src='${pageContext.request.contextPath}/resources/divImgs/osam.jpg'/>">제육+쌈</button>
-                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Tooltip on top">오삼불고기</button>
-                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" title="Tooltip on top">계란말이</button>
+                                <div id="slide-content-0">
+                                    <h2>우렁 된장찌개</h2>
+                                    <p>양평에서 직거래로 받아온 신선한 우렁으로 구수하고 건강함을 맛볼 수 있습니다.</p>
+                                    <p class="sub-text">
+                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
+                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
+                                    </button>
+                                    </p>
                                 </div>
 
                                 <div id="slide-content-1">
-                                    <h2>Slider Two</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                    <h2>쇠고기 된장찌개</h2>
+                                    <p>그날 받아온 한우로 소고기의 진한 맛과 구수함을 맛볼 수 있습니다.</p>
+                                    <p class="sub-text">
+                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
+                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
+                                    </button>
+                                    </p>
                                 </div>
 
                                 <div id="slide-content-2">
-                                    <h2>Slider Three</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                    <h2>돼지고기 김치찌개</h2>
+                                    <p>시원하고 얼큰한 국물과 돼지 앞다리살의 식감이 일품인 김치찌개를 선사합니다.</p>
+                                    <p class="sub-text">
+                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
+                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
+                                    </button>
+                                    </p>
                                 </div>
 
                                 <div id="slide-content-3">
-                                    <h2>Slider Four</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                    <h2>고등어 조림</h2>
+                                    <p>두툼한 고등어살과 개운하고 깔끔한 묵은지의 맛으로 밥도둑</p>
+                                    <p class="sub-text">
+                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
+                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
+                                    </button>
+                                    </p>
                                 </div>
 
                                 <div id="slide-content-4">
@@ -556,23 +566,49 @@
     $('[data-toggle="tooltip"]').tooltip(); 
 }); */
 
-/* $(document).ready(function() {
-    $("body").tooltip({ selector: '[data-toggle=tooltip]', 
-    	animated: 'fade',
-        placement: 'top',
-        html: true });
+$(document).ready(function() {
+	$("body").tooltip({ selector: '[data-toggle=tooltip]', placement:'right'});
+});
+
+
+
+/* $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
+        $('.tooltip').addClass('animated swing');
+    })
 }); */
 
-$(document).ready(function() {
+/* $(document).ready(function() {
     $("body").tooltip({ selector: '[data-toggle=tooltipmenu]', 
     	animated: 'fade',
         placement: 'top',
         html: true,
         content: function () {
-            return '<img src="'+$(this).attr('src') + '" width="500" height="500" />';
+            return '<img src="'+$(this).attr('src') + '" width="100" height="100" />';
           }
 	});
-});
+}); */
+
+
+/* $(document).ready(function() {
+	  // grab all thumbnails and add bootstrap popovers
+	  // https://getbootstrap.com/javascript/#popovers
+	  $("body").popover({
+		selector: '[data-toggle=popover]', 
+	    container: 'body',
+	    html: true,
+	    placement: 'auto',
+	    trigger: 'hover',
+	    content: function() {
+	      // get the url for the full size img
+	      var url = $(this).data('full');
+	      var wsize = 300;
+	      var hsize = 200;
+	      return '<img src="' + url + '"style="width:'+wsize+'px;'+'height:'+hsize+'px ">'
+	    }
+	  });
+	}); */
 
 
 

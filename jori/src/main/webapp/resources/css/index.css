@@ -407,5 +407,7 @@ div.joritem-1 {
  }	
 	
 /* 톨팁이미지 */
-
+body .popover {
+  max-width: 350px;
+}
 	
