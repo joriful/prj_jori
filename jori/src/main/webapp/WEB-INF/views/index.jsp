@@ -229,11 +229,51 @@
                                 <div id="slide-content-0">
                                     <h2>우렁 된장찌개</h2>
                                     <p>양평에서 직거래로 받아온 신선한 우렁으로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">
-                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-                                    </button>
-                                    </p>
+                                    
+                                    <div class="btn-group" data-toggle="buttons">
+                                    
+	                                    <div class="btn-group" data-toggle="buttons">
+										  <label class="btn btn-default active">
+										    <input type="radio" name="options" id="option1"> 1인
+										  </label>
+										  <label class="btn btn-default">
+										    <input type="radio" name="options" id="option2"> 2인
+										  </label>
+										 </div>
+										 
+										  <div class="btn-group" role="group" data-toggle="tooltip" data-container="body" title="담기!">
+
+											    <button type="button" class="btn btn-default" id="pricebtn1" data-toggle="dropdown" aria-expanded="false">
+											      <span id="menuprice-1">14,000</span>
+											      <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true" style=""></i>
+											    </button>
+
+										  </div>
+									</div>
+                                    
+                                    
+<!--                                <div class="btn-group" role="group" aria-label="...">
+									  <button type="button" class="btn btn-default">1인</button>
+									  <button type="button" class="btn btn-default">2인</button>
+									
+										  <div class="btn-group" role="group" data-toggle="tooltip" data-container="body" title="담기!">
+
+											    <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
+											      <span id="menuprice-1">14,000</span>
+											      <span class="caret"></span>
+											      <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true" style=""></i>
+											    </button>
+
+										  </div>
+									</div> -->
+									
+									
+                                    <!-- <p class="sub-text">2인 <i class="fa fa-krw" aria-hidden="true"></i>14,000원</p> -->
+                                    <!-- <p class="sub-text" style="/* font-size:20px; font-weight:bold; */">
+	                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
+	                                    	2인 <i class="fa fa-krw" aria-hidden="true"></i>14,000원<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
+	                                    </button>
+                                    </p> -->
                                 </div>
 
                                 <div id="slide-content-1">
@@ -258,7 +298,7 @@
 
                                 <div id="slide-content-3">
                                     <h2>고등어 조림</h2>
-                                    <p>두툼한 고등어살과 개운하고 깔끔한 묵은지의 맛으로 밥도둑</p>
+                                    <p>두툼한 고등어살과 개운하고 깔끔한 묵은지의 맛으로 밥도둑입니다.</p>
                                     <p class="sub-text">
                                     <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
                                     	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
@@ -570,45 +610,20 @@ $(document).ready(function() {
 	$("body").tooltip({ selector: '[data-toggle=tooltip]', placement:'right'});
 });
 
+/* price btn click remove */
+ 
+ $(document).ready(function() {
+  $('#pricebtn1').on('click', function(e) {
+	  console.log("click");
+    if ($(this).hasClass('active')) {
+      setTimeout(function() {
+        $(this).removeClass('active').find('input').prop('checked', false);
+      }.bind(this), 10);
+    }
+  });
+});
 
 
-/* $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="tooltip"]').on('shown.bs.tooltip', function () {
-        $('.tooltip').addClass('animated swing');
-    })
-}); */
-
-/* $(document).ready(function() {
-    $("body").tooltip({ selector: '[data-toggle=tooltipmenu]', 
-    	animated: 'fade',
-        placement: 'top',
-        html: true,
-        content: function () {
-            return '<img src="'+$(this).attr('src') + '" width="100" height="100" />';
-          }
-	});
-}); */
-
-
-/* $(document).ready(function() {
-	  // grab all thumbnails and add bootstrap popovers
-	  // https://getbootstrap.com/javascript/#popovers
-	  $("body").popover({
-		selector: '[data-toggle=popover]', 
-	    container: 'body',
-	    html: true,
-	    placement: 'auto',
-	    trigger: 'hover',
-	    content: function() {
-	      // get the url for the full size img
-	      var url = $(this).data('full');
-	      var wsize = 300;
-	      var hsize = 200;
-	      return '<img src="' + url + '"style="width:'+wsize+'px;'+'height:'+hsize+'px ">'
-	    }
-	  });
-	}); */
 
 
 
