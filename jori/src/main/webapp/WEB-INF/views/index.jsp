@@ -234,16 +234,16 @@
                                     
 	                                    <div class="btn-group" data-toggle="buttons">
 										  <label class="btn btn-default active">
-										    <input type="radio" name="options" id="option1"> 1인
+										    <input type="radio" name="options" id="recommend_option1"> 2인
 										  </label>
 										  <label class="btn btn-default">
-										    <input type="radio" name="options" id="option2"> 2인
+										    <input type="radio" name="options" id="recommend_option1"> 3인
 										  </label>
 										 </div>
 										 
 										  <div class="btn-group" role="group" data-toggle="tooltip" data-container="body" title="담기!">
 
-											    <button type="button" class="btn btn-default" id="pricebtn1" data-toggle="dropdown" aria-expanded="false">
+											    <button type="button" class="btn btn-default" id="pricebtn1" aria-expanded="false">
 											      <span id="menuprice-1">14,000</span>
 											      <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true" style=""></i>
 											    </button>
@@ -612,18 +612,18 @@ $(document).ready(function() {
 
 /* price btn click remove */
  
- $(document).ready(function() {
-  $('#pricebtn1').on('click', function(e) {
-	  console.log("click");
+  /* $('#pricebtn1').on('click', function(e) {
+	  alert("click");
     if ($(this).hasClass('active')) {
-      setTimeout(function() {
-        $(this).removeClass('active').find('input').prop('checked', false);
-      }.bind(this), 10);
+        $(this).removeClass('active');
     }
-  });
-});
+  }); */
 
-
+  $("#pricebtn1").click(function(){
+	  alert("click");
+	  /* $("button").removeClass("active");
+	  $(this).addClass("active"); */
+	});
 
 
 

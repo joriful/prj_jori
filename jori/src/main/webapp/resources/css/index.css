@@ -405,9 +405,18 @@ div.joritem-1 {
 	    background-size: cover;  
 	    overflow: hidden;
  }	
+ 
+/* 	price button event edit */
+
+/* #pricebtn1{
 	
-/* 톨팁이미지 */
-body .popover {
-  max-width: 350px;
-}
-	
+} */
+
+  	/* #pricebtn1:hover, 
+	#pricebtn1:focus, 
+	#pricebtn1:active, 
+	#pricebtn1.active, 
+	.open .dropdown-toggle #pricebtn1 {
+ 		
+ 	
+	} */
