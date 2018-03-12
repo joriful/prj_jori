@@ -408,17 +408,39 @@ div.joritem-1 {
  
 /* 	price button event edit */
 
-#sidecatgegorymenu {
- color: #009688;
- background: #fff;
- border: 1px solid #009688;
- font-size: 17px;
- padding: 7px 12px;
- font-weight: normal;
- margin: 6px 0;
- margin-right: 12px;
- display: inline-block;
- text-decoration: none;
- font-family: 'Open Sans', sans-serif;
- min-width: 120px;
-}
+	#sidecatgegorymenu {
+		 color: #AAB7B8;
+		 background: transparent;
+		 border: 2px solid #AAB7B8;
+		 font-size: 17px;
+		 padding: 7px 12px;
+		 font-weight: normal;
+		 margin: 6px 0;
+		 margin-right: 12px;
+		 display: inline-block;
+		 text-decoration: none;
+		 /* font-family: 'Open Sans', sans-serif; */
+		 /* min-width: 120px; */
+	}
+
+	#sidecatgegorymenu:hover,
+	#sidecatgegorymenu:focus,	 
+	#sidecatgegorymenu:active,
+	#sidecatgegorymenu.active,
+	.open .dropdown-toggle #sidecatgegorymenu{
+		 color: #009688;
+		 background: transparent;
+		 border: 2px solid #009688;
+		 font-size: 17px;
+		 padding: 7px 12px;
+		 font-weight: normal;
+		 margin: 6px 0;
+		 margin-right: 12px;
+		 display: inline-block;
+		 text-decoration: none;
+		 /* min-width: 120px; */
+         outline: none !important;
+ 
+	}
+	
+	

@@ -371,10 +371,20 @@
         </div>        
 	</div>
 	
-	<button type="button" id="sidecatgegorymenu">
-		 <span id="menuprice-1">14,000</span>
-	</button>
-	
+	<!-- filter btn -->
+	<div class="container" >
+		<button type="button" class="selected1" id="sidecatgegorymenu">
+			 <span id="menuprice-1">볶음</span>
+		</button>
+		
+		<button type="button" id="sidecatgegorymenu">
+			 <span id="menuprice-1">14,000</span>
+		</button>
+		
+		<button type="button" id="sidecatgegorymenu">
+			 <span id="menuprice-1">14,000</span>
+		</button>
+	</div>
 </div><!-- side choo chun menus -->
 
 
@@ -385,6 +395,12 @@
 </body>
 
 <script type="text/javascript">
+
+/* default button  */
+$(document).ready(function(){
+	$(".selected1").focus();
+});
+
 
 /* tooltip : display:none not working*/
 /* $(document).ready(function(){
