@@ -185,12 +185,12 @@
                                     <!-- Carousel items -->
                                     <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
-                                        	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/urung.jpg');">
+                                        	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjur1.jpg');">
                                         	</div>
                                         </div>
 
                                         <div class="item" data-slide-number="1">
-                                        	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/beef.jpg');">
+                                        	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg');">
                                         	</div>
                                         </div>
 
@@ -353,39 +353,41 @@
         </div>
 </div>
 
-<!-- side choo chun menus -->
-
-<div style="background-color:#F2F4F4; height:1200px;">
-	   
-	  <div class="container">	    
-        <div class="text-center" style="/* border-bottom:solid coral 1px; */ margin-top:7%;">
-            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">함께하면</span>
-            <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; /* padding-top:3%; */">'더'</span>
-            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">맛있는 사이드 메뉴</span>           
-        </div>
-        <div class="row">
-            <div class="col-md-8 text-center col-centered" style=" margin-bottom:5%;">                
-                <p class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.6em;"> 
-                	지금까지 가장 많이 주문되고 만족해주신 메뉴입니다.</p>	
-            </div>
-        </div>        
-	</div>
+	<!-- side choo chun menus -->
 	
-	<!-- filter btn -->
-	<div class="container" >
-		<button type="button" class="selected1" id="sidecatgegorymenu">
-			 <span id="menuprice-1">볶음</span>
-		</button>
+	<div style="background-color:#F2F4F4; height:1200px;">
+		   
+		  <div class="container">	    
+	        <div class="text-center" style="/* border-bottom:solid coral 1px; */ margin-top:7%;">
+	            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">함께하면</span>
+	            <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; /* padding-top:3%; */">'더'</span>
+	            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">맛있는 사이드 메뉴</span>           
+	        </div>
+	        <div class="row">
+	            <div class="col-md-8 text-center col-centered" style=" margin-bottom:5%;">                
+	                <p class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.6em;"> 
+	                	지금까지 가장 많이 주문되고 만족해주신 메뉴입니다.</p>	
+	            </div>
+	        </div>        
+		</div>
 		
-		<button type="button" id="sidecatgegorymenu">
-			 <span id="menuprice-1">14,000</span>
-		</button>
-		
-		<button type="button" id="sidecatgegorymenu">
-			 <span id="menuprice-1">14,000</span>
-		</button>
-	</div>
-</div><!-- side choo chun menus -->
+		<!-- filter btn / menu area-->
+		<div class="container" >
+			<button type="button" class="selected1" id="sidecatgegorymenu">
+				 <span id="menuprice-1">볶음</span>
+			</button>
+			
+			<button type="button" id="sidecatgegorymenu">
+				 <span id="menuprice-1">14,000</span>
+			</button>
+			
+			<button type="button" id="sidecatgegorymenu">
+				 <span id="menuprice-1">14,000</span>
+			</button>
+			
+			
+		</div>
+	</div><!-- side choo chun menus -->
 
 
 
