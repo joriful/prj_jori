@@ -270,11 +270,11 @@ div.joritem-1 {
  
   /* recomand menu shadow */
  
-  	.recomenu_box:hover, 
-	.recomenu_box:focus, 
-	.recomenu_box:active, 
-	.recomenu_box.active, 
-	.open .dropdown-toggle .recomenu_box {
+  	#recomenu_box:hover, 
+	#recomenu_box:focus, 
+	#recomenu_box:active, 
+	#recomenu_box.active, 
+	.open .dropdown-toggle #recomenu_box {
  		
  		box-shadow:  4px 4px 5px rgba(0,0,0,0.6); 
 		-moz-box-shadow:  4px 4px 5px rgba(0,0,0,0.6); 
@@ -423,7 +423,7 @@ div.joritem-1 {
 		 /* min-width: 120px; */
 	}
 
-	#sidecatgegorymenu:hover,
+	/* #sidecatgegorymenu:hover, */
 	#sidecatgegorymenu:focus,	 
 	#sidecatgegorymenu:active,
 	#sidecatgegorymenu.active,

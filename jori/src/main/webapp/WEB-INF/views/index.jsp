@@ -373,17 +373,85 @@
 		
 		<!-- filter btn / menu area-->
 		<div class="container" >
-			<button type="button" class="selected1" id="sidecatgegorymenu">
-				 <span id="menuprice-1">볶음</span>
-			</button>
+			<div class="col-md-8 text-center col-centered">
+				<button type="button" class="selected1" id="sidecatgegorymenu">
+					 <span id="menuprice-1">기본 사이드</span>
+				</button>
+				
+				<button type="button" id="sidecatgegorymenu">
+					 <span id="menuprice-1">볶음 추가</span>
+				</button>
+				
+				<button type="button" id="sidecatgegorymenu">
+					 <span id="menuprice-1">조림 추가</span>
+				</button>
+			</div>
+
+			<!-- side1 -->			
+			<div class="col-md-12" id="side1" style="margin-top:20px; position:inline">
 			
-			<button type="button" id="sidecatgegorymenu">
-				 <span id="menuprice-1">14,000</span>
-			</button>
+				<div>
+					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
+						<div class="img-circle" id="recomenu_box"
+							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
+							background-position: center center; width:100px; height:100px; background-size: 120px;
+							background-repeat: no-repeat; float:left; margin-right:10px;">
+						</div>
+					<span style="">
+						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+					</span>
+					</div>
+	
+				</div>
+			<!--  -->
+				<div>		
+					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
+						<div class="img-circle" id="recomenu_box"
+							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
+							background-position: center center; width:100px; height:100px; background-size: 120px;
+							background-repeat: no-repeat; float:left; margin-right:10px;">
+						</div>
+					<span style="">
+						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+					</span>
+					</div>
+	
+				</div>
 			
-			<button type="button" id="sidecatgegorymenu">
-				 <span id="menuprice-1">14,000</span>
-			</button>
+			</div>
+			
+			<!-- side2 -->			
+			<div class="col-md-12" id="side2" style="margin-top:20px; position:inline">
+			
+				<div>
+					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
+						<div class="img-circle" id="recomenu_box"
+							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
+							background-position: center center; width:100px; height:100px; background-size: 120px;
+							background-repeat: no-repeat; float:left; margin-right:10px;">
+						</div>
+					<span style="">
+						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+					</span>
+					</div>
+	
+				</div>
+			<!--  -->
+				<div>		
+					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
+						<div class="img-circle" id="recomenu_box"
+							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
+							background-position: center center; width:100px; height:100px; background-size: 120px;
+							background-repeat: no-repeat; float:left; margin-right:10px;">
+						</div>
+					<span style="">
+						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+					</span>
+					</div>
+	
+				</div>
+			
+			</div>			
 			
 			
 		</div>
