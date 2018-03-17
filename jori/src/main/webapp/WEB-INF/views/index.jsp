@@ -390,17 +390,24 @@
 			<!-- side1 -->			
 			<div class="col-md-12" id="side1" style="margin-top:20px; position:inline">
 			
-				<div>
+
 					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
 						<div class="img-circle" id="recomenu_box"
 							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
 							background-position: center center; width:100px; height:100px; background-size: 120px;
 							background-repeat: no-repeat; float:left; margin-right:10px;">
 						</div>
-					<span style="">
-						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
-					</span>
-					</div>
+						<div style="border:solid red 1px;" >						
+							<p style="font-size:20px; font-weight:bold;">
+								Title food ohh
+							</p>
+							<p style="">
+								가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+							</p>
+							<p style="color:orange;">
+								3333
+							</p>
+						</div>
 	
 				</div>
 			<!--  -->
