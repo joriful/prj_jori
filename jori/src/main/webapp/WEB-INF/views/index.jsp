@@ -374,94 +374,109 @@
 		<!-- filter btn / menu area-->
 		<div class="container" >
 			<div class="col-md-8 text-center col-centered">
-				<button type="button" class="selected1" id="sidecatgegorymenu">
+				<button type="button" class="side-categroy-btn" id="side_btn1" data-sidectgry="1">
 					 <span id="menuprice-1">기본 사이드</span>
 				</button>
 				
-				<button type="button" id="sidecatgegorymenu">
+				<button type="button" class="side-categroy-btn" id="side_btn2" data-sidectgry="2">
 					 <span id="menuprice-1">볶음 추가</span>
 				</button>
 				
-				<button type="button" id="sidecatgegorymenu">
+				<button type="button" class="side-categroy-btn" id="side_btn3" data-sidectgry="3">
 					 <span id="menuprice-1">조림 추가</span>
 				</button>
 			</div>
 
-			<!-- side1 -->			
-			<div class="col-md-12" id="side1" style="margin-top:20px; position:inline">
-			
+			<!-- side1-1 -->			
+			<div class="col-md-12" id="side1" data-sidemenu="1" style="margin-top:20px; position:inline" >
+					<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+						<div class="media">
+							  <div class="media-left">
+							  	<div class="media-object">
+									<div class="img-circle" id="recomenu_box"
+										style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/segro1.PNG'); 
+										background-position: center center; width:100px; height:100px; background-size: 140px;
+										background-repeat: no-repeat; float:left; margin-right:10px;">
+									</div>
+								</div>
+							 </div>
+							<div class="media-body" style="" >					
+								<p class="media-heading" style="font-size:20px; font-weight:bold;">
+									계란말이
+								</p>
+								<p class="media-heading" style="color:#95A5A6;">
+									가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+								</p>
+								<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
+									<i class="fa fa-krw" aria-hidden="true"></i> 
+									<fmt:formatNumber value="6000" type="Number" pattern="##,###"/>&nbsp;
+								</p>
+							</div>
+						</div>
+				</div>
+			<!-- side1-2 -->
+					<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+						<div class="media">
+							  <div class="media-left">
+							  	<div class="media-object">
+									<div class="img-circle" id="recomenu_box"
+										style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/sbs1.jpg'); 
+										background-position: center center; width:100px; height:100px; background-size: 140px;
+										background-repeat: no-repeat; float:left; margin-right:10px;">
+									</div>
+								</div>
+							 </div>
+							<div class="media-body" style="" >					
+								<p class="media-heading" style="font-size:20px; font-weight:bold;">
+									소세지&베이컨 양파볶음
+								</p>
+								<p class="media-heading" style="color:#95A5A6;">
+									가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+								</p>
+								<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
+									<i class="fa fa-krw" aria-hidden="true"></i> 
+									<fmt:formatNumber value="5000" type="Number" pattern="##,###"/>&nbsp;
+								</p>
+							</div>
+						</div>
+				</div>
 
-					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
-						<div class="img-circle" id="recomenu_box"
-							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
-							background-position: center center; width:100px; height:100px; background-size: 120px;
-							background-repeat: no-repeat; float:left; margin-right:10px;">
-						</div>
-						<div style="border:solid red 1px;" >						
-							<p style="font-size:20px; font-weight:bold;">
-								Title food ohh
-							</p>
-							<p style="">
-								가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
-							</p>
-							<p style="color:orange;">
-								3333
-							</p>
-						</div>
-	
-				</div>
-			<!--  -->
-				<div>		
-					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
-						<div class="img-circle" id="recomenu_box"
-							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
-							background-position: center center; width:100px; height:100px; background-size: 120px;
-							background-repeat: no-repeat; float:left; margin-right:10px;">
-						</div>
-					<span style="">
-						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
-					</span>
-					</div>
-	
-				</div>
-			
-			</div>
-			
-			<!-- side2 -->			
-			<div class="col-md-12" id="side2" style="margin-top:20px; position:inline">
-			
-				<div>
-					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
-						<div class="img-circle" id="recomenu_box"
-							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
-							background-position: center center; width:100px; height:100px; background-size: 120px;
-							background-repeat: no-repeat; float:left; margin-right:10px;">
-						</div>
-					<span style="">
-						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
-					</span>
-					</div>
-	
-				</div>
-			<!--  -->
-				<div>		
-					<div class="col-sm-6" style="margin-top:20px; border:solid red 1px; display: inline-block; float:left;">
-						<div class="img-circle" id="recomenu_box"
-							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
-							background-position: center center; width:100px; height:100px; background-size: 120px;
-							background-repeat: no-repeat; float:left; margin-right:10px;">
-						</div>
-					<span style="">
-						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
-					</span>
-					</div>
-	
-				</div>
-			
-			</div>			
-			
-			
 		</div>
+
+		<!-- side2-1 -->			
+			<div class="col-md-12" id="side2" data-sidemenu="2" style="margin-top:20px; position:inline">
+				<div>
+					<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+						<div class="img-circle" id="recomenu_box"
+							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
+							background-position: center center; width:100px; height:100px; background-size: 120px;
+							background-repeat: no-repeat; float:left; margin-right:10px;">
+						</div>
+					<span style="">
+						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+					</span>
+					</div>
+	
+				</div>
+			<!-- side2-2  -->
+				<div>		
+					<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+						<div class="img-circle" id="recomenu_box"
+							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
+							background-position: center center; width:100px; height:100px; background-size: 120px;
+							background-repeat: no-repeat; float:left; margin-right:10px;">
+						</div>
+					<span style="">
+						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
+					</span>
+					</div>
+	
+				</div>
+			
+			</div>					
+		
+		
+		
 	</div><!-- side choo chun menus -->
 
 
@@ -475,9 +490,20 @@
 
 /* default button  */
 $(document).ready(function(){
-	$(".selected1").focus();
+	$(".side-categroy-btn").focus();
 });
 
+$(document).ready(function(){
+	$(".side-categroy-btn").click(function(){
+		var sbval = $(this).data("sidectgry");
+		var smval = $(this).data("sidemenu");
+		sbval.style.display = 'none';
+		/* $(this).style.display = 'none'; */
+		/* if(sbval == smval){
+				
+		} */
+	});
+});
 
 /* tooltip : display:none not working*/
 /* $(document).ready(function(){
@@ -487,22 +513,6 @@ $(document).ready(function(){
 $(document).ready(function() {
 	$("body").tooltip({ selector: '[data-toggle=tooltip]', placement:'right'});
 });
-
-/* price btn click remove */
- 
-  /* $('#pricebtn1').on('click', function(e) {
-	  alert("click");
-    if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-    }
-  }); */
-
-  $("#pricebtn1").click(function(){
-	  alert("click");
-	  /* $("button").removeClass("active");
-	  $(this).addClass("active"); */
-	});
-
 
 
 /* slider */
@@ -536,6 +546,14 @@ jQuery(document).ready(function($) {
 	});
 	$(document).ready(function(){
 	    $(window).trigger('resize');		
+	});
+	
+/* 사이드메뉴 카테고리 show */
+
+	$(document).ready(function(){
+		
+		$('#side1').click(0)
+		
 	});
 
 </script>

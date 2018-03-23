@@ -408,7 +408,7 @@ div.joritem-1 {
  
 /* 	price button event edit */
 
-	#sidecatgegorymenu {
+	.side-categroy-btn {
 		 color: #AAB7B8;
 		 background: transparent;
 		 border: 2px solid #AAB7B8;
@@ -424,10 +424,10 @@ div.joritem-1 {
 	}
 
 	/* #sidecatgegorymenu:hover, */
-	#sidecatgegorymenu:focus,	 
-	#sidecatgegorymenu:active,
-	#sidecatgegorymenu.active,
-	.open .dropdown-toggle #sidecatgegorymenu{
+	.side-categroy-btn:focus,	 
+	.side-categroy-btn:active,
+	.side-categroy-btn.active,
+	.open .dropdown-toggle .side-categroy-btn{
 		 color: #009688;
 		 background: transparent;
 		 border: 2px solid #009688;
