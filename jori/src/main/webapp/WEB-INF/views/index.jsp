@@ -497,11 +497,13 @@ $(document).ready(function(){
 	$(".side-categroy-btn").click(function(){
 		var sbval = $(this).data("sidectgry");
 		var smval = $(this).data("sidemenu");
-		sbval.style.display = 'none';
-		/* $(this).style.display = 'none'; */
-		/* if(sbval == smval){
-				
-		} */
+		/* sbval.style.display = 'none'; */
+		
+		/* if(sbval == smval){ */
+			/* $("div[data-sidemenu='2']").style.display = 'none'; */
+			/* $("#side2").css("display","none"); */
+		$("div[data-sidemenu="+smval+"]").css("display","none");
+		/* } */
 	});
 });
 
