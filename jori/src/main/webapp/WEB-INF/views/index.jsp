@@ -497,13 +497,13 @@ $(document).ready(function(){
 	$(".side-categroy-btn").click(function(){
 		var sbval = $(this).data("sidectgry");
 		var smval = $(this).data("sidemenu");
+		console.log(smval);
 		/* sbval.style.display = 'none'; */
-		
-		/* if(sbval == smval){ */
-			/* $("div[data-sidemenu='2']").style.display = 'none'; */
-			/* $("#side2").css("display","none"); */
-		$("div[data-sidemenu="+smval+"]").css("display","none");
-		/* } */
+		if(sbval == smval){
+		 /* $("#side2").attr("data-sidemenu", sbval).css("display", "none"); */
+		 /* $("#side1").attr("data-sidemenu", 2).css("background-color", "red"); EACH*/
+		 $('.col-md-12[data-sidemenu="2"]').css("background-color", "red");
+		}
 	});
 });
 
