@@ -423,6 +423,10 @@ div.joritem-1 {
 		 /* min-width: 120px; */
 	}
 
+	.side-categroy-btn:hover{
+		 color: #AAB7B8;		
+	}
+
 	/* #sidecatgegorymenu:hover, */
 	.side-categroy-btn:focus,	 
 	.side-categroy-btn:active,
@@ -440,6 +444,8 @@ div.joritem-1 {
 		 text-decoration: none;
 		 /* min-width: 120px; */
          outline: none !important;
+		  -webkit-box-shadow: none !important;
+		  box-shadow: none  !important;
  
 	}
 	

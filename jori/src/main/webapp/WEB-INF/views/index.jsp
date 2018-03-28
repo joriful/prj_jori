@@ -374,21 +374,37 @@
 		<!-- filter btn / menu area-->
 		<div class="container" >
 			<div class="col-md-8 text-center col-centered">
-				<button type="button" class="side-categroy-btn" id="side_btn1" data-sidectgry="1">
-					 <span id="menuprice-1">기본 사이드</span>
-				</button>
-				
-				<button type="button" class="side-categroy-btn" id="side_btn2" data-sidectgry="2">
-					 <span id="menuprice-1">볶음 추가</span>
-				</button>
-				
-				<button type="button" class="side-categroy-btn" id="side_btn3" data-sidectgry="3">
-					 <span id="menuprice-1">조림 추가</span>
-				</button>
+				<!-- <div class="btn-group" data-toggle="buttons">
+					<button type="button" class="side-categroy-btn active" id="side_btn1" data-sidectgry="1">
+						 <span id="menuprice-1">기본 사이드</span>
+					</button>
+					
+					<button type="button" class="side-categroy-btn" id="side_btn2" data-sidectgry="2">
+						 <span id="menuprice-1">볶음 추가</span>
+					</button>
+					
+					<button type="button" class="side-categroy-btn" id="side_btn3" data-sidectgry="3">
+						 <span id="menuprice-1">조림 추가</span>
+					</button>
+				</div> -->
+				<div class="btn-group" data-toggle="buttons">
+				  <label class="btn side-categroy-btn active">
+				    <input type="radio" name="options" id="side_btn1" autocomplete="off" data-sidectgry="1" checked> 
+				    <span id="menuprice-1">기본 사이드</span>
+				  </label>
+				  <label class="btn side-categroy-btn">
+				    <input type="radio" name="options" id="side_btn2" autocomplete="off" data-sidectgry="2">
+				    <span id="menuprice-1">볶음 추가</span>
+				  </label>
+				  <label class="btn side-categroy-btn">
+				    <input type="radio" name="options" id="side_btn3" autocomplete="off" data-sidectgry="3">
+				    <span id="menuprice-1">조림 추가</span>
+				  </label>
+				</div>				
 			</div>
 
 			<!-- side1-1 -->			
-			<div class="col-md-12" id="side1" data-sidemenu="1" style="margin-top:20px; position:inline" >
+			<div class="col-md-12" id="side1" data-sidemenu="1" style="margin-top:20px; position:inline; /* display:block; */" >
 					<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
 						<div class="media">
 							  <div class="media-left">
@@ -444,7 +460,7 @@
 		</div>
 
 		<!-- side2-1 -->			
-			<div class="col-md-12" id="side2" data-sidemenu="2" style="margin-top:20px; position:inline">
+			<div class="col-md-12" id="side2" data-sidemenu="2" style="margin-top:20px; position:inline; /* display:none; */">
 				<div>
 					<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
 						<div class="img-circle" id="recomenu_box"
@@ -489,21 +505,30 @@
 <script type="text/javascript">
 
 /* default button  */
-$(document).ready(function(){
+/* $(document).ready(function(){
 	$(".side-categroy-btn").focus();
-});
+}); */
 
 $(document).ready(function(){
+	
 	$(".side-categroy-btn").click(function(){
 		var sbval = $(this).data("sidectgry");
-		var smval = $(this).data("sidemenu");
-		console.log(smval);
-		/* sbval.style.display = 'none'; */
-		if(sbval == smval){
+		var smlist = $('input[data-sidemenu="'+sbval+'"]');
+		
+		$('input[data="sidemenu"]').css("background-color", "red");
+		
+		/* if($(smlist).length){ */
+			/* $(smlist).css("display", "none"); */ ///ssssssssss
+		/* }; */
+	/* $('div[data-sidemenu="'+sbval+'"]').css("display", "none"); */
+		
+		
+		
+		/* if(sbval == smval){ */
 		 /* $("#side2").attr("data-sidemenu", sbval).css("display", "none"); */
 		 /* $("#side1").attr("data-sidemenu", 2).css("background-color", "red"); EACH*/
-		 $('.col-md-12[data-sidemenu="2"]').css("background-color", "red");
-		}
+		 /* $('.col-md-12[data-sidemenu="2"]').css("background-color", "red"); */
+		/* } */
 	});
 });
 
