@@ -7,6 +7,35 @@
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/index.css">
 	<!-- <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
 <title>Jorimi</title>
+
+<style> 
+	.side-menu
+	{
+	/* width:100px;
+	height:100px;
+	background:red; */
+	position:relative;
+	animation:mymove 3s ease-out forwards;
+	animation-iteration-count:3;
+	
+	/* Safari and Chrome */
+	-webkit-animation:mymove 3s;
+	-webkit-animation-iteration-count:3;
+	}
+	
+	@keyframes mymove
+	{ from {top:0px; opacity: 0;}
+	to {top:200px; opacity: 1}
+	}
+	
+	@-webkit-keyframes mymove /* Safari and Chrome */
+	{
+	from {top:0px; opacity: 0;}
+	to {top:200px; opacity: 1;}
+	}
+</style>
+
+
 </head>
 
 <body style=" height: 100%; margin: 0;">
@@ -404,8 +433,65 @@
 			</div>
 
 			<!-- side1-1 -->		
-			<div>
-				<div class="col-md-12" id="side1" data-sidemenu="1" style="margin-top:20px; position:inline; display:block;" >
+			<div class="side-menu" data-sidemenu="1" style="margin-top:20px; position:inline; display:block;">
+				<div class="col-md-12" id="side1" >
+						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+							<div class="media">
+								  <div class="media-left">
+								  	<div class="media-object">
+										<div class="img-circle" id="recomenu_box"
+											style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
+											background-position: center center; width:100px; height:100px; background-size: 140px;
+											background-repeat: no-repeat; float:left; margin-right:10px;">
+										</div>
+									</div>
+								 </div>
+								<div class="media-body" style="" >					
+									<p class="media-heading" style="font-size:20px; font-weight:bold;">
+										계란말이
+									</p>
+									<p class="media-heading" style="color:#95A5A6;">
+										가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+									</p>
+									<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
+										<i class="fa fa-krw" aria-hidden="true"></i> 
+										<fmt:formatNumber value="6000" type="Number" pattern="##,###"/>&nbsp;
+									</p>
+								</div>
+							</div>
+					</div>
+				<!-- side1-2 -->
+						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+							<div class="media">
+								  <div class="media-left">
+								  	<div class="media-object">
+										<div class="img-circle" id="recomenu_box"
+											style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjur1.jpg'); 
+											background-position: center center; width:100px; height:100px; background-size: 140px;
+											background-repeat: no-repeat; float:left; margin-right:10px;">
+										</div>
+									</div>
+								 </div>
+								<div class="media-body" style="" >					
+									<p class="media-heading" style="font-size:20px; font-weight:bold;">
+										소세지&베이컨 양파볶음
+									</p>
+									<p class="media-heading" style="color:#95A5A6;">
+										가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+									</p>
+									<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
+										<i class="fa fa-krw" aria-hidden="true"></i> 
+										<fmt:formatNumber value="5000" type="Number" pattern="##,###"/>&nbsp;
+									</p>
+								</div>
+							</div>
+					</div>
+			</div>
+		</div>
+
+		<!-- side2-1 -->
+		<div class="side-menu" data-sidemenu="2" style="margin-top:20px; position:inline; display:none;">		
+			<div class="col-md-12" id="side2">
 						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
 							<div class="media">
 								  <div class="media-left">
@@ -458,39 +544,7 @@
 							</div>
 					</div>
 			</div>
-		</div>
-
-		<!-- side2-1 -->			
-			<div class="col-md-12" id="side2" data-sidemenu="2" style="margin-top:20px; position:inline; display:none;">
-				<div>
-					<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
-						<div class="img-circle" id="recomenu_box"
-							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
-							background-position: center center; width:100px; height:100px; background-size: 120px;
-							background-repeat: no-repeat; float:left; margin-right:10px;">
-						</div>
-					<span style="">
-						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
-					</span>
-					</div>
-	
-				</div>
-			<!-- side2-2  -->
-				<div>		
-					<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
-						<div class="img-circle" id="recomenu_box"
-							style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg'); 
-							background-position: center center; width:100px; height:100px; background-size: 120px;
-							background-repeat: no-repeat; float:left; margin-right:10px;">
-						</div>
-					<span style="">
-						가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라
-					</span>
-					</div>
-	
-				</div>
-			
-			</div>					
+		</div>			
 		
 		
 		
@@ -515,8 +569,8 @@
 		var sbval = $(this).data("sidectgry");
 		$('div[data-sidemenu]').each(function(){
 			if($('div[data-sidemenu="'+sbval+'"]').length > 0){
-				$('div.col-md-12[data-sidemenu="'+sbval+'"]').css("display", "block");
-				$('div.col-md-12[data-sidemenu!="'+sbval+'"]').css("display", "none");				
+				$('div.side-menu[data-sidemenu="'+sbval+'"]').css("display", "block");
+				$('div.side-menu[data-sidemenu!="'+sbval+'"]').css("display", "none");				
 			}
 		})
 	});
