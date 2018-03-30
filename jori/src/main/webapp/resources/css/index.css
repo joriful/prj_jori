@@ -91,7 +91,7 @@ div.joritem-1 {
 
 
 /* slider */
-/* body{
+ /* body{
   font-family: 'Lato', sans-serif;
 }
 
@@ -143,7 +143,7 @@ div.joritem-1 {
 .carousel-caption {
     text-shadow: 0 1px 4px rgba(0,0,0,.9);
   font-size:17px;
-  border:solid red 1px; *//* 
+  border:solid red 1px;  
   margin-bottom:3%;
   color: #FFF;
   padding-left:30px;
@@ -449,4 +449,106 @@ div.joritem-1 {
  
 	}
 	
+		
+/*  */		
+		
+	.allmenu-categroy-btn {
+		 color: #AAB7B8;
+		 background: transparent;
+		 border: 2px solid #AAB7B8;
+		 font-size: 17px;
+		 padding: 7px 12px;
+		 font-weight: normal;
+		 margin: 6px 0;
+		 margin-right: 12px;
+		 display: inline-block;
+		 text-decoration: none;
+		 /* font-family: 'Open Sans', sans-serif; */
+		 /* min-width: 120px; */
+	}
+
+	.allmenu-categroy-btn:hover{
+		 color: #AAB7B8;		
+	}
+
+	/* #sidecatgegorymenu:hover, */
+	.allmenu-categroy-btn:focus,	 
+	.allmenu-categroy-btn:active,
+	.allmenu-categroy-btn.active,
+	.open .dropdown-toggle .allmenu-categroy-btn{
+		 color: #009688;
+		 background: transparent;
+		 border: 2px solid #009688;
+		 font-size: 17px;
+		 padding: 7px 12px;
+		 font-weight: normal;
+		 margin: 6px 0;
+		 margin-right: 12px;
+		 display: inline-block;
+		 text-decoration: none;
+		 /* min-width: 120px; */
+         outline: none !important;
+		  -webkit-box-shadow: none !important;
+		  box-shadow: none  !important;
+ 
+	}
+			
+	/* to up animation for side menu */
 	
+.side-menu
+	{
+	position:relative;
+	animation:mymove 1s ease-out forwards;
+	animation-iteration-count:1;
+	
+	/* Safari and Chrome */
+	-webkit-animation:mymove 1s;
+	-webkit-animation-iteration-count:1;
+	}
+	
+	@keyframes mymove
+	{ from {top:50px; opacity: 0;}
+	to {top:0px; opacity: 1}
+	}
+	
+	@-webkit-keyframes mymove /* Safari and Chrome */
+	{
+	from {top:50px; opacity: 0;}
+	to {top:0px; opacity: 1;}
+	}
+	
+/* all menu slider */
+/* body { padding-top: 50px; } */
+
+/* #allmenuCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#allmenuCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+#allmenuCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+#allmenuCarousel .list-group .active {
+	background-color:#eee;	
+}
+
+@media (min-width: 992px) { 
+	#allmenuCarousel {padding-right:33.3333%;}
+	#allmenuCarousel .carousel-controls {display:none;}	
+}
+@media (max-width: 991px) { 
+	.carousel-caption p,
+	#allmenuCarousel .list-group {display:none;} 
+} */
+/* all menu slider */	

@@ -7,35 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/index.css">
 	<!-- <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
 <title>Jorimi</title>
-
-<style> 
-	.side-menu
-	{
-	/* width:100px;
-	height:100px;
-	background:red; */
-	position:relative;
-	animation:mymove 3s ease-out forwards;
-	animation-iteration-count:3;
-	
-	/* Safari and Chrome */
-	-webkit-animation:mymove 3s;
-	-webkit-animation-iteration-count:3;
-	}
-	
-	@keyframes mymove
-	{ from {top:0px; opacity: 0;}
-	to {top:200px; opacity: 1}
-	}
-	
-	@-webkit-keyframes mymove /* Safari and Chrome */
-	{
-	from {top:0px; opacity: 0;}
-	to {top:200px; opacity: 1;}
-	}
-</style>
-
-
 </head>
 
 <body style=" height: 100%; margin: 0;">
@@ -384,7 +355,7 @@
 
 	<!-- side choo chun menus -->
 	
-	<div style="background-color:#F2F4F4; height:1200px;">
+	<div style="background-color:#F2F4F4; min-height:600px;">
 		   
 		  <div class="container">	    
 	        <div class="text-center" style="/* border-bottom:solid coral 1px; */ margin-top:7%;">
@@ -403,19 +374,6 @@
 		<!-- filter btn / menu area-->
 		<div class="container" >
 			<div class="col-md-8 text-center col-centered">
-				<!-- <div class="btn-group" data-toggle="buttons">
-					<button type="button" class="side-categroy-btn active" id="side_btn1" data-sidectgry="1">
-						 <span id="menuprice-1">기본 사이드</span>
-					</button>
-					
-					<button type="button" class="side-categroy-btn" id="side_btn2" data-sidectgry="2">
-						 <span id="menuprice-1">볶음 추가</span>
-					</button>
-					
-					<button type="button" class="side-categroy-btn" id="side_btn3" data-sidectgry="3">
-						 <span id="menuprice-1">조림 추가</span>
-					</button>
-				</div> -->
 				<div class="btn-group" data-toggle="buttons">
 				  <label class="btn side-categroy-btn active" data-sidectgry="1" >
 				    <input type="radio" name="options" id="side_btn1" autocomplete="off" checked> 
@@ -517,7 +475,7 @@
 								</div>
 							</div>
 					</div>
-				<!-- side1-2 -->
+				<!-- side2-2 -->
 						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
 							<div class="media">
 								  <div class="media-left">
@@ -545,15 +503,235 @@
 					</div>
 			</div>
 		</div>			
-		
-		
-		
-	</div><!-- side choo chun menus -->
 
+		<!-- side3-1 -->
+		<div class="side-menu" data-sidemenu="3" style="margin-top:20px; position:inline; display:none;">		
+			<div class="col-md-12" id="side3">
+						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+							<div class="media">
+								  <div class="media-left">
+								  	<div class="media-object">
+										<div class="img-circle" id="recomenu_box"
+											style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/segro1.PNG'); 
+											background-position: center center; width:100px; height:100px; background-size: 140px;
+											background-repeat: no-repeat; float:left; margin-right:10px;">
+										</div>
+									</div>
+								 </div>
+								<div class="media-body" style="" >					
+									<p class="media-heading" style="font-size:20px; font-weight:bold;">
+										계란말이
+									</p>
+									<p class="media-heading" style="color:#95A5A6;">
+										가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+									</p>
+									<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
+										<i class="fa fa-krw" aria-hidden="true"></i> 
+										<fmt:formatNumber value="6000" type="Number" pattern="##,###"/>&nbsp;
+									</p>
+								</div>
+							</div>
+					</div>
+				<!-- side3-2 -->
+						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+							<div class="media">
+								  <div class="media-left">
+								  	<div class="media-object">
+										<div class="img-circle" id="recomenu_box"
+											style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/sbs1.jpg'); 
+											background-position: center center; width:100px; height:100px; background-size: 140px;
+											background-repeat: no-repeat; float:left; margin-right:10px;">
+										</div>
+									</div>
+								 </div>
+								<div class="media-body" style="" >					
+									<p class="media-heading" style="font-size:20px; font-weight:bold;">
+										소세지&베이컨 양파볶음
+									</p>
+									<p class="media-heading" style="color:#95A5A6;">
+										가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+									</p>
+									<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
+										<i class="fa fa-krw" aria-hidden="true"></i> 
+										<fmt:formatNumber value="5000" type="Number" pattern="##,###"/>&nbsp;
+									</p>
+								</div>
+							</div>
+					</div>
+			</div>
+		</div>				
+		
+	</div>
+</div>
+	<!-- side choo chun menus -->
 
+<!-- all menu -->
+	<div style="background-color:#FFFFFF; min-height:600px; /* border:solid red 1px; */">
+		<div class="controller" style="margin:40px;">
+		  	<div class="container">	    
+		        <div class="text-center" style="/* border-bottom:solid coral 1px; */ margin-top:7%;">
+		            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">조리미</span>
+		            <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; /* padding-top:3%; */">'모든'</span>
+		            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">메뉴</span>           
+		        </div>
+		        <div class="row">
+		            <div class="col-md-8 text-center col-centered" style=" margin-bottom:5%;">                
+		                <p class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.6em;"> 
+		                	조리미의 모든 메뉴입니다.</p>	
+		            </div>
+		        </div>        
+			</div>
+			
+		<!-- category btn for all menus -->
+			
+			<div class="col-md-8 text-center col-centered">
+				<div class="btn-group" data-toggle="buttons">
+				  <label class="btn allmenu-categroy-btn active" data-menuctgry="1" >
+				    <input type="radio" name="options" id="side_btn1" autocomplete="off" checked> 
+				    <span id="menuprice-1">찌개</span>
+				  </label>
+				  <label class="btn allmenu-categroy-btn" data-menuctgry="2">
+				    <input type="radio" name="options" id="side_btn2" autocomplete="off" >
+				    <span id="menuprice-1">볶음</span>
+				  </label>
+				  <label class="btn allmenu-categroy-btn"  data-menuctgry="3">
+				    <input type="radio" name="options" id="side_btn3" autocomplete="off">
+				    <span id="menuprice-1">조림</span>
+				  </label>
+				  <label class="btn allmenu-categroy-btn"  data-menuctgry="4">
+				    <input type="radio" name="options" id="side_btn3" autocomplete="off">
+				    <span id="menuprice-1">사이드</span>
+				  </label>
+				  <label class="btn allmenu-categroy-btn"  data-menuctgry="5">
+				    <input type="radio" name="options" id="side_btn3" autocomplete="off">
+				    <span id="menuprice-1">음료</span>
+				  </label>				  
+				</div>				
+			</div>
+		</div>
+		
+		<!-- all menu -->
+		
+				<!-- side3-1 -->
+		<div class="side-menu" data-sidemenu="3" style="margin-top:20px; position:inline; display:block;">		
+			<div class="col-md-12" id="side3">
+				<!-- side3-2 -->
+						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+							<div class="media">
+								  <div class="media-left">
+								  	<div class="media-object">
+										<div class="img-circle" id="recomenu_box"
+											style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/sbs1.jpg'); 
+											background-position: center center; width:100px; height:100px; background-size: 140px;
+											background-repeat: no-repeat; float:left; margin-right:10px;">
+										</div>
+									</div>
+								 </div>
+								<div class="media-body" style="" >					
+									<p class="media-heading" style="font-size:20px; font-weight:bold;">
+										소세지&베이컨 양파볶음
+									</p>
+									<p class="media-heading" style="color:#95A5A6;">
+										가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+									</p>
+									<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
+										<i class="fa fa-krw" aria-hidden="true"></i> 
+										<fmt:formatNumber value="5000" type="Number" pattern="##,###"/>&nbsp;
+									</p>
+								</div>
+							</div>
+					</div>
+			</div>
+		</div>	
+		
+		
+		
+		
+
+		<!-- <div class="container">
+		
+			찌개 1
+		    <div id="allmenuCarousel" class="carousel slide" data-ride="carousel">
+		    
+		      Wrapper for slides
+		      <div class="carousel-inner">
+		      
+		        <div class="item active">
+		          <img src="http://placehold.it/760x400/cccccc/ffffff">
+		           <div class="carousel-caption">
+		            <h4><a href="#">Lorem ipsum dolor sit amet consetetur sadipscing</a></h4>
+		            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+		          </div>
+		        </div>End Item
+		 
+		         <div class="item">
+		          <img src="http://placehold.it/760x400/999999/cccccc">
+		           <div class="carousel-caption">
+		            <h4><a href="#">consetetur sadipscing elitr, sed diam nonumy eirmod</a></h4>
+		            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+		          </div>
+		        </div>End Item
+		        
+		        <div class="item">
+		          <img src="http://placehold.it/760x400/dddddd/333333">
+		           <div class="carousel-caption">
+		            <h4><a href="#">tempor invidunt ut labore et dolore</a></h4>
+		            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+		          </div>
+		        </div>End Item
+		        
+		        <div class="item">
+		          <img src="http://placehold.it/760x400/999999/cccccc">
+		           <div class="carousel-caption">
+		            <h4><a href="#">magna aliquyam erat, sed diam voluptua</a></h4>
+		            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+		          </div>
+		        </div>End Item
+		
+		        <div class="item">
+		          <img src="http://placehold.it/760x400/dddddd/333333">
+		           <div class="carousel-caption">
+		            <h4><a href="#">tempor invidunt ut labore et dolore magna aliquyam erat</a></h4>
+		            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+		          </div>
+		        </div>End Item
+		                
+		      </div>End Carousel Inner
+		
+		
+		    <ul class="list-group col-sm-4">
+		      <li data-target="#allmenuCarousel" data-slide-to="0" class="list-group-item active"><h4>Lorem ipsum dolor sit amet consetetur sadipscing</h4></li>
+		      <li data-target="#allmenuCarousel" data-slide-to="1" class="list-group-item"><h4>consetetur sadipscing elitr, sed diam nonumy eirmod</h4></li>
+		      <li data-target="#allmenuCarousel" data-slide-to="2" class="list-group-item"><h4>tempor invidunt ut labore et dolore</h4></li>
+		      <li data-target="#allmenuCarousel" data-slide-to="3" class="list-group-item"><h4>magna aliquyam erat, sed diam voluptua</h4></li>
+		      <li data-target="#allmenuCarousel" data-slide-to="4" class="list-group-item"><h4>tempor invidunt ut labore et dolore magna aliquyam erat</h4></li>
+		    </ul>
+		
+		      Controls
+		      <div class="carousel-controls">
+		          <a class="left carousel-control" href="#allmenuCarousel" data-slide="prev">
+		            <span class="glyphicon glyphicon-chevron-left"></span>
+		          </a>
+		          <a class="right carousel-control" href="#allmenuCarousel" data-slide="next">
+		            <span class="glyphicon glyphicon-chevron-right"></span>
+		          </a>
+		      </div>
+		
+		    </div>End Carousel
+		</div>		 -->
+
+		<!-- all menu -->
+		
+	</div>
+<!-- all menu end -->
 
 <!-- index-page -->
 </div>
+
+
+<!-- exemple  -->
+
+<!-- exemple  -->
 
 </body>
 
@@ -625,6 +803,38 @@ jQuery(document).ready(function($) {
 		$('#side1').click(0)
 		
 	});
+	
+	
+/* all menu slider */
+	/* $(document).ready(function(){
+    
+	var clickEvent = false;
+	$('#allmenuCarousel').carousel({
+		interval:   4000
+	}).on('click', '.list-group li', function() {
+			clickEvent = true;
+			$('.list-group li').removeClass('active');
+			$(this).addClass('active');		
+	}).on('slid.bs.carousel', function(e) {
+		if(!clickEvent) {
+			var count = $('.list-group').children().length -1;
+			var current = $('.list-group li.active');
+			current.removeClass('active').next().addClass('active');
+			var id = parseInt(current.data('slide-to'));
+			if(count == id) {
+				$('.list-group li').first().addClass('active');	
+			}
+		}
+		clickEvent = false;
+	});
+})
+
+$(window).load(function() {
+    var boxheight = $('#allmenuCarousel .carousel-inner').innerHeight();
+    var itemlength = $('#allmenuCarousel .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+	$('#allmenuCarousel .list-group-item').outerHeight(triggerheight);
+}); */
 
 </script>
 	
