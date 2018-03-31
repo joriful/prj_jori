@@ -613,20 +613,25 @@
 		<!-- all menu -->
 		
 				<!-- side3-1 -->
+		<div class="container">		
 		<div class="side-menu" data-sidemenu="3" style="margin-top:20px; position:inline; display:block;">		
 			<div class="col-md-12" id="side3">
 				<!-- side3-2 -->
-						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+						<!-- <div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;"> -->
+						<div class="allmenimage">
 							<div class="media">
-								  <div class="media-left">
-								  	<div class="media-object">
+								<div class="col-sm-4" style="border:solid red 1px;">
+								  <!-- <div class="media-left"> -->
+								  	<!-- <div class="media-object" style="border:solid red 1px; "> -->
 										<div class="img-circle" id="recomenu_box"
 											style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/sbs1.jpg'); 
 											background-position: center center; width:100px; height:100px; background-size: 140px;
-											background-repeat: no-repeat; float:left; margin-right:10px;">
+											background-repeat: no-repeat; margin-right:10px; float:right;">
 										</div>
-									</div>
-								 </div>
+									<!-- </div> -->
+								 <!-- </div> -->
+								</div>
+								<div class="col-sm-8">								
 								<div class="media-body" style="" >					
 									<p class="media-heading" style="font-size:20px; font-weight:bold;">
 										소세지&베이컨 양파볶음
@@ -639,10 +644,13 @@
 										<fmt:formatNumber value="5000" type="Number" pattern="##,###"/>&nbsp;
 									</p>
 								</div>
+								</div>
 							</div>
-					</div>
+						</div>
+					<!-- </div> -->
 			</div>
-		</div>	
+		</div>
+		</div>
 		
 		
 		
