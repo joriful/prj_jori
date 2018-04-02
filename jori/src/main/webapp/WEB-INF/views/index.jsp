@@ -230,20 +230,20 @@
                                     <h2>우렁 된장찌개</h2>
                                     <p>양평에서 직거래로 받아온 신선한 우렁으로 구수하고 건강함을 맛볼 수 있습니다.</p>
                                     
-                                    <div class="btn-group" data-toggle="buttons">
+                                    <div class="btn-group" id="pricebtn" data-toggle="buttons">
                                     
 	                                    <div class="btn-group" data-toggle="buttons">
-										  <label class="btn btn-warning active">
+										  <label class="btn btn-danger active">
 										    <input type="radio" name="options" id="person2"> 2인
 										  </label>
-										  <label class="btn btn-warning">
+										  <label class="btn btn-default">
 										    <input type="radio" name="options" id="person3"> 3인
 										  </label>
 										 </div>
 										 
 										  <div class="btn-group" role="group" data-toggle="tooltip" data-container="body" title="담기!">
 
-											    <button type="button" class="btn btn-warning" id="pricebtn1" aria-expanded="false">
+											    <button type="button" class="btn btn-default" id="pricebtn1" aria-expanded="false">
 											      <span id="menuprice-1">14,000</span>
 											      <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true" style=""></i>
 											    </button>
@@ -786,6 +786,13 @@
 /* $(document).ready(function(){
 	$(".side-categroy-btn").focus();
 }); */
+
+
+$('#pricebtn').children('click',function(){
+	$(this).children().css( "background-color", "red" );
+});
+
+
 
 //test
 	$('.side-categroy-btn').on('click', function(){
