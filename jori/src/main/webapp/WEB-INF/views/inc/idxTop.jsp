@@ -37,7 +37,8 @@
 				</a>
 			</div>
 			
-			<%-- <c:choose >
+			<!-- login -->
+			<c:choose >
 				<c:when test="${sessionScope.id ne null }">
 					<form>
 					 	<div class="navbar-header pull-right">
@@ -59,7 +60,7 @@
 						</form>
 					</div>
 				</c:otherwise>
-			</c:choose> --%>
+			</c:choose>
 		</div>
 	</div>
 		
