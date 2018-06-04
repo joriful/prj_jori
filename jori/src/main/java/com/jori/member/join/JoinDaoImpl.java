@@ -6,11 +6,22 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.mybatis.config.MyConfManager;
+
 @Repository("joinDao")
 public class JoinDaoImpl implements JoinDAO{
 	
-	@Autowired
+	
 	private SqlSession sql;
+	
+	@Autowired
+	public JoinDaoImpl() {
+		MyConfManager cfManager = MyConfManager.getInstance();
+		sql = cfManager.getSqlSessionFactory().openSession();//.openSession();
+		
+		System.out.println("sessionFactory 성공 JoinDaoImpl");
+	}
+	
 	
 	@Override
 	public int pushMember(MemberBean mbBean) throws SQLException{

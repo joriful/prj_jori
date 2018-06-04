@@ -1,4 +1,4 @@
-package com.myConf;
+package com.mybatis.config;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -12,7 +12,7 @@ public class MyConfManager {
 	private SqlSessionFactory sqlSessionFactory;
 	
 	private MyConfManager() {
-		String configFile = "com/myConf/MyConf.xml";
+		String configFile = "com/mybatis/config/MyConf.xml";
 		
 		try {
 			Reader reader = Resources.getResourceAsReader(configFile);

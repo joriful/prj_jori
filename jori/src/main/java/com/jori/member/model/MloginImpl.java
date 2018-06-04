@@ -4,12 +4,12 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.myConf.MyConfManager;
+import com.mybatis.config.MyConfManager;
 
 @Repository
 public class MloginImpl implements MloginDAO {
 	
-	@Autowired
+	
 	private SqlSession sql;
 	
 	@Autowired

@@ -30,21 +30,21 @@
     
     <!-- session bean -->
     <!-- <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-  		<property name="dataSource" ref="dataSource" />
+  		<property name="dataSource" ref="dbDataSource" />
   		<property name="mapperLocations" value="classpath:query/**" />  		
 	</bean> -->
     
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
         p:dataSource-ref="dbDataSource"
-        p:configLocation="classpath:/com/myConf/MyConf.xml"
-        />    
+        p:configLocation="classpath:/com/mybatis/config/MyConf.xml"
+        /> 
     
     <!-- <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
   		<constructor-arg ref="sqlSessionFactory"></constructor-arg>		
 	</bean> -->
 
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
-        p:dataSource-ref="dbDataSource" />
+        p:dataSource-ref="dbDataSource" /><!-- https://blog.outsider.ne.kr/559 -->
     
 		
 </beans>
