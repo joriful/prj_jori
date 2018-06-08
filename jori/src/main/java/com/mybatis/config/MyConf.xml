@@ -15,5 +15,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     </environments>
     <mappers>
         <mapper resource="com/mappers/memInfo.xml" />
+        <mapper resource="com/mappers/menus.xml" />
     </mappers>
 </configuration>

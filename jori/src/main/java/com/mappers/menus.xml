@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+    <mapper namespace="menus">	
+    
+    <!-- 메뉴 판매순위 리스트 -->
+    <select id="prodRkList" resultType="com.jori.rank.prodRank.ProductsBean">
+  		select * from products
+ 			order by gdodrCnt asc, gdcgNo asc, gdNo asc;
+  	</select>
+    
+    
+    
+    </mapper>

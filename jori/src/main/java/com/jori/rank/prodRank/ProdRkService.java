@@ -1,5 +1,9 @@
 package com.jori.rank.prodRank;
 
-public interface ProdRkService {
+import java.util.List;
 
-}
+public interface ProdRkService {
+	List<ProductsBean> rankListByProd() throws Exception;
+	
+}//
+
