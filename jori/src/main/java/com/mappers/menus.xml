@@ -5,11 +5,11 @@
   
     <mapper namespace="menus">	
     
-    <!-- 메뉴 판매순위 리스트 -->
-    <select id="prodRkList" resultType="com.jori.rank.prodRank.ProductsBean">
-  		select * from products
- 			order by gdodrCnt asc, gdcgNo asc, gdNo asc;
-  	</select>
+	    <!-- 메뉴 판매순위 리스트 -->
+	    <select id="prodRkList" resultType="com.jori.rank.prodRank.ProductsBean">
+	  		select * from products
+	 			order by gdodrCnt asc, gdcgNo asc, gdNo asc
+	  	</select>
     
     
     

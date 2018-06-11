@@ -7,19 +7,22 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+@Controller
 public class ProdRkController {
-	@Resource(name="pRankService")
+	@Resource(name="ProdRkService")
 	private ProdRkService pRankService;
 	
-	@RequestMapping(value="/rk/prk")
+	@RequestMapping(value="/rank/prk", method=RequestMethod.GET)
 	public ModelAndView pRank() throws Exception {
 		List<ProductsBean> prodRkList = new ArrayList<ProductsBean>();
 		try{
 			prodRkList = pRankService.rankListByProd();
-			System.out.println("메뉴 리스트 로딩 성공"+prodRkList);
+			System.out.println("메뉴 리스트 로딩 성공"+prodRkList.size());
 			
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -28,7 +31,7 @@ public class ProdRkController {
 		
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("prodRkList", prodRkList);
-		mav.setViewName("/prk");
+		mav.setViewName("/rank/prk");
 		
 		return mav;
 	}

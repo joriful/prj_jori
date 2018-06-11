@@ -366,7 +366,7 @@
 	        <div class="row">
 	            <div class="col-md-8 text-center col-centered" style=" margin-bottom:5%;">                
 	                <p class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.6em;"> 
-	                	지금까지 가장 많이 주문되고 만족해주신 메뉴입니다.</p>	
+	                	지금까지 메뉴입니다.</p>	
 	            </div>
 	        </div>        
 		</div>
