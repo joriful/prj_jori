@@ -2,63 +2,63 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%-- <%@ include file="../inc/idxTop.jsp" %> --%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1" charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/jorinav.css">
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/mainstyle.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/index.css">	
+	<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1" charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/prk.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap-theme.min.css">
+		<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-<body>
+<body style=" height: 100%; margin: 0;">
+
+<!-- 추천메뉴 문구 -->
+    <div class="container" style="">	    
+        <div class="text-center" style=" margin-top:7%;">
+            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; ">조리미味</span>
+            <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; ">'추천'</span>
+            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; ">메뉴</span>
+        </div>
+        <div class="row" style="">
+            <div class="col-md-8 text-center col-centered" style=" margin-bottom:5%;">                
+                <p class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.6em;"> 
+                	지금까지 가장 많이 주문되고 만족해주신 메뉴입니다.</p>	
+            </div>
+        </div>        
+	</div>	
+
+<!-- //추천메뉴 문구 -->
+
 	<div class="container">
-	        <div id="main_area" style="margin-bottom:7%;">
-	                <!-- Slider -->
-	                <div class="row">
-	                    <div class="col-xs-12" id="slider">
-	                        <!-- Top part of the slider -->
-	                        <div class="row">
-	                            <div class="col-sm-6" id="carousel-bounding-box">
-	                                <div class="carousel slide" id="myCarousel">
-	                                    <!-- Carousel items -->
-	                                    <div class="carousel-inner">
-	                                        <div class="active item" data-slide-number="0">
-	                                        	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjur1.jpg');">
-	                                        	</div>
-	                                        </div>
-	
-	                                        <div class="item" data-slide-number="1">
-	                                        	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg');">
-	                                        	</div>
-	                                        </div>
-	
-	                                        <div class="item" data-slide-number="2">
-			                                  	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/osam.jpg');">
-	                                        	</div>
-	                                        </div>
-	
-	                                        <div class="item" data-slide-number="3">
-			                                  	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/osam.jpg');">
-	                                        	</div>									
-	                                        </div>
-	
-	                                        <div class="item" data-slide-number="4">
-			                                  	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/osam.jpg');">
-	                                        	</div>
-	                                        </div>
-	
-	                                        <div class="item" data-slide-number="5">
-			                                  	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/osam.jpg');">
-	                                        	</div>
-	                                        </div>
-	                                    </div><!-- Carousel nav -->
+		<div id="main_area" style="margin-bottom:7%;">
+	        <!-- Slider -->
+	    	<div class="row">
+	     	   <div class="col-xs-12" id="slider">
+	             <!-- Top part of the slider -->
+	        	   <div class="row">
+	            	   <div class="col-sm-12" id="carousel-bounding-box" style="height:30vh;">
+	                	   <div class="carousel slide" id="myCarousel">
+	                       <!-- Carousel items -->
+	                    	   <div class="carousel-inner">            
+	                           	<!-- db for -->
+	                            <c:set var="cnt" value="0" />
+	                            	<c:forEach var="i" begin="1" end="${prkSize}">
+	                                	<c:set var="prodBean" value="${prkList[i-1] }" />
+	                                    <c:set var="cnt" value="${cnt + 1}" />
+	                                    <c:if test="${cnt > 0 }">
+		                                	<div class="item" data-slide-number="${cnt-1 }" style="height:60vh;">
+		 	                                	<div class="recomand_main" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }');">
+		                                       	</div>
+		                                    </div>
+	                                   	</c:if>
+	                               	</c:forEach>
+	                               
+	                           </div><!-- Carousel nav -->
 	                                    
 	                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 	                                        <span class="glyphicon glyphicon-chevron-left" ></span>                                       
@@ -66,59 +66,15 @@
 	                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
 	                                        <span class="glyphicon glyphicon-chevron-right" ></span>                                       
 	                                    </a>                                
-	                                    </div>
-	                            </div>
+	                     </div>
+	                   </div>
 	
-	                            <div class="col-sm-6" id="carousel-text" style="/* border:solid red 1px; */"></div>
-	                            <div id="slide-content" style="display:none;">
-	                                <div id="slide-content-0">
-	                                    <h2>우렁 된장찌개</h2>
-	                                    <p>양평에서 직거래로 받아온 신선한 우렁으로 구수하고 건강함을 맛볼 수 있습니다.</p>
-	                                    
-	                                    <div class="btn-group" id="pricebtn" data-toggle="buttons">
-	                                    
-		                                    <div class="btn-group" data-toggle="buttons">
-											  <label class="btn btn-danger active">
-											    <input type="radio" name="options" id="person2"> 2인
-											  </label>
-											  <label class="btn btn-default">
-											    <input type="radio" name="options" id="person3"> 3인
-											  </label>
-											 </div>
-											 
-											  <div class="btn-group" role="group" data-toggle="tooltip" data-container="body" title="담기!">
-	
-												    <button type="button" class="btn btn-default" id="pricebtn1" aria-expanded="false">
-												      <span id="menuprice-1">14,000</span>
-												      <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true" style=""></i>
-												    </button>
-	
-											  </div>
-										</div>
-	                                    
-	                                    
-	<!--                                <div class="btn-group" role="group" aria-label="...">
-										  <button type="button" class="btn btn-default">1인</button>
-										  <button type="button" class="btn btn-default">2인</button>
-										
-											  <div class="btn-group" role="group" data-toggle="tooltip" data-container="body" title="담기!">
-	
-												    <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
-												      <span id="menuprice-1">14,000</span>
-												      <span class="caret"></span>
-												      <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true" style=""></i>
-												    </button>
-	
-											  </div>
-										</div> -->
-										
-										
-	                                    <!-- <p class="sub-text">2인 <i class="fa fa-krw" aria-hidden="true"></i>14,000원</p> -->
-	                                    <!-- <p class="sub-text" style="/* font-size:20px; font-weight:bold; */">
-		                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-		                                    	2인 <i class="fa fa-krw" aria-hidden="true"></i>14,000원<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-		                                    </button>
-	                                    </p> -->
+	                            <div class="col-sm-6" id="carousel-text" style=""></div>
+	                            <div id="slide-content" style="display:none; ">
+	                                <div id="slide-content-0" >
+	                                    <div style="padding:10px 15px 8px 8px; background: rgba(0, 0, 0, 0.7);  margin:0; display:inline-block; font-size:25px; font-weight:bold; color:#FFFFFF;">우렁 된장찌개</div><br>
+	                                    <div style="padding:10px 15px 8px 8px; background: rgba(0, 0, 0, 0.7); margin:0; display:inline-block; font-size:15px;  color:#FFFFFF;">신선한 우렁으로 구수하고 건강함을 맛볼 수 있습니다.</div>
+	                                   
 	                                </div>
 	
 	                                <div id="slide-content-1">
@@ -126,7 +82,7 @@
 	                                    <p>그날 받아온 한우로 소고기의 진한 맛과 구수함을 맛볼 수 있습니다.</p>
 	                                    <p class="sub-text">
 	                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-	                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
+	                                    	<i class="fas fa-cart-arrow-down" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
 	                                    </button>
 	                                    </p>
 	                                </div>
@@ -136,7 +92,7 @@
 	                                    <p>시원하고 얼큰한 국물과 돼지 앞다리살의 식감이 일품인 김치찌개를 선사합니다.</p>
 	                                    <p class="sub-text">
 	                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-	                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
+	                                    	<i class="fas fa-cart-arrow-down" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
 	                                    </button>
 	                                    </p>
 	                                </div>
@@ -146,7 +102,7 @@
 	                                    <p>두툼한 고등어살과 개운하고 깔끔한 묵은지의 맛으로 밥도둑입니다.</p>
 	                                    <p class="sub-text">
 	                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-	                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
+	                                    	<i class="fas fa-cart-arrow-down" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
 	                                    </button>
 	                                    </p>
 	                                </div>
@@ -171,27 +127,33 @@
 	                        <!-- Bottom switcher of slider -->
 	                        <ul class="hide-bullets">
 	                            <li class="col-sm-2">
-	                                <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+	                                <a id="carousel-selector-0"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF" 
+	                                	src="http://placehold.it/170x100&text=one"></a>
 	                            </li>
 	
 	                            <li class="col-sm-2">
-	                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
+	                                <a id="carousel-selector-1"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
+	                                	src="http://placehold.it/170x100&text=two"></a>
 	                            </li>
 	
 	                            <li class="col-sm-2">
-	                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
+	                                <a id="carousel-selector-2"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
+	                                	src="http://placehold.it/170x100&text=three"></a>
 	                            </li>
 	
 	                            <li class="col-sm-2">
-	                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
+	                                <a id="carousel-selector-3"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
+	                                	src="http://placehold.it/170x100&text=four"></a>
 	                            </li>
 	
 	                            <li class="col-sm-2">
-	                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
+	                                <a id="carousel-selector-4"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
+	                                	src="http://placehold.it/170x100&text=five"></a>
 	                            </li>
 	
 	                            <li class="col-sm-2">
-	                                <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
+	                                <a id="carousel-selector-5"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
+	                                	src="http://placehold.it/170x100&text=six"></a>
 	                            </li>
 	                        </ul>                 
 	                </div>
@@ -224,6 +186,10 @@ $('#pricebtn').children('click',function(){
 		})
 	});
 
+/* tooltip : display:none not working*/
+/* $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+}); */
 
 $(document).ready(function() {
 	$("body").tooltip({ selector: '[data-toggle=tooltip]', placement:'right'});
@@ -271,37 +237,18 @@ jQuery(document).ready(function($) {
 		
 	});
 	
+/* slider data selector */
 	
-/* all menu slider */
-	/* $(document).ready(function(){
-    
-	var clickEvent = false;
-	$('#allmenuCarousel').carousel({
-		interval:   4000
-	}).on('click', '.list-group li', function() {
-			clickEvent = true;
-			$('.list-group li').removeClass('active');
-			$(this).addClass('active');		
-	}).on('slid.bs.carousel', function(e) {
-		if(!clickEvent) {
-			var count = $('.list-group').children().length -1;
-			var current = $('.list-group li.active');
-			current.removeClass('active').next().addClass('active');
-			var id = parseInt(current.data('slide-to'));
-			if(count == id) {
-				$('.list-group li').first().addClass('active');	
-			}
-		}
-		clickEvent = false;
+	$(document).ready(function(){
+		$('div[data-slide-number="0"]').attr('class','active item');
+		
 	});
-})
-
-$(window).load(function() {
-    var boxheight = $('#allmenuCarousel .carousel-inner').innerHeight();
-    var itemlength = $('#allmenuCarousel .item').length;
-    var triggerheight = Math.round(boxheight/itemlength+1);
-	$('#allmenuCarousel .list-group-item').outerHeight(triggerheight);
-}); */
+	
+/* 추천메뉴 height */
+	$(document).ready(function(){
+		var oriHeight = $('div[data-slide-number="0"]').height();
+		$(".recomand_main").css({"height":oriHeight+"px"});
+	});
 
 </script>
 

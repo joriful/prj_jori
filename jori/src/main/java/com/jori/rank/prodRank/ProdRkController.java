@@ -30,7 +30,8 @@ public class ProdRkController {
 		}
 		
 		ModelAndView mav = new ModelAndView();
-		mav.addObject("prodRkList", prodRkList);
+		mav.addObject("prkList", prodRkList);
+		mav.addObject("prkSize", prodRkList.size());
 		mav.setViewName("/rank/prk");
 		
 		return mav;
