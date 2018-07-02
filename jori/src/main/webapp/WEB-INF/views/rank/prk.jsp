@@ -15,11 +15,11 @@
 		<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-<body style=" height: 100%; margin: 0;">
+<body style=" height: 100%; margin: 0; border:solid red 1px;">
 
 <!-- 추천메뉴 문구 -->
     <div class="container" style="">	    
-        <div class="text-center" style=" margin-top:7%;">
+        <div class="text-center" style=" /* margin-top:7%; 추천메뉴 위공간 */">
             <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; ">조리미味</span>
             <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; ">'추천'</span>
             <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; ">메뉴</span>
@@ -35,130 +35,133 @@
 <!-- //추천메뉴 문구 -->
 
 	<div class="container">
-		<div id="main_area" style="margin-bottom:7%;">
-	        <!-- Slider -->
-	    	<div class="row">
-	     	   <div class="col-xs-12" id="slider">
-	             <!-- Top part of the slider -->
-	        	   <div class="row">
-	            	   <div class="col-sm-12" id="carousel-bounding-box" style="height:30vh;">
-	                	   <div class="carousel slide" id="myCarousel">
-	                       <!-- Carousel items -->
-	                    	   <div class="carousel-inner">            
-	                           	<!-- db for -->
-	                            <c:set var="cnt" value="0" />
-	                            	<c:forEach var="i" begin="1" end="${prkSize}">
-	                                	<c:set var="prodBean" value="${prkList[i-1] }" />
-	                                    <c:set var="cnt" value="${cnt + 1}" />
-	                                    <c:if test="${cnt > 0 }">
-		                                	<div class="item" data-slide-number="${cnt-1 }" style="height:60vh;">
-		 	                                	<div class="recomand_main" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }');">
-		                                       	</div>
-		                                    </div>
-	                                   	</c:if>
-	                               	</c:forEach>
-	                               
-	                           </div><!-- Carousel nav -->
-	                                    
-	                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	                                        <span class="glyphicon glyphicon-chevron-left" ></span>                                       
-	                                    </a>
-	                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	                                        <span class="glyphicon glyphicon-chevron-right" ></span>                                       
-	                                    </a>                                
-	                     </div>
-	                   </div>
-	
-	                            <div class="col-sm-6" id="carousel-text" style=""></div>
-	                            <div id="slide-content" style="display:none; ">
-	                                <div id="slide-content-0" >
-	                                    <div style="padding:10px 15px 8px 8px; background: rgba(0, 0, 0, 0.7);  margin:0; display:inline-block; font-size:25px; font-weight:bold; color:#FFFFFF;">우렁 된장찌개</div><br>
-	                                    <div style="padding:10px 15px 8px 8px; background: rgba(0, 0, 0, 0.7); margin:0; display:inline-block; font-size:15px;  color:#FFFFFF;">신선한 우렁으로 구수하고 건강함을 맛볼 수 있습니다.</div>
-	                                   
-	                                </div>
-	
-	                                <div id="slide-content-1">
-	                                    <h2>쇠고기 된장찌개</h2>
-	                                    <p>그날 받아온 한우로 소고기의 진한 맛과 구수함을 맛볼 수 있습니다.</p>
-	                                    <p class="sub-text">
-	                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-	                                    	<i class="fas fa-cart-arrow-down" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-	                                    </button>
-	                                    </p>
-	                                </div>
-	
-	                                <div id="slide-content-2">
-	                                    <h2>돼지고기 김치찌개</h2>
-	                                    <p>시원하고 얼큰한 국물과 돼지 앞다리살의 식감이 일품인 김치찌개를 선사합니다.</p>
-	                                    <p class="sub-text">
-	                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-	                                    	<i class="fas fa-cart-arrow-down" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-	                                    </button>
-	                                    </p>
-	                                </div>
-	
-	                                <div id="slide-content-3">
-	                                    <h2>고등어 조림</h2>
-	                                    <p>두툼한 고등어살과 개운하고 깔끔한 묵은지의 맛으로 밥도둑입니다.</p>
-	                                    <p class="sub-text">
-	                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-	                                    	<i class="fas fa-cart-arrow-down" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-	                                    </button>
-	                                    </p>
-	                                </div>
-	
-	                                <div id="slide-content-4">
-	                                    <h2>Slider Five</h2>
-	                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-	                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-	                                </div>
-	
-	                                <div id="slide-content-5">
-	                                    <h2>Slider Six</h2>
-	                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-	                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-	                                </div>
-	                            </div>                         
-	                        </div>
-	                    </div>
-	                </div><!--/Slider-->
-	
-	                <div class="row hidden-xs" id="slider-thumbs">
-	                        <!-- Bottom switcher of slider -->
-	                        <ul class="hide-bullets">
-	                            <li class="col-sm-2">
-	                                <a id="carousel-selector-0"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF" 
-	                                	src="http://placehold.it/170x100&text=one"></a>
-	                            </li>
-	
-	                            <li class="col-sm-2">
-	                                <a id="carousel-selector-1"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
-	                                	src="http://placehold.it/170x100&text=two"></a>
-	                            </li>
-	
-	                            <li class="col-sm-2">
-	                                <a id="carousel-selector-2"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
-	                                	src="http://placehold.it/170x100&text=three"></a>
-	                            </li>
-	
-	                            <li class="col-sm-2">
-	                                <a id="carousel-selector-3"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
-	                                	src="http://placehold.it/170x100&text=four"></a>
-	                            </li>
-	
-	                            <li class="col-sm-2">
-	                                <a id="carousel-selector-4"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
-	                                	src="http://placehold.it/170x100&text=five"></a>
-	                            </li>
-	
-	                            <li class="col-sm-2">
-	                                <a id="carousel-selector-5"><img class="img-circle" style="width:90px; height:90px; border:solid 3px #FFFFFF"
-	                                	src="http://placehold.it/170x100&text=six"></a>
-	                            </li>
-	                        </ul>                 
-	                </div>
-	        </div>
-	</div>
+        <div id="main_area" style="margin-bottom:7%;">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="col-sm-6" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+	                              <div class="carousel-inner">            
+		                           	<!-- db for -->
+		                            <c:set var="cnt" value="0" />
+		                            	<c:forEach var="i" begin="1" end="${prkSize}">
+		                                	<c:set var="prodBean" value="${prkList[i-1] }" />
+		                                    <c:set var="cnt" value="${cnt + 1}" />
+		                                    <c:if test="${cnt > 0 }">
+			                                	<div class="item" data-slide-number="${cnt-1 }" style="/* height:60vh; */">
+			 	                                	<div class="recomand_main" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }');">
+			 	                                		<input type="text" name="pdName" value="${prodBean.gdName}">
+			 	                                		<input type="text" name="pdInfo" value="${prodBean.gdInfo}">
+			                                       	</div>
+			                                    </div>
+		                                   	</c:if>
+		                               	</c:forEach> 
+		                           </div><!-- Carousel nav -->
+                                    
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" ></span>                                       
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" ></span>                                       
+                                    </a>                                
+                                    </div>
+                            </div>
+							
+
+                            <div class="col-sm-6" id="carousel-text" style="/* border:solid red 1px; */"></div>
+                            
+                            
+		                    	<c:set var="cnt" value="0" />
+		                      	 	<c:forEach var="i" begin="1" end="${prkSize}">
+		                       	    	<c:set var="prodBean" value="${prkList[i-1] }" />
+		                                <c:set var="cnt" value="${cnt + 1}" />
+		                       		        <c:if test="${cnt > 0 }">
+			                                	<div class="item" data-slide-number="${cnt-1 }" style="/* height:60vh; */">
+			 	                                	<div class="recomand_main" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }');">
+			 	                                		<input type="text" name="pdName" value="${prodBean.gdName}">
+			 	                                		<input type="text" name="pdInfo" value="${prodBean.gdInfo}">
+			                                       	</div>
+			                                    </div>
+		                                   	</c:if>
+		                           </c:forEach>                             
+                            
+ <!--                            <div id="slide-content" style="display:none;">
+                                <div id="slide-content-0" data-pdescrpt="0">
+                                    <h2 class="rkProdName"></h2>
+                                    <p class="rkProdIfno"></p>
+                                  
+                                </div>
+
+                                <div id="slide-content-1" data-pdescrpt="1">
+                                    <h2 class="rkProdName"></h2>
+                                    <p class="rkProdIfno"></p>
+                                </div>
+
+                                <div id="slide-content-2" data-pdescrpt="2">
+                                    <h2>돼지고기 김치찌개</h2>
+                                    <p>시원하고 얼큰한 국물과 돼지 앞다리살의 식감이 일품인 김치찌개를 선사합니다.</p>
+                                </div>
+
+                                <div id="slide-content-3" data-pdescrpt="3">
+                                    <h2>고등어 조림</h2>
+                                    <p>두툼한 고등어살과 개운하고 깔끔한 묵은지의 맛으로 밥도둑입니다.</p>
+                                </div>
+
+                                <div id="slide-content-4" data-pdescrpt="4">
+                                    <h2>Slider Five</h2>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+
+                                <div id="slide-content-5" data-pdescrpt="5">
+                                    <h2>Slider Six</h2>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>
+                                
+								<div id="slide-content-6" data-pdescrpt="6">
+                                    <h2>Slider Six</h2>
+                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
+                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                </div>                                
+                            </div>   -->                       
+                        </div>
+                    </div>
+                </div><!--/Slider-->
+
+                <div class="row hidden-xs" id="slider-thumbs">
+                        <!-- Bottom switcher of slider -->
+                        <ul class="hide-bullets">
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
+                            </li>
+                        </ul>                 
+                </div>
+        </div>
+</div>
 </body>
 
 <script type="text/javascript">
@@ -172,24 +175,6 @@
 $('#pricebtn').children('click',function(){
 	$(this).children().css( "background-color", "red" );
 });
-
-
-
-//test
-	$('.side-categroy-btn').on('click', function(){
-		var sbval = $(this).data("sidectgry");
-		$('div[data-sidemenu]').each(function(){
-			if($('div[data-sidemenu="'+sbval+'"]').length > 0){
-				$('div.side-menu[data-sidemenu="'+sbval+'"]').css("display", "block");
-				$('div.side-menu[data-sidemenu!="'+sbval+'"]').css("display", "none");				
-			}
-		})
-	});
-
-/* tooltip : display:none not working*/
-/* $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
-}); */
 
 $(document).ready(function() {
 	$("body").tooltip({ selector: '[data-toggle=tooltip]', placement:'right'});
@@ -249,6 +234,20 @@ jQuery(document).ready(function($) {
 		var oriHeight = $('div[data-slide-number="0"]').height();
 		$(".recomand_main").css({"height":oriHeight+"px"});
 	});
+	
+/* products data array */
+	
+	$('div[data-slide-number]').each(function(){
+		var arrRkData = $(this).data('slide-number');
+		/* console.log($(this).data('slide-number')); */
+	});
+	
+	/* 메뉴 설명 Bean */
+	$('input[name=pdName], input[name=pdInfo]').each(function(){
+		var arrpdN = $(this).val();
+		console.log(arrpdN);
+	});
+
 
 </script>
 
