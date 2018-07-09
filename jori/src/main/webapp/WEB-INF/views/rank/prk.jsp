@@ -53,8 +53,6 @@
 		                                    <c:if test="${cnt > 0 }">
 			                                	<div class="item" data-slide-number="${cnt-1 }" style="/* height:60vh; */">
 			 	                                	<div class="recomand_main" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }');">
-			 	                                		<input type="text" name="pdName" value="${prodBean.gdName}">
-			 	                                		<input type="text" name="pdInfo" value="${prodBean.gdInfo}">
 			                                       	</div>
 			                                    </div>
 		                                   	</c:if>
@@ -73,91 +71,45 @@
 
                             <div class="col-sm-6" id="carousel-text" style="/* border:solid red 1px; */"></div>
                             
-                            
+                            <div id="slide-content" style="display:none;">
+                            	<!-- dbclone -->
 		                    	<c:set var="cnt" value="0" />
 		                      	 	<c:forEach var="i" begin="1" end="${prkSize}">
-		                       	    	<c:set var="prodBean" value="${prkList[i-1] }" />
+		                      	 		<c:set var="prodBean" value="${prkList[i-1] }" />
 		                                <c:set var="cnt" value="${cnt + 1}" />
 		                       		        <c:if test="${cnt > 0 }">
-			                                	<div class="item" data-slide-number="${cnt-1 }" style="/* height:60vh; */">
-			 	                                	<div class="recomand_main" style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }');">
-			 	                                		<input type="text" name="pdName" value="${prodBean.gdName}">
-			 	                                		<input type="text" name="pdInfo" value="${prodBean.gdInfo}">
-			                                       	</div>
-			                                    </div>
+                                                <div id="slide-content-${cnt-1 }" data-pdescrpt="${cnt-1 }">
+				                                    <h2>${prodBean.gdName}</h2>
+				                                    <p>${prodBean.gdInfo}</p>
+				                                </div>
 		                                   	</c:if>
-		                           </c:forEach>                             
-                            
- <!--                            <div id="slide-content" style="display:none;">
-                                <div id="slide-content-0" data-pdescrpt="0">
-                                    <h2 class="rkProdName"></h2>
-                                    <p class="rkProdIfno"></p>
-                                  
-                                </div>
-
-                                <div id="slide-content-1" data-pdescrpt="1">
-                                    <h2 class="rkProdName"></h2>
-                                    <p class="rkProdIfno"></p>
-                                </div>
-
-                                <div id="slide-content-2" data-pdescrpt="2">
-                                    <h2>돼지고기 김치찌개</h2>
-                                    <p>시원하고 얼큰한 국물과 돼지 앞다리살의 식감이 일품인 김치찌개를 선사합니다.</p>
-                                </div>
-
-                                <div id="slide-content-3" data-pdescrpt="3">
-                                    <h2>고등어 조림</h2>
-                                    <p>두툼한 고등어살과 개운하고 깔끔한 묵은지의 맛으로 밥도둑입니다.</p>
-                                </div>
-
-                                <div id="slide-content-4" data-pdescrpt="4">
-                                    <h2>Slider Five</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-
-                                <div id="slide-content-5" data-pdescrpt="5">
-                                    <h2>Slider Six</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-                                
-								<div id="slide-content-6" data-pdescrpt="6">
-                                    <h2>Slider Six</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>                                
-                            </div>   -->                       
-                        </div>
-                    </div>
+		                           </c:forEach>                          
+                   
+                        	</div>
+                   		 </div>
+                   </div>
                 </div><!--/Slider-->
 
                 <div class="row hidden-xs" id="slider-thumbs">
                         <!-- Bottom switcher of slider -->
                         <ul class="hide-bullets">
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+                                                
+                            <li class="col-sm-2" style="">
+                                <a class="thumbnail" ><img id="bSize" src="http://placehold.it/170x100"></a>
                             </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
-                            </li>
+                        	<c:set var="cnt" value="0" />
+                        		<c:forEach var="i" begin="1" end="${prkSize}">
+                        			<c:set var="prodBean" value="${prkList[i-1] }" />
+                        			<c:set var="cnt" value="${cnt+1}" />
+                        				<c:if test="${cnt>0 }">
+                        					<li class="col-sm-2" style="display: flex; flex-flow: wrap;">
+                                				<a class="thumbnail" id="carousel-selector-${cnt-1 }">
+                                					<img class="transSz" src="${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }" style="/* object-fit: cover; */">                                				
+                                				</a>
+                            				</li>
+                        				</c:if>
+                        		</c:forEach>
+                        
                         </ul>                 
                 </div>
         </div>
@@ -165,12 +117,6 @@
 </body>
 
 <script type="text/javascript">
-
-/* default button  */
-/* $(document).ready(function(){
-	$(".side-categroy-btn").focus();
-}); */
-
 
 $('#pricebtn').children('click',function(){
 	$(this).children().css( "background-color", "red" );
@@ -241,14 +187,21 @@ jQuery(document).ready(function($) {
 		var arrRkData = $(this).data('slide-number');
 		/* console.log($(this).data('slide-number')); */
 	});
+
 	
-	/* 메뉴 설명 Bean */
-	$('input[name=pdName], input[name=pdInfo]').each(function(){
-		var arrpdN = $(this).val();
-		console.log(arrpdN);
+	/* rkImgSize */
+	function setHeight(){
+			var rkiw = $('#bSize').width();
+			var rkih = $('#bSize').height();
+			$('.transSz').css({'width':rkiw, 'height': rkih}); 
+	}
+	$(window).resize(function() {
+	    setHeight('.transSz');
 	});
-
-
+	
+	$(document).ready(function(){
+		$('#bSize').css({"display"})
+	});
 </script>
 
 </html>
