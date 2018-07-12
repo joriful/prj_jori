@@ -2,7 +2,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%-- <%@ include file="../inc/idxTop.jsp" %> --%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +14,9 @@
 		<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-<body style=" height: 100%; margin: 0; border:solid red 1px;">
+<body style=" height: 100%; margin: 0;">
+<div class="widd">
+</div>
 
 <!-- 추천메뉴 문구 -->
     <div class="container" style="">	    
@@ -34,7 +35,7 @@
 
 <!-- //추천메뉴 문구 -->
 
-	<div class="container">
+	<div class="container" style="">
         <div id="main_area" style="margin-bottom:7%;">
                 <!-- Slider -->
                 <div class="row">
@@ -93,46 +94,34 @@
                 <div class="row hidden-xs" id="slider-thumbs">
                         <!-- Bottom switcher of slider -->
                         <ul class="hide-bullets">
-                                                
-                            <li class="col-sm-2" style="">
-                                <a class="thumbnail" ><img id="bSize" src="http://placehold.it/170x100"></a>
-                            </li>
+
                         	<c:set var="cnt" value="0" />
                         		<c:forEach var="i" begin="1" end="${prkSize}">
                         			<c:set var="prodBean" value="${prkList[i-1] }" />
                         			<c:set var="cnt" value="${cnt+1}" />
                         				<c:if test="${cnt>0 }">
-                        					<li class="col-sm-2" style="display: flex; flex-flow: wrap;">
+                        					<li class="col-sm-2" style="">
                                 				<a class="thumbnail" id="carousel-selector-${cnt-1 }">
-                                					<img class="transSz" src="${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }" style="/* object-fit: cover; */">                                				
+                                					<img class="transSz" src="${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }" style="width:170px; /* width:170px;  height:100px; */ object-fit: cover; ">                                				
                                 				</a>
                             				</li>
                         				</c:if>
                         		</c:forEach>
-                        
                         </ul>                 
                 </div>
         </div>
 </div>
+
 </body>
 
 <script type="text/javascript">
 
-$('#pricebtn').children('click',function(){
-	$(this).children().css( "background-color", "red" );
-});
-
-$(document).ready(function() {
-	$("body").tooltip({ selector: '[data-toggle=tooltip]', placement:'right'});
-});
-
-
 /* slider */
 jQuery(document).ready(function($) {
 	 
-    /* $('#myCarousel').carousel({
+    $('#myCarousel').carousel({
             interval: 5000
-    }); */
+    });
 
     $('#carousel-text').html($('#slide-content-0').html());
 
@@ -152,21 +141,13 @@ jQuery(document).ready(function($) {
 });
 
 /* resize 메뉴 */
-	$(window).on('resize', function(){
+	/* $(window).on('resize', function(){
 		var lheight = $('#leftmain').height();
 		$('.carousel-inner .item').height(lheight);				
 	});
 	$(document).ready(function(){
 	    $(window).trigger('resize');		
-	});
-	
-/* 사이드메뉴 카테고리 show */
-
-	$(document).ready(function(){
-		
-		$('#side1').click(0)
-		
-	});
+	}); */
 	
 /* slider data selector */
 	
@@ -176,32 +157,32 @@ jQuery(document).ready(function($) {
 	});
 	
 /* 추천메뉴 height */
-	$(document).ready(function(){
+	/* $(document).ready(function(){
 		var oriHeight = $('div[data-slide-number="0"]').height();
 		$(".recomand_main").css({"height":oriHeight+"px"});
-	});
+	}); */
 	
 /* products data array */
-	
 	$('div[data-slide-number]').each(function(){
 		var arrRkData = $(this).data('slide-number');
-		/* console.log($(this).data('slide-number')); */
 	});
 
-	
-	/* rkImgSize */
-	function setHeight(){
-			var rkiw = $('#bSize').width();
-			var rkih = $('#bSize').height();
-			$('.transSz').css({'width':rkiw, 'height': rkih}); 
-	}
-	$(window).resize(function() {
-	    setHeight('.transSz');
+/* rankImageHeight resize */
+	$(window).on('resize', function(){
+		var rkWidth = $(window).width();
+		$('.transSz').height(97);
+		
+		if(rkWidth < 1183){
+			$('.transSz').height(76);		
+		}
+		if(rkWidth < 992 ){
+			$('.transSz').height(53);	
+		}
 	});
-	
 	$(document).ready(function(){
-		$('#bSize').css({"display"})
+	    $(window).trigger('resize');		
 	});
+
 </script>
 
 </html>

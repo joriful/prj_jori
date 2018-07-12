@@ -147,210 +147,17 @@
 
  <!-- jorim+soy -->
  
-<!-- menu bottom image -->	
+<!-- sang cha rim image -->	
  	<div id="vertiBox" style="">
 		<div class="joritem-2" id="vertiDiv" >
 			
 		</div>
 	</div> 
-<!-- menu bottom image -->	   
-
-
-    <div class="container">	    
-        <div class="text-center" style="/* border-bottom:solid coral 1px; */ margin-top:7%;">
-            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">조리미味</span>
-            <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; /* padding-top:3%; */">'추천'</span>
-            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">메뉴</span>
-        </div>
-        <div class="row">
-            <div class="col-md-8 text-center col-centered" style=" margin-bottom:5%;">                
-                <p class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.6em;"> 
-                	지금까지 가장 많이 주문되고 만족해주신 메뉴입니다.</p>	
-            </div>
-        </div>        
-	</div>	
-
-<!--  -->
-
-<div class="container">
-        <div id="main_area" style="margin-bottom:7%;">
-                <!-- Slider -->
-                <div class="row">
-                    <div class="col-xs-12" id="slider">
-                        <!-- Top part of the slider -->
-                        <div class="row">
-                            <div class="col-sm-6" id="carousel-bounding-box">
-                                <div class="carousel slide" id="myCarousel">
-                                    <!-- Carousel items -->
-                                    <div class="carousel-inner">
-                                        <div class="active item" data-slide-number="0">
-                                        	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjur1.jpg');">
-                                        	</div>
-                                        </div>
-
-                                        <div class="item" data-slide-number="1">
-                                        	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/jjbe1.jpg');">
-                                        	</div>
-                                        </div>
-
-                                        <div class="item" data-slide-number="2">
-		                                  	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/osam.jpg');">
-                                        	</div>
-                                        </div>
-
-                                        <div class="item" data-slide-number="3">
-		                                  	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/osam.jpg');">
-                                        	</div>									
-                                        </div>
-
-                                        <div class="item" data-slide-number="4">
-		                                  	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/osam.jpg');">
-                                        	</div>
-                                        </div>
-
-                                        <div class="item" data-slide-number="5">
-		                                  	<div class="recomand_main" style=" background-image:url('${pageContext.request.contextPath}/resources/divImgs/osam.jpg');">
-                                        	</div>
-                                        </div>
-                                    </div><!-- Carousel nav -->
-                                    
-                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" ></span>                                       
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right" ></span>                                       
-                                    </a>                                
-                                    </div>
-                            </div>
-
-                            <div class="col-sm-6" id="carousel-text" style="/* border:solid red 1px; */"></div>
-                            <div id="slide-content" style="display:none;">
-                                <div id="slide-content-0">
-                                    <h2>우렁 된장찌개</h2>
-                                    <p>양평에서 직거래로 받아온 신선한 우렁으로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    
-                                    <div class="btn-group" id="pricebtn" data-toggle="buttons">
-                                    
-	                                    <div class="btn-group" data-toggle="buttons">
-										  <label class="btn btn-danger active">
-										    <input type="radio" name="options" id="person2"> 2인
-										  </label>
-										  <label class="btn btn-default">
-										    <input type="radio" name="options" id="person3"> 3인
-										  </label>
-										 </div>
-										 
-										  <div class="btn-group" role="group" data-toggle="tooltip" data-container="body" title="담기!">
-
-											    <button type="button" class="btn btn-default" id="pricebtn1" aria-expanded="false">
-											      <span id="menuprice-1">14,000</span>
-											      <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true" style=""></i>
-											    </button>
-
-										  </div>
-									</div>
-                                    
-                                    
-<!--                                <div class="btn-group" role="group" aria-label="...">
-									  <button type="button" class="btn btn-default">1인</button>
-									  <button type="button" class="btn btn-default">2인</button>
-									
-										  <div class="btn-group" role="group" data-toggle="tooltip" data-container="body" title="담기!">
-
-											    <button type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
-											      <span id="menuprice-1">14,000</span>
-											      <span class="caret"></span>
-											      <i class="fa fa-cart-arrow-down fa-1x" aria-hidden="true" style=""></i>
-											    </button>
-
-										  </div>
-									</div> -->
-									
-									
-                                    <!-- <p class="sub-text">2인 <i class="fa fa-krw" aria-hidden="true"></i>14,000원</p> -->
-                                    <!-- <p class="sub-text" style="/* font-size:20px; font-weight:bold; */">
-	                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-	                                    	2인 <i class="fa fa-krw" aria-hidden="true"></i>14,000원<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-	                                    </button>
-                                    </p> -->
-                                </div>
-
-                                <div id="slide-content-1">
-                                    <h2>쇠고기 된장찌개</h2>
-                                    <p>그날 받아온 한우로 소고기의 진한 맛과 구수함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">
-                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-                                    </button>
-                                    </p>
-                                </div>
-
-                                <div id="slide-content-2">
-                                    <h2>돼지고기 김치찌개</h2>
-                                    <p>시원하고 얼큰한 국물과 돼지 앞다리살의 식감이 일품인 김치찌개를 선사합니다.</p>
-                                    <p class="sub-text">
-                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-                                    </button>
-                                    </p>
-                                </div>
-
-                                <div id="slide-content-3">
-                                    <h2>고등어 조림</h2>
-                                    <p>두툼한 고등어살과 개운하고 깔끔한 묵은지의 맛으로 밥도둑입니다.</p>
-                                    <p class="sub-text">
-                                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-animation="true" title="담기!">
-                                    	<i class="fa fa-cart-arrow-down fa-2x" aria-hidden="true" style="padding:0 5px 0 0;"></i> 
-                                    </button>
-                                    </p>
-                                </div>
-
-                                <div id="slide-content-4">
-                                    <h2>Slider Five</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-
-                                <div id="slide-content-5">
-                                    <h2>Slider Six</h2>
-                                    <p>종가집 장독된장의 깊은맛과 13가지 이상의 풍부하고 신선한 재료로 구수하고 건강함을 맛볼 수 있습니다.</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                                </div>
-                            </div>                         
-                        </div>
-                    </div>
-                </div><!--/Slider-->
-
-                <div class="row hidden-xs" id="slider-thumbs">
-                        <!-- Bottom switcher of slider -->
-                        <ul class="hide-bullets">
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
-                            </li>
-                        </ul>                 
-                </div>
-        </div>
-</div>
+	
+<!-- RANK MENU -->
+	<c:import url="${pageContext.request.contextPath}/rank/prk.jpg">
+    	<%-- <c:param name="PARAM1" value="A1" /> --%>
+	</c:import>
 
 	<!-- side choo chun menus -->
 	
@@ -445,6 +252,8 @@
 					</div>
 			</div>
 		</div>
+
+
 
 		<!-- side2-1 -->
 		<div class="side-menu" data-sidemenu="2" style="margin-top:20px; position:inline; display:none;">		
@@ -665,37 +474,15 @@
 		
 		</div><!-- container -->
 
-
-		<!-- all menu -->
-		
 	</div>
-<!-- all menu end -->
 
-<!-- index-page -->
 </div>
-
-
-<!-- exemple  -->
-
-<!-- exemple  -->
 
 </body>
 
 <script type="text/javascript">
 
-/* default button  */
-/* $(document).ready(function(){
-	$(".side-categroy-btn").focus();
-}); */
-
-
-$('#pricebtn').children('click',function(){
-	$(this).children().css( "background-color", "red" );
-});
-
-
-
-//test
+/* rising menu */
 	$('.side-categroy-btn').on('click', function(){
 		var sbval = $(this).data("sidectgry");
 		$('div[data-sidemenu]').each(function(){
@@ -706,88 +493,23 @@ $('#pricebtn').children('click',function(){
 		})
 	});
 
-/* tooltip : display:none not working*/
-/* $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
-}); */
-
-$(document).ready(function() {
-	$("body").tooltip({ selector: '[data-toggle=tooltip]', placement:'right'});
-});
-
-
-/* slider */
-jQuery(document).ready(function($) {
-	 
-    /* $('#myCarousel').carousel({
-            interval: 5000
-    }); */
-
-    $('#carousel-text').html($('#slide-content-0').html());
-
-    //Handles the carousel thumbnails
-   $('[id^=carousel-selector-]').click( function(){
-        var id = this.id.substr(this.id.lastIndexOf("-") + 1);
-        var id = parseInt(id);
-        $('#myCarousel').carousel(id);
-    });
-
-
-    // When the carousel slides, auto update the text
-    $('#myCarousel').on('slid.bs.carousel', function (e) {
-             var id = $('.item.active').data('slide-number');
-            $('#carousel-text').html($('#slide-content-'+id).html());
-    });
-});
 
 /* resize 메뉴 */
-	$(window).on('resize', function(){
+	/* $(window).on('resize', function(){
 		var lheight = $('#leftmain').height();
 		$('.carousel-inner .item').height(lheight);				
 	});
 	$(document).ready(function(){
 	    $(window).trigger('resize');		
-	});
+	}); */
 	
 /* 사이드메뉴 카테고리 show */
-
-	$(document).ready(function(){
+	/* $(document).ready(function(){
 		
 		$('#side1').click(0)
 		
-	});
-	
-	
-/* all menu slider */
-	/* $(document).ready(function(){
-    
-	var clickEvent = false;
-	$('#allmenuCarousel').carousel({
-		interval:   4000
-	}).on('click', '.list-group li', function() {
-			clickEvent = true;
-			$('.list-group li').removeClass('active');
-			$(this).addClass('active');		
-	}).on('slid.bs.carousel', function(e) {
-		if(!clickEvent) {
-			var count = $('.list-group').children().length -1;
-			var current = $('.list-group li.active');
-			current.removeClass('active').next().addClass('active');
-			var id = parseInt(current.data('slide-to'));
-			if(count == id) {
-				$('.list-group li').first().addClass('active');	
-			}
-		}
-		clickEvent = false;
-	});
-})
+	}); */
 
-$(window).load(function() {
-    var boxheight = $('#allmenuCarousel .carousel-inner').innerHeight();
-    var itemlength = $('#allmenuCarousel .item').length;
-    var triggerheight = Math.round(boxheight/itemlength+1);
-	$('#allmenuCarousel .list-group-item').outerHeight(triggerheight);
-}); */
 
 </script>
 	
