@@ -155,10 +155,11 @@
 	</div> 
 	
 <!-- RANK MENU -->
-	<c:import url="${pageContext.request.contextPath}/rank/prk.jpg">
-    	<%-- <c:param name="PARAM1" value="A1" /> --%>
-	</c:import>
 
+	<div>
+		<jsp:include page="${pageContext.request.contextPath}/rank/prk"></jsp:include>
+	</div>
+	
 	<!-- side choo chun menus -->
 	
 	<div style="background-color:#F2F4F4; min-height:600px;">
@@ -510,6 +511,7 @@
 		
 	}); */
 
+	
 
 </script>
 	

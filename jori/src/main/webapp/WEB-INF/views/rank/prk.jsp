@@ -7,12 +7,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1" charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/prk.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap-theme.min.css">
-		<script src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body style=" height: 100%; margin: 0;">
 <div class="widd">
@@ -20,7 +15,7 @@
 
 <!-- 추천메뉴 문구 -->
     <div class="container" style="">	    
-        <div class="text-center" style=" /* margin-top:7%; 추천메뉴 위공간 */">
+        <div class="text-center" style=" margin-top:7%; 추천메뉴">
             <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; ">조리미味</span>
             <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; ">'추천'</span>
             <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; ">메뉴</span>
