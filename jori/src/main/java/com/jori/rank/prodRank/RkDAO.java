@@ -1,4 +1,4 @@
-package com.jori.rank.prodRank;
+/*package com.jori.rank.prodRank;
 
 import java.util.List;
 
@@ -31,9 +31,10 @@ public class RkDAO {
 	
 	
 	@SuppressWarnings("rawtypes")//List<??> 지정하지 않을경우 @SuppressWarnings
-	public List selectList(String queryId) {
+	public List ddselectList(String queryId) {
 		printQueryId(queryId);
 		return sqlSession.selectList(queryId);
 	}//rankListByProd()
 	
 }//
+*/

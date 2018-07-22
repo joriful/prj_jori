@@ -1,5 +1,9 @@
 package com.jori.menu.indexMenu;
 
-public interface IndexMenuService {
+import java.util.List;
 
+import com.jori.menu.menuMain.ProductsMainBean;
+
+public interface IndexMenuService {
+	List<ProductsMainBean> idxSiMenuList() throws Exception;
 }//

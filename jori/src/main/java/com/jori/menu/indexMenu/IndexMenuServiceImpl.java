@@ -18,7 +18,6 @@ public class IndexMenuServiceImpl implements IndexMenuService {
 	
 	@Override
 	public List<ProductsMainBean> idxSiMenuList() throws Exception{
-		
 		return idxMenuDao.idxSiMenuList();
 	}
 	
