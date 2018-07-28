@@ -63,6 +63,6 @@
 	<context:component-scan base-package="com.jori.menu.indexMenu" />
 	
 		<!-- menu Bean -->
-	<context:component-scan base-package="com.jori.menu.indexMenu" />	
+	<context:component-scan base-package="com.jori.menu.menuMain" />	
 	
 </beans:beans>
