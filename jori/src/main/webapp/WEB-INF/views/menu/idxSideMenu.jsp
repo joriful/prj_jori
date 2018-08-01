@@ -9,7 +9,7 @@
 <body>
 <div style="background-color:#F2F4F4; min-height:600px;">
 		   
-		  <!-- <div class="container">	    
+		  <div class="container">	    
 	        <div class="text-center" style="/* border-bottom:solid coral 1px; */ margin-top:7%;">
 	            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">함께하면</span>
 	            <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; /* padding-top:3%; */">'더'</span>
@@ -21,7 +21,7 @@
 	                	지금까지 메뉴입니다.</p>	
 	            </div>
 	        </div>        
-		</div> -->
+		</div>
 		
 		<!-- filter btn / menu area-->
 		<%-- <div class="container" >

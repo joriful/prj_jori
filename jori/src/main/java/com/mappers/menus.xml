@@ -11,6 +11,9 @@
   				order by gdodrCnt desc, prodSort asc Limit 6
 	  	</select>
     
-    
+    	<select id="sideMenuList" resultType="com.jori.menu.menuMain.ProductsMainBean">
+    		select * from products
+  					where gdcgNo = 4 order by gdNo asc
+    	</select>
     
     </mapper>
