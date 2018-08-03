@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" 
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="../inc/idxTop.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/index.css">
 </head>
 <body>
 <div style="background-color:#F2F4F4; min-height:600px;">
@@ -15,8 +15,8 @@
 	            <span style="font-weight:bold; color:#FF8C00; font-family:BatangChe; font-size: 58px; /* padding-top:3%; */">'더'</span>
 	            <span style="font-weight:bold; color:#404040; font-family:BatangChe; font-size: 48px; /* padding-top:3%; */">맛있는 사이드 메뉴</span>           
 	        </div>
-	        <div class="row">
-	            <div class="col-md-8 text-center col-centered" style=" margin-bottom:5%;">                
+	        <div class="row" style="">
+	            <div class="col-md-8 text-center col-centered" style="float: none; margin: 0 auto; margin-bottom:5%;"> 
 	                <p class="slogan" style="font-size:20px; color:#696969; margin-top:10px; line-height:1.6em;"> 
 	                	지금까지 메뉴입니다.</p>	
 	            </div>
@@ -24,7 +24,7 @@
 		</div>
 		
 		<!-- filter btn / menu area-->
-		<%-- <div class="container" >
+		<div class="container" >
 			<div class="col-md-8 text-center col-centered">
 				<div class="btn-group" data-toggle="buttons">
 				  <label class="btn side-categroy-btn active" data-sidectgry="1" >
@@ -35,6 +35,10 @@
 				    <input type="radio" name="options" id="side_btn2" autocomplete="off" >
 				    <span id="menuprice-1">볶음 추가</span>
 				  </label>
+				  <label class="btn side-categroy-btn" data-sidectgry="2">
+				    <input type="radio" name="options" id="side_btn2" autocomplete="off" >
+				    <span id="menuprice-1">볶음 추가</span>
+				  </label>				  
 				  <label class="btn side-categroy-btn"  data-sidectgry="3">
 				    <input type="radio" name="options" id="side_btn3" autocomplete="off">
 				    <span id="menuprice-1">조림 추가</span>
@@ -215,7 +219,7 @@
 			</div>
 		</div>				
 		
-	</div> --%>
+	</div>     
 </div>
 </body>
 </html>
