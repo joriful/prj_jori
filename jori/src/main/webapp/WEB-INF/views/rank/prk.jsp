@@ -97,7 +97,7 @@
                         				<c:if test="${cnt>0 }">
                         					<li class="col-sm-2" style="">
                                 				<a class="thumbnail" id="carousel-selector-${cnt-1 }">
-                                					<img class="transSz" src="${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }" style="width:170px; /* width:170px;  height:100px; */ object-fit: cover; ">                                				
+                                					<img class="transSz" src="${pageContext.request.contextPath}/resources/divImgs/menu/${prodBean.gdUrl }" style="width:170px; object-fit: cover; ">                                				
                                 				</a>
                             				</li>
                         				</c:if>

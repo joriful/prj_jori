@@ -29,23 +29,20 @@
 				<div class="btn-group" data-toggle="buttons">
 				  <label class="btn side-categroy-btn active" data-sidectgry="1" >
 				    <input type="radio" name="options" id="side_btn1" autocomplete="off" checked> 
-				    <span id="menuprice-1">기본 사이드</span>
+				    <span id="menuprice-1">사이드 메뉴</span>
 				  </label>
 				  <label class="btn side-categroy-btn" data-sidectgry="2">
 				    <input type="radio" name="options" id="side_btn2" autocomplete="off" >
-				    <span id="menuprice-1">볶음 추가</span>
-				  </label>
-				  <label class="btn side-categroy-btn" data-sidectgry="2">
-				    <input type="radio" name="options" id="side_btn2" autocomplete="off" >
-				    <span id="menuprice-1">볶음 추가</span>
-				  </label>				  
-				  <label class="btn side-categroy-btn"  data-sidectgry="3">
-				    <input type="radio" name="options" id="side_btn3" autocomplete="off">
-				    <span id="menuprice-1">조림 추가</span>
+				    <span id="menuprice-1">주류/음료</span>
 				  </label>
 				</div>				
 			</div>
 
+			<!-- mdb menu add area -->
+				
+
+			<!-- mdb menu add area -->
+			
 			<!-- side1-1 -->		
 			<div class="side-menu" data-sidemenu="1" style="margin-top:20px; position:inline; display:block;">
 				<div class="col-md-12" id="side1" >
@@ -162,64 +159,25 @@
 			</div>
 		</div>			
 
-		<!-- side3-1 -->
-		<div class="side-menu" data-sidemenu="3" style="margin-top:20px; position:inline; display:none;">		
-			<div class="col-md-12" id="side3">
-						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
-							<div class="media">
-								  <div class="media-left">
-								  	<div class="media-object">
-										<div class="img-circle" id="recomenu_box"
-											style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/segro1.PNG'); 
-											background-position: center center; width:100px; height:100px; background-size: 140px;
-											background-repeat: no-repeat; float:left; margin-right:10px;">
-										</div>
-									</div>
-								 </div>
-								<div class="media-body" style="" >					
-									<p class="media-heading" style="font-size:20px; font-weight:bold;">
-										계란말이
-									</p>
-									<p class="media-heading" style="color:#95A5A6;">
-										가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
-									</p>
-									<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
-										<i class="fa fa-krw" aria-hidden="true"></i> 
-										<fmt:formatNumber value="6000" type="Number" pattern="##,###"/>&nbsp;
-									</p>
-								</div>
-							</div>
-					</div>
-				<!-- side3-2 -->
-						<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
-							<div class="media">
-								  <div class="media-left">
-								  	<div class="media-object">
-										<div class="img-circle" id="recomenu_box"
-											style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/sbs1.jpg'); 
-											background-position: center center; width:100px; height:100px; background-size: 140px;
-											background-repeat: no-repeat; float:left; margin-right:10px;">
-										</div>
-									</div>
-								 </div>
-								<div class="media-body" style="" >					
-									<p class="media-heading" style="font-size:20px; font-weight:bold;">
-										소세지&베이컨 양파볶음
-									</p>
-									<p class="media-heading" style="color:#95A5A6;">
-										가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
-									</p>
-									<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
-										<i class="fa fa-krw" aria-hidden="true"></i> 
-										<fmt:formatNumber value="5000" type="Number" pattern="##,###"/>&nbsp;
-									</p>
-								</div>
-							</div>
-					</div>
-			</div>
-		</div>				
+	
+		
 		
 	</div>     
 </div>
 </body>
+
+<script type="text/javascript">
+$('.side-categroy-btn').on('click', function(){
+	var sbval = $(this).data("sidectgry");
+	$('div[data-sidemenu]').each(function(){
+		if($('div[data-sidemenu="'+sbval+'"]').length > 0){
+			$('div.side-menu[data-sidemenu="'+sbval+'"]').css("display", "block");
+			$('div.side-menu[data-sidemenu!="'+sbval+'"]').css("display", "none");				
+		}
+	})
+});
+
+
+</script>
+
 </html>
