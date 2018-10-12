@@ -39,7 +39,14 @@
 			</div>
 
 			<!-- mdb menu add area -->
-				
+			
+			<c:set var="cnt" value="0" />
+				<c:forEach var="i" begin="1" end="${idxSiListSize }" >
+					<c:set var="sMenuBean" value="${idxSiList[i-1]}" />
+					<c:set var="cnt" value="${cnt+1 }" />
+					<c:if test="${cnt > 0 }" >
+					</c:if>
+				</c:forEach>
 
 			<!-- mdb menu add area -->
 			
