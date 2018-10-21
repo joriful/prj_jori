@@ -63,8 +63,8 @@
 											<p class="media-heading" style="font-size:20px; font-weight:bold; ">
 												${sMenuBean.gdName}
 											</p>
-											<p class="media-heading" style="color:#95A5A6;">
-												${sMenuBean.gdInfo}<!-- 가가가가가가가가가가가각가 -->
+											<p class="media-heading" id="menuDesc${cnt-1}" style="color:#95A5A6;">
+												${sMenuBean.gdInfo}
 											</p>
 											<p class="media-heading" style="font-size:25px; color:#FF8C00;">
 												<i class="fa fa-krw" aria-hidden="true"></i> 
@@ -119,7 +119,34 @@ $('label[data-sidectgry="2"]').on('click', function(){
 	$('[data-ctgry="4"]').css("display", "none");
 }); 
 
+/* padding height */
+ 	$(window).on('resize',function() {
+		var hidA = $('#idx_Page_upload_Menu'); 
+		var hidB = $('#idx_Page_view_Menu');
+		
+		var maxH  = Math.max(hidA.height(), hidB.height());
+			if($(hidA).height() != maxH){
+				$(hidA).height($(hidB).height());
+			}
+			if($(hidB).height() != maxH){
+				$(hidB).height($(hidA).height());
+			}
+	});
+	$(document).ready(function() {
+	    $(window).trigger('resize');
+	});
 
+
+	$(document).ready(function(){
+		var maxHeight = 0;
+
+		$("div").each(function(){
+		   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+		});
+
+		$("div").height(maxHeight);		
+	});
+	
 /* $('.side-categroy-btn').on('click', function(){
 	var sbval = $(this).data("sidectgry");
 	$('div[data-sidemenu]').each(function(){
