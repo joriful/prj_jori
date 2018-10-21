@@ -13,7 +13,7 @@
     
     	<select id="sideMenuList" resultType="com.jori.menu.menuMain.ProductsMainBean">
     		select * from products
-  					where gdcgNo = 4 and gdcgNo = 5 order by gdNo asc
+  					where gdcgNo IN (4,5) order by gdNo asc
     	</select>
     
     </mapper>

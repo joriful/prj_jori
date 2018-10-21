@@ -46,12 +46,11 @@
 			<c:set var="cnt" value="${cnt+1 }" />
 				<c:if test="${cnt > 0 }" >
 				
-								<!-- side1-1 -->		
-					<div class="side-menu" id="sideAll${cnt-1}" data-sidemenu="${cnt-1}" data-ctgry="${sMenuBean.gdcgNo }" style="margin-top:20px; position:inline; display:block; /* float:left; */ /* border:solid red 1px; */">
-						<%-- <div class="col-md-12" id="side+${cnt-1}" > --%>
-								<div class="col-sm-6" style="margin-top:20px; display: inline-block; float:left;">
+			<!-- side menu -->		
+					<div class="side-menu" data-sidemenu="${cnt-1}" data-ctgry="${sMenuBean.gdcgNo }" style="position:inline; display:block; ">
+								<div class="col-sm-6" style="margin-top:20px; display: inline-block; /* float:left; */ /* margin-top:10px; margin-bottom:10px; */ border:solid red 1px;">
 									<div class="media">
-										  <div class="media-left">
+										 <div class="media-left">
 										  	<div class="media-object">
 												<div class="img-circle" id="recomenu_box"
 													style="background-image:url('${pageContext.request.contextPath}/resources/divImgs/menu/${sMenuBean.gdUrl}'); 
@@ -61,20 +60,20 @@
 											</div>
 										 </div>
 										<div class="media-body" style="" >					
-											<p class="media-heading" style="font-size:20px; font-weight:bold;">
+											<p class="media-heading" style="font-size:20px; font-weight:bold; ">
 												${sMenuBean.gdName}
 											</p>
 											<p class="media-heading" style="color:#95A5A6;">
-												가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라나다라가나다라가나다라가나다라
+												${sMenuBean.gdInfo}<!-- 가가가가가가가가가가가각가 -->
 											</p>
-											<p class="media-heading" style="font-size:25px; /* font-weight:bold; */ color:#FF8C00;">
+											<p class="media-heading" style="font-size:25px; color:#FF8C00;">
 												<i class="fa fa-krw" aria-hidden="true"></i> 
-												<fmt:formatNumber value="6000" type="Number" pattern="##,###"/>&nbsp;
+												<fmt:formatNumber value="${sMenuBean.gdprice}" type="Number" pattern="##,###"/>&nbsp;
 											</p>
 										</div>
 									</div>
 							   </div>
-				</div>
+					</div>
 				</c:if>
 		</c:forEach>
 
@@ -85,26 +84,16 @@
 </body>
 
 <script type="text/javascript">
-/* $('.side-categroy-btn').on('click', function(){
-	var sbval = $(this).data("sidectgry");
-	$('div[data-sidemenu]').each(function(){
-		
-		if($('div[data-sidemenu="'+sbval+'"]').length > 0){
-			
-			
-			$('div.side-menu[data-sidemenu="'+sbval+'"]').css("display", "block");
-			$('div.side-menu[data-sidemenu!="'+sbval+'"]').css("display", "none");
-			
-			$("[id^=side]").css('display','block');
-		}else{
-			$("[id^=side]").css('display','none');
+
+//check category 5 display none
+	$(document).ready(function(){
+		if($('#side_btn1').is(':checked')) { 
+			$('[data-ctgry="5"]').css("display", "none");
 		}
-	})
-}); */
+	});
 
-
-
-/* $('label[data-sidectgry="1"]').on('click', function(){
+//check category 5 display none
+ $('label[data-sidectgry="1"]').on('click', function(){
 	$('div[data-sidemenu]').each(function(){
 		if($('[data-ctgry="4"]').css('display') == 'block'){
 			$('[data-ctgry="4"]').css("display", "none");
@@ -112,11 +101,11 @@
 		}
 		if($('[data-ctgry="4"]').css('display') == 'none') {
 			$('[data-ctgry="4"]').css("display", "block");
-			
 		}
 	})
+	$('[data-ctgry="5"]').css("display", "none");
 });
-
+//check category 4 display none
 $('label[data-sidectgry="2"]').on('click', function(){
 	$('div[data-sidemenu]').each(function(){
 		if($('[data-ctgry="5"]').css('display') == 'block'){
@@ -125,10 +114,10 @@ $('label[data-sidectgry="2"]').on('click', function(){
 		}
 		if($('[data-ctgry="5"]').css('display') == 'none') {
 			$('[data-ctgry="5"]').css("display", "block");
-			
 		}
 	})
-}); */
+	$('[data-ctgry="4"]').css("display", "none");
+}); 
 
 
 /* $('.side-categroy-btn').on('click', function(){
