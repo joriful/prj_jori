@@ -48,7 +48,7 @@
 				
 			<!-- side menu -->		
 					<div class="side-menu" data-sidemenu="${cnt-1}" data-ctgry="${sMenuBean.gdcgNo }" style="position:inline; display:block; ">
-								<div class="col-sm-6" style="margin-top:20px; display: inline-block; /* float:left; */ /* margin-top:10px; margin-bottom:10px; */ border:solid red 1px;">
+								<div class="col-sm-6" style="margin-top:20px; display: inline-block; /* float:left; */ /* margin-top:10px; margin-bottom:10px; */ /* border:solid red 1px; */">
 									<div class="media">
 										 <div class="media-left">
 										  	<div class="media-object">
@@ -66,7 +66,7 @@
 											<p class="media-heading" id="menuDesc${cnt-1}" style="color:#95A5A6;">
 												${sMenuBean.gdInfo}
 											</p>
-											<p class="media-heading" style="font-size:25px; color:#FF8C00;">
+											<p class="media-heading" style="font-size:25px; margin-top:2px; color:#FF8C00;">
 												<i class="fa fa-krw" aria-hidden="true"></i> 
 												<fmt:formatNumber value="${sMenuBean.gdprice}" type="Number" pattern="##,###"/>&nbsp;
 											</p>
@@ -120,7 +120,7 @@ $('label[data-sidectgry="2"]').on('click', function(){
 }); 
 
 /* padding height */
- 	$(window).on('resize',function() {
+ 	/* $(window).on('resize',function() {
 		var hidA = $('#idx_Page_upload_Menu'); 
 		var hidB = $('#idx_Page_view_Menu');
 		
@@ -134,18 +134,24 @@ $('label[data-sidectgry="2"]').on('click', function(){
 	});
 	$(document).ready(function() {
 	    $(window).trigger('resize');
-	});
+	}); */
 
-
-	$(document).ready(function(){
+$(document).ready(function(){
+ 	$(window).on('resize', function(){
 		var maxHeight = 0;
 
-		$("div").each(function(){
+		$("[id^=menuDesc]").each(function(){
 		   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
 		});
 
-		$("div").height(maxHeight);		
+		$("[id^=menuDesc]").height(maxHeight);
 	});
+	/* $(document).ready(function() {
+	    $(window).trigger('resize');
+	}); */
+});	
+	
+	
 	
 /* $('.side-categroy-btn').on('click', function(){
 	var sbval = $(this).data("sidectgry");
