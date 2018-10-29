@@ -48,7 +48,7 @@
 				
 			<!-- side menu -->		
 					<div class="side-menu" data-sidemenu="${cnt-1}" data-ctgry="${sMenuBean.gdcgNo }" style="position:inline; display:block; ">
-								<div class="col-sm-6" style="margin-top:20px; display: inline-block; /* float:left; */ /* margin-top:10px; margin-bottom:10px; */ /* border:solid red 1px; */">
+								<div class="col-sm-6" style="margin-top:20px; display: inline-block; /* float:left; */ /* margin-top:10px; margin-bottom:10px; */ border:solid red 1px;">
 									<div class="media">
 										 <div class="media-left">
 										  	<div class="media-object">
@@ -63,7 +63,7 @@
 											<p class="media-heading" style="font-size:20px; font-weight:bold; ">
 												${sMenuBean.gdName}
 											</p>
-											<p class="media-heading" id="menuDesc${cnt-1}" style="color:#95A5A6;">
+											<p class="media-heading" data-menudesc="${cnt-1}" id="menuDesc${cnt-1}" style="color:#95A5A6;">
 												${sMenuBean.gdInfo}
 											</p>
 											<p class="media-heading" style="font-size:25px; margin-top:2px; color:#FF8C00;">
@@ -119,24 +119,8 @@ $('label[data-sidectgry="2"]').on('click', function(){
 	$('[data-ctgry="4"]').css("display", "none");
 }); 
 
-/* padding height */
- 	/* $(window).on('resize',function() {
-		var hidA = $('#idx_Page_upload_Menu'); 
-		var hidB = $('#idx_Page_view_Menu');
-		
-		var maxH  = Math.max(hidA.height(), hidB.height());
-			if($(hidA).height() != maxH){
-				$(hidA).height($(hidB).height());
-			}
-			if($(hidB).height() != maxH){
-				$(hidB).height($(hidA).height());
-			}
-	});
-	$(document).ready(function() {
-	    $(window).trigger('resize');
-	}); */
 
-$(document).ready(function(){
+/*  $(document).ready(function(){ 
  	$(window).on('resize', function(){
 		var maxHeight = 0;
 
@@ -146,29 +130,27 @@ $(document).ready(function(){
 
 		$("[id^=menuDesc]").height(maxHeight);
 	});
-	/* $(document).ready(function() {
-	    $(window).trigger('resize');
-	}); */
-});	
+ }); 
+	 $(document).ready(function() {
+		    $(window).trigger('resize');
+		});	 */
 	
-	
-	
-/* $('.side-categroy-btn').on('click', function(){
-	var sbval = $(this).data("sidectgry");
-	$('div[data-sidemenu]').each(function(){
-		if(sbval == 1){
-			if($("[id^=sideAll]").css('display') == 'block'){
-				$("[id^=sideAll]").css("display", "none");
-				
-			}
-			if($("[id^=sideAll]").css('display') == 'none') {
-				$("[id^=sideAll]").css("display", "block");
-			}
-		}
-	})
-}); */
+		 $(document).ready(function(){ 
+			 	$(window).on('resize', function(){
+					var maxHeight = 0;
 
+					$(".media-body").each(function(){
+					   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+					});
 
+					$(".media-body").height(maxHeight);
+				});
+			 }); 
+				 $(document).ready(function() {
+					    $(window).trigger('resize');
+					});	
+		
+		
 </script>
 
 </html>
